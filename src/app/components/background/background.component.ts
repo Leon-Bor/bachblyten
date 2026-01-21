@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -8,9 +9,8 @@ import {
   QueryList,
   SimpleChanges,
   ViewChild,
-  ViewChildren
+  ViewChildren,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -23,7 +23,7 @@ type BackgroundMode = 'sunrise' | 'static';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './background.component.html',
-  styleUrl: './background.component.scss'
+  styleUrl: './background.component.scss',
 })
 export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges {
   @Input() mode: BackgroundMode = 'static';
@@ -76,9 +76,9 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
             scale: gsap.utils.interpolate(1.05, 1.18, eased),
             duration: 0.2,
             ease: 'power1.out',
-            overwrite: true
+            overwrite: true,
           });
-        }
+        },
       });
     } else {
       gsap.set(sun, { y: 30, scale: 1.05, opacity: 0.95 });
@@ -103,7 +103,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
       const startX = direction === 1 ? -240 - index * 60 : viewportWidth + 240 + index * 60;
       const endX = direction === 1 ? viewportWidth + 280 : -260;
       const scale = 0.7 + Math.random() * 0.6;
-      const y = 30 + index * 40 + Math.random() * 30;
+      const y = 130 + index * 40 + Math.random() * 300;
 
       gsap.set(cloud.nativeElement, { x: startX, y, scale, opacity: 0.85 });
 
@@ -113,7 +113,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
         ease: 'none',
         repeat: -1,
         yoyo: true,
-        delay: Math.random() * 3
+        delay: Math.random() * 10,
       });
 
       this.cloudTweens.push(tween);
@@ -141,7 +141,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
       },
       yoyo: true,
       rotation: () => gsap.utils.random(-6, 6, 1),
-      delay: 2.5
+      delay: 2.5,
     });
   }
 }
