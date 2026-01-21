@@ -12,9 +12,6 @@ import {
   ViewChildren,
 } from '@angular/core';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 type BackgroundMode = 'sunrise' | 'static';
 
@@ -34,7 +31,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
 
   protected cloudCount = Array.from({ length: 4 });
 
-  private sunTrigger?: ScrollTrigger;
+  private sunTween?: gsap.core.Tween;
   private cloudTweens: gsap.core.Tween[] = [];
   private wieselTween?: gsap.core.Tween;
 
@@ -63,22 +60,16 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     }
 
     const sun = this.sunLayer.nativeElement;
+    this.sunTween?.kill();
+
     if (this.mode === 'sunrise') {
-      gsap.set(sun, { y: 80, scale: 1.05, opacity: 1 });
-      this.sunTrigger = ScrollTrigger.create({
-        trigger: document.body,
-        start: 'top top',
-        end: '+=1200',
-        onUpdate: (self) => {
-          const eased = gsap.utils.clamp(0, 1, self.progress);
-          gsap.to(sun, {
-            y: gsap.utils.interpolate(80, -50, eased),
-            scale: gsap.utils.interpolate(1.05, 1.18, eased),
-            duration: 0.2,
-            ease: 'power1.out',
-            overwrite: true,
-          });
-        },
+      gsap.set(sun, { y: 140, scale: 1.02, opacity: 0.85 });
+      this.sunTween = gsap.to(sun, {
+        y: -30,
+        scale: 1.12,
+        opacity: 1,
+        duration: 5,
+        ease: 'power2.out',
       });
     } else {
       gsap.set(sun, { y: 30, scale: 1.05, opacity: 0.95 });
@@ -86,8 +77,8 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
   }
 
   private resetSunAnimation(): void {
-    this.sunTrigger?.kill();
-    this.sunTrigger = undefined;
+    this.sunTween?.kill();
+    this.sunTween = undefined;
   }
 
   private setupClouds(): void {
@@ -135,6 +126,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
       ease: 'back.out(1.6)',
       repeat: -1,
       repeatDelay: 8,
+      scale: 2,
       onRepeat: () => {
         const nextDelay = 6 + Math.random() * 10;
         this.wieselTween?.repeatDelay(nextDelay);
