@@ -29,7 +29,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
   @ViewChild('wiesel', { static: false }) wiesel?: ElementRef<HTMLImageElement>;
   @ViewChildren('cloud') clouds?: QueryList<ElementRef<HTMLImageElement>>;
 
-  protected cloudCount = Array.from({ length: 4 });
+  protected cloudCount = Array.from({ length: 6 });
 
   private sunTween?: gsap.core.Tween;
   private cloudTweens: gsap.core.Tween[] = [];
@@ -65,10 +65,10 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     if (this.mode === 'sunrise') {
       gsap.set(sun, { y: 140, scale: 1.02, opacity: 0.85 });
       this.sunTween = gsap.to(sun, {
-        y: -30,
+        y: -230,
         scale: 1.12,
         opacity: 1,
-        duration: 5,
+        duration: 20,
         ease: 'power2.out',
       });
     } else {
@@ -91,20 +91,25 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     const viewportWidth = window.innerWidth;
     this.clouds.forEach((cloud, index) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
-      const startX = direction === 1 ? -240 - index * 60 : viewportWidth + 240 + index * 60;
+      const startX =
+        direction === 1
+          ? Math.random() * viewportWidth - index * 60
+          : viewportWidth - Math.random() * viewportWidth;
       const endX = direction === 1 ? viewportWidth + 280 : -260;
       const scale = 0.7 + Math.random() * 0.6;
-      const y = 130 + index * 40 + Math.random() * 300;
+      const y = 50 + index * 40 + Math.random() * 400;
+
+      cloud.nativeElement.style.transform = `scaleY(${Math.random() > 0.5 ? 1 : -1})`;
 
       gsap.set(cloud.nativeElement, { x: startX, y, scale, opacity: 0.85 });
 
       const tween = gsap.to(cloud.nativeElement, {
         x: endX,
         duration: 18 + Math.random() * 10,
+
         ease: 'none',
         repeat: -1,
         yoyo: true,
-        delay: Math.random() * 10,
       });
 
       this.cloudTweens.push(tween);
