@@ -1,0 +1,91 @@
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Datenschutz</span>
+    <h2>Deine Daten, unser Versprechen</h2>
+  </div>
+  <div class="section-grid">
+    <article class="card">
+      <h3>Verantwortlicher</h3>
+      <ul>
+        <li *ngFor="let contact of contacts"><strong>{{ contact.label }}:</strong> {{ contact.value }}</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Grundsätze</h3>
+      <p class="muted">
+        Wir verarbeiten nur, was nötig ist, speichern so kurz wie möglich und übertragen Daten nur an
+        geprüfte Auftragsverarbeiter.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Verarbeitung</span>
+    <h3>Zwecke & Rechtsgrundlagen</h3>
+  </div>
+  <div class="section-grid">
+    <article class="card" *ngFor="let item of processing">
+      <h4>{{ item.title }}</h4>
+      <p>{{ item.detail }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Speicherdauer</span>
+    <h3>Wie lange?</h3>
+  </div>
+  <div class="card">
+    <p>
+      Wir speichern Vertragsdaten gemäß gesetzlichen Pflichten (z. B. steuerlich 10 Jahre), Newsletter-Daten bis
+      zum Widerruf, technische Logs maximal 14 Tage. Danach löschen oder anonymisieren wir.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Weitergabe</span>
+    <h3>Empfänger & Drittland</h3>
+  </div>
+  <div class="card">
+    <ul>
+      <li *ngFor="let rec of recipients">{{ rec }}</li>
+    </ul>
+    <p class="muted">
+      Kein Drittlandtransfer ohne geeignete Garantien. Verträge zur Auftragsverarbeitung liegen vor.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Deine Rechte</span>
+    <h3>Selbstbestimmt bleiben</h3>
+  </div>
+  <div class="card">
+    <ul>
+      <li *ngFor="let right of rights">{{ right }}</li>
+    </ul>
+    <p class="muted">
+      Kontaktiere uns via privacy@bachblyten-festival.com. Zuständige Aufsichtsbehörde: Unabhängiges
+      Landeszentrum für Datenschutz Schleswig-Holstein.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Cookies</span>
+    <h3>Consent & Tools</h3>
+  </div>
+  <div class="card">
+    <ul>
+      <li *ngFor="let cookie of cookies">{{ cookie }}</li>
+    </ul>
+    <p class="muted">Opt-Outs und Tool-Liste folgen im Consent-Tool.</p>
+  </div>
+</section>

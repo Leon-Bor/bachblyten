@@ -1,0 +1,39 @@
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Kontakt</span>
+    <h2>Schreib uns</h2>
+  </div>
+  <div class="section-grid">
+    <article class="card">
+      <h3>Ansprechpartner</h3>
+      <ul>
+        <li *ngFor="let c of contacts"><strong>{{ c.title }}:</strong> {{ c.detail }}</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Kontaktwege</h3>
+      <ul>
+        <li *ngFor="let channel of channels"><strong>{{ channel.title }}:</strong> {{ channel.detail }}</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Service-Level</h3>
+      <p class="muted">
+        Wir antworten in der Festivalwoche binnen 6 Stunden, sonst innerhalb von 24 Stunden. Dringende
+        Fälle bitte telefonisch. Deutsch & Englisch möglich.
+      </p>
+      <p class="muted">
+        Eskalation: Bei Sicherheitsfragen direkt an Security/Info vor Ort. Awareness-Team ist sichtbar
+        gekennzeichnet.
+      </p>
+    </article>
+  </div>
+  <div class="card hints">
+    <h4>Hinweise</h4>
+    <ul>
+      <li><a routerLink="/faq">FAQ lesen</a> – viele Fragen sind bereits beantwortet.</li>
+      <li><a routerLink="/anfahrt">Anfahrt checken</a> – spart Stress bei der Anreise.</li>
+      <li>Datenschutz: Wir nutzen deine Angaben nur zur Bearbeitung der Anfrage.</li>
+    </ul>
+  </div>
+</section>

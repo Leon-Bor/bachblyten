@@ -1,0 +1,51 @@
+<nav class="nav">
+  <div class="logo">
+    <img src="/bb21-madamme.svg" alt="Bachblyten Logo">
+    <div class="wordmark">
+      <span class="logo-text">Bachblyten</span>
+      <span class="subline">24–26 Jul 2026 · Flugplatz Schwesing</span>
+    </div>
+  </div>
+
+  <div class="nav-actions">
+    <a class="cta secondary ghost" routerLink="/line-up">Line-Up Sneak</a>
+    <button
+      class="menu-button"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Navigation öffnen"
+    >
+      <svg viewBox="0 0 24 24" [class.open]="menuOpen()">
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+      <span>{{ menuOpen() ? 'Close' : 'Menu' }}</span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-panel" [class.open]="menuOpen()">
+  <div class="menu-card">
+    <div class="menu-header">
+      <div>
+        <p class="eyebrow">Bunt. Ungebändigt.</p>
+        <h3>Wo triffst du als nächstes?</h3>
+      </div>
+      <a class="cta" routerLink="/tickets" (click)="closeMenu()">Tickets sichern</a>
+    </div>
+    <div class="link-grid">
+      <a
+        *ngFor="let link of headerLinks"
+        [routerLink]="link.path"
+        routerLinkActive="active"
+        (click)="closeMenu()"
+        [class.active]="activePath === link.path"
+      >
+        <span class="link-title">{{ link.label }}</span>
+        <span class="dash">→</span>
+      </a>
+    </div>
+  </div>
+</div>

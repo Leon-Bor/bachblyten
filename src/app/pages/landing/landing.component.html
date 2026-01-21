@@ -1,0 +1,95 @@
+<section class="bg-intro">
+  <div class="scroll-hint">
+    <p class="eyebrow">Sonne geht auf</p>
+    <span>Scroll für das Programm ↓</span>
+  </div>
+</section>
+
+<section class="section hero marquee">
+  <div class="hero-overlay">
+    <div class="pill-row">
+      <span class="tag">24–26 Jul 2026</span>
+      <span class="tag">Flugplatz Schwesing</span>
+      <span class="tag">3 Nächte · 4 Floors</span>
+    </div>
+    <h1>
+      Bachblyten <span class="gradient-word">Festival</span>
+      <small>Neon, Sonnenaufgang, Mystic Vibes</small>
+    </h1>
+    <p>
+      Vibe-heavy wie Mystic Creatures, aber nordisch klar: ein immersives Wochenende mit farbigen
+      Lichtwelten, viel Deko-Liebe und endlosen Sunrise-Sets.
+    </p>
+    <div class="hero-actions">
+      <a class="cta massive" routerLink="/tickets">Tickets</a>
+      <a class="cta secondary" routerLink="/line-up">Line-Up entdecken</a>
+    </div>
+    <div class="hero-grid">
+      <div class="glass mini">
+        <p class="eyebrow">Highlight</p>
+        <h3>Sunrise Floor</h3>
+        <p class="muted">Progressive & Downtempo bis die Sonne im Hintergrund voll aufgeht.</p>
+      </div>
+      <div class="glass mini">
+        <p class="eyebrow">Experience</p>
+        <h3>Hangar Techno Dome</h3>
+        <p class="muted">Funktion-One, Laser und visuals à la Mystic – aber mit Bachblyten Deko.</p>
+      </div>
+      <div class="glass mini">
+        <p class="eyebrow">Crew</p>
+        <h3>Neue Macher:innen</h3>
+        <p class="muted">Mehr Kunst, mehr Awareness, alles privat finanziert und publikumsnah.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section highlights">
+  <div class="section-heading">
+    <span class="eyebrow">Warum kommen</span>
+    <h2>Ein Wochenende voller Blyten</h2>
+  </div>
+  <div class="section-grid">
+    <article class="card" *ngFor="let item of highlights">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div class="dash-row">
+        <span class="pill">Bring deine Crew</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section timeline">
+  <div class="section-heading">
+    <span class="eyebrow">Was passiert wann</span>
+    <h2>Dein Wochenende auf dem Rollfeld</h2>
+  </div>
+  <div class="timeline-grid">
+    <article class="card" *ngFor="let slot of timeline">
+      <div class="slot-time">{{ slot.time }}</div>
+      <h4>{{ slot.title }}</h4>
+      <p>{{ slot.detail }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section aftermovie">
+  <div class="section-heading">
+    <span class="eyebrow">Vibes checken</span>
+    <h2>Aftermovie</h2>
+  </div>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/UAHgHB7qQTk"
+      title="Bachblyten Aftermovie"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="cta-row">
+    <a class="cta" routerLink="/tickets">Ticket kaufen</a>
+    <a class="cta secondary" routerLink="/anfahrt">Anfahrt planen</a>
+  </div>
+</section>

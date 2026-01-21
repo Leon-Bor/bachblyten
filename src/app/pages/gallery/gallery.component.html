@@ -1,0 +1,25 @@
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Gallery</span>
+    <h2>Aktuelle Insta-Highlights</h2>
+  </div>
+  <p>
+    Wir zeigen hier aktuell ausgewählte Posts. Ersetze die Daten in der Component oder binde den
+    offiziellen Instagram-Embed ein – das Layout ist vorbereitet.
+  </p>
+  <div class="section-grid gallery-grid">
+    <a class="card post" *ngFor="let post of posts" [href]="post.url" target="_blank" rel="noreferrer">
+      <div class="image" [style.background-image]="'url(' + post.image + ')'"></div>
+      <div class="meta">
+        <span class="tag">{{ post.handle }}</span>
+        <span class="ago">{{ post.ago }}</span>
+      </div>
+      <p>{{ post.caption }}</p>
+    </a>
+  </div>
+  <div class="cta-row">
+    <a class="cta secondary" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+      Zum Instagram-Feed
+    </a>
+  </div>
+</section>

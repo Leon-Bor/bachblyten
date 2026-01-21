@@ -1,0 +1,64 @@
+.lineup-hero code {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-glow);
+}
+
+.headliner-grid .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links a {
+  color: var(--accent-cold);
+  font-weight: 600;
+}
+
+.artist-days .days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.artist {
+  margin-bottom: 12px;
+}
+
+.artist .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.playlists .tiny {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .artist .row {
+    flex-direction: column;
+  }
+}

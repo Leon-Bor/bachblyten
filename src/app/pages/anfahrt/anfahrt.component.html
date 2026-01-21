@@ -1,0 +1,35 @@
+<section class="section venue">
+  <div class="section-heading">
+    <span class="eyebrow">Anfahrt</span>
+    <h2>Anflug zum Bachblyten</h2>
+  </div>
+  <p><strong>{{ venue.name }}</strong>, {{ venue.address }}</p>
+  <div class="chip-row">
+    <span class="tag">Park &amp; Camp ausgeschildert</span>
+    <span class="tag">Bitte Glasfrei</span>
+  </div>
+  <a class="cta secondary" [href]="venue.mapUrl" target="_blank" rel="noreferrer">
+    Route in Maps öffnen
+  </a>
+  <div class="map-placeholder">
+    <p>Hier könnte eine eingebettete Map liegen. Der Link oben öffnet Google Maps.</p>
+  </div>
+</section>
+
+<section class="section options">
+  <div class="section-heading">
+    <span class="eyebrow">Anreiseoptionen</span>
+    <h3>So kommst du hin</h3>
+  </div>
+  <div class="section-grid">
+    <article class="card" *ngFor="let option of options">
+      <div class="header">
+        <h3>{{ option.title }}</h3>
+        <span class="tag" *ngIf="option.tag">{{ option.tag }}</span>
+      </div>
+      <ul>
+        <li *ngFor="let detail of option.details">{{ detail }}</li>
+      </ul>
+    </article>
+  </div>
+</section>

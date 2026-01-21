@@ -1,0 +1,76 @@
+<section class="section ticket-hero">
+  <div>
+    <p class="eyebrow">Tickets</p>
+    <h2>Hol dir dein Boarding-Ticket</h2>
+    <p>
+      Das Rollfeld wartet auf dich. Sichere dir jetzt deinen Pass – je früher, desto bunter die
+      Überraschungen. Alle Tickets kommen mit Cashless-Armband und Zugang zu Wasserstationen.
+    </p>
+    <div class="cta-row">
+      <a class="cta" [href]="paylogicUrl" target="_blank" rel="noreferrer">Jetzt buchen</a>
+      <a class="cta secondary" routerLink="/faq">Fragen? Ab in die FAQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="section ticket-grid">
+  <div class="section-heading">
+    <span class="eyebrow">Pakete</span>
+    <h3>Finde dein Tempo</h3>
+  </div>
+  <div class="section-grid">
+    <article class="card" *ngFor="let tier of tiers">
+      <div class="header">
+        <h3>{{ tier.name }}</h3>
+        <span class="tag" *ngIf="tier.tag">{{ tier.tag }}</span>
+      </div>
+      <div class="price">{{ tier.price }}</div>
+      <ul>
+        <li *ngFor="let perk of tier.perks">{{ perk }}</li>
+      </ul>
+      <a class="cta secondary tiny" [href]="paylogicUrl" target="_blank" rel="noreferrer">
+        Zur Paylogic-Kasse
+      </a>
+    </article>
+  </div>
+</section>
+
+<section class="section paylogic">
+  <div class="section-heading">
+    <span class="eyebrow">Checkout</span>
+    <h3>Paylogic Embed</h3>
+  </div>
+  <div class="iframe-wrap">
+    <iframe
+      [src]="paylogicUrl"
+      title="Paylogic Checkout"
+      loading="lazy"
+      sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+    ></iframe>
+    <div class="placeholder">
+      <p>
+        Füge hier deine finale Paylogic-URL ein. Wir haben das Embed responsive vorbereitet und mit
+        einem Sandbox-Setup gesichert.
+      </p>
+    </div>
+  </div>
+  <div class="notes">
+    <div class="card">
+      <h4>Payment</h4>
+      <p class="muted">Kreditkarte, PayPal, Sofort. Cashless-Bändchen werden vor Ort aktiviert.</p>
+    </div>
+    <div class="card">
+      <h4>Resale</h4>
+      <p class="muted">
+        Offizieller Weiterverkauf über die Paylogic-Resale-Funktion. Kein privat Verkauf auf dem
+        Gelände.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Helpdesk</h4>
+      <p class="muted">
+        Bei Ticketproblemen: tickets@bachblyten-festival.com oder vor Ort am Haupttresen.
+      </p>
+    </div>
+  </div>
+</section>

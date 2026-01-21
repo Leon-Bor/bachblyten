@@ -1,0 +1,15 @@
+<section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">FAQ</span>
+    <h2>Alles, was du vor dem Abflug wissen musst</h2>
+  </div>
+  <div class="faq-grid">
+    <article class="card" *ngFor="let item of faqs">
+      <h3>{{ item.question }}</h3>
+      <p>{{ item.answer }}</p>
+    </article>
+  </div>
+  <div class="cta-row">
+    <a class="cta secondary" routerLink="/kontakt">Noch Fragen? Schreib uns</a>
+  </div>
+</section>

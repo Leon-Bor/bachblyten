@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <p class="eyebrow">Bachblyten</p>
+      <h3>Wir sehen uns auf dem Rollfeld</h3>
+      <p class="muted">
+        Drei Tage Sommersonne, bunte Nächte, viel Bass und ein Team, das mit euch zusammen jedes Jahr
+        noch wilder wird.
+      </p>
+      <div class="chip-row">
+        <span class="tag">24–26 Jul 2026</span>
+        <span class="tag">Flugplatz Schwesing</span>
+      </div>
+    </div>
+
+    <div class="link-block">
+      <h4>Navi</h4>
+      <div class="links">
+        <a *ngFor="let link of footerLinks" [routerLink]="link.path">{{ link.label }}</a>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <h4>Immer up to date</h4>
+      <p class="muted">
+        Livemeldungen, Timetable-Drops und Secret-Floor-Ankündigungen direkt in dein Postfach.
+      </p>
+      <a class="cta secondary" href="mailto:hallo@bachblyten-festival.com">Newsletter anfragen</a>
+      <div class="chip-row socials">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="tag">Instagram</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer" class="tag">YouTube</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="tag">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta-row">
+    <span>© {{ year }} Bachblyten Festival</span>
+    <span class="muted">Made with Nordseeluft &amp; Neon</span>
+  </div>
+</footer>
