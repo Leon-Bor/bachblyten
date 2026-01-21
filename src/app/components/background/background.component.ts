@@ -91,10 +91,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     const viewportWidth = window.innerWidth;
     this.clouds.forEach((cloud, index) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
-      const startX =
-        direction === 1
-          ? Math.random() * viewportWidth - index * 60
-          : viewportWidth - Math.random() * viewportWidth;
+      const startX = Math.random() * viewportWidth;
       const endX = direction === 1 ? viewportWidth + 280 : -260;
       const scale = 0.7 + Math.random() * 0.6;
       const y = 50 + index * 40 + Math.random() * 400;
