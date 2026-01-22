@@ -32,14 +32,15 @@ $spot-count: 52;
     transform 0.25s ease,
     box-shadow 0.35s ease,
     background-position 0.9s ease;
+  background-position: 100% 40%;
 }
 
 .spark-btn:hover {
   transform: translateY(-2px);
-  background-position: 100% 40%;
   box-shadow:
     0 20px 42px rgba(255, 63, 63, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.16);
+  background-position: 50% 50%;
 }
 
 .spark-btn:focus-visible {
@@ -86,7 +87,7 @@ $spot-count: 52;
     height: #{$size}px;
     --x-start: #{random(140) - 70}px;
     --y-start: #{random(120) - 60}px;
-    --x-end: #{random(200) - 100}px;
+    --x-end: #{random(400) - 200}px;
     --y-end: #{random(160) - 80}px;
     --duration: #{(random(30) / 5) + 4}s;
     --delay: -#{random(20) / 10}s;

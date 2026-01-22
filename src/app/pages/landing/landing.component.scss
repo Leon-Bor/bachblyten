@@ -1,9 +1,12 @@
 .bg-intro {
   position: relative;
   height: 100vh;
+  min-height: min(500px, 100vh);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   padding: 24px 6vw;
+  margin-bottom: 150px;
 }
 
 .date {
@@ -21,6 +24,7 @@
   justify-content: center;
   position: relative;
   z-index: 123;
+  pointer-events: auto;
 }
 
 .where {
@@ -30,16 +34,15 @@
 }
 
 .mainbrand {
-  position: absolute;
-  top: clamp(32px, 9vh, 120px);
-  left: 50%;
-  transform: translate(-50%, 6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: min(620px, 78vw);
   max-width: 720px;
   z-index: 2;
   filter: drop-shadow(0 12px 48px rgba(0, 0, 0, 0.35));
   animation: brandFloat 0.9s ease-out forwards;
-  pointer-events: none;
   user-select: none;
 }
 
@@ -52,12 +55,12 @@
 @keyframes brandFloat {
   from {
     opacity: 0;
-    transform: translate(-50%, 26px) scale(0.98);
+    transform: translate(0, 26px) scale(0.98);
   }
 
   to {
     opacity: 1;
-    transform: translate(-50%, 6px) scale(1);
+    transform: translate(0, 6px) scale(1);
   }
 }
 
