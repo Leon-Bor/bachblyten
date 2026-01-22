@@ -1,0 +1,16 @@
+<ng-template #sparkContent>
+  <span class="spark-btn__label">{{ label }}</span>
+  <span class="spark-btn__spots" aria-hidden="true">
+    <span class="spark-btn__spot" *ngFor="let _ of spots"></span>
+  </span>
+</ng-template>
+
+<a *ngIf="routerLink; else plainButton" class="spark-btn" [routerLink]="routerLink">
+  <ng-container *ngTemplateOutlet="sparkContent"></ng-container>
+</a>
+
+<ng-template #plainButton>
+  <button class="spark-btn" type="button">
+    <ng-container *ngTemplateOutlet="sparkContent"></ng-container>
+  </button>
+</ng-template>

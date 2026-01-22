@@ -6,6 +6,29 @@
   padding: 24px 6vw;
 }
 
+.date {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.sell-more-tickets {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 123;
+}
+
+.where {
+  text-align: center;
+  color: rgb(210 210 210);
+  font-size: 22px;
+}
+
 .mainbrand {
   position: absolute;
   top: clamp(32px, 9vh, 120px);
@@ -111,9 +134,11 @@
   gap: 12px;
   margin: 18px 0;
   justify-content: center;
+  align-items: center;
 }
 
-.glass, .glass.mini {
+.glass,
+.glass.mini {
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(12, 16, 36, 0.9));
   border: 1px solid var(--border-glow);
   border-radius: var(--radius-md);
