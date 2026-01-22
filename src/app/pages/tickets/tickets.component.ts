@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface TicketTier {
   name: string;
@@ -17,7 +18,9 @@ interface TicketTier {
   styleUrl: './tickets.component.scss'
 })
 export class TicketsComponent {
-  protected readonly paylogicUrl = 'https://paylogic.com/';
+  protected readonly paylogicUrl = 'https://shop.paylogic.com/b6bc9231e9ca428a96862b6b04394506/?wmode=opaque';
+  private readonly sanitizer = inject(DomSanitizer);
+  protected readonly paylogicEmbed: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.paylogicUrl);
 
   protected tiers: TicketTier[] = [
     {

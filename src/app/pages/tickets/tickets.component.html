@@ -1,58 +1,32 @@
-<section class="section ticket-hero">
-  <div>
-    <p class="eyebrow">Tickets</p>
-    <h2>Hol dir dein Boarding-Ticket</h2>
-    <p>
-      Das Rollfeld wartet auf dich. Sichere dir jetzt deinen Pass – je früher, desto bunter die
-      Überraschungen. Alle Tickets kommen mit Cashless-Armband und Zugang zu Wasserstationen.
-    </p>
-    <div class="cta-row">
-      <a class="cta" [href]="paylogicUrl" target="_blank" rel="noreferrer">Jetzt buchen</a>
-      <a class="cta secondary" routerLink="/faq">Fragen? Ab in die FAQ</a>
-    </div>
-  </div>
-</section>
-
-<section class="section ticket-grid">
-  <div class="section-heading">
-    <span class="eyebrow">Pakete</span>
-    <h3>Finde dein Tempo</h3>
-  </div>
-  <div class="section-grid">
-    <article class="card" *ngFor="let tier of tiers">
-      <div class="header">
-        <h3>{{ tier.name }}</h3>
-        <span class="tag" *ngIf="tier.tag">{{ tier.tag }}</span>
-      </div>
-      <div class="price">{{ tier.price }}</div>
-      <ul>
-        <li *ngFor="let perk of tier.perks">{{ perk }}</li>
-      </ul>
-      <a class="cta secondary tiny" [href]="paylogicUrl" target="_blank" rel="noreferrer">
-        Zur Paylogic-Kasse
-      </a>
-    </article>
-  </div>
+<section class="section tickets-intro">
+  <h1>Tickets</h1>
+  <p>
+    Hier findest du alle Informationen rund um Tickets, Preise, den Vorverkauf und den offiziellen
+    Resale. Sichere dir jetzt dein Ticket für das Bachblyten Festival 2026!
+  </p>
 </section>
 
 <section class="section paylogic">
   <div class="section-heading">
     <span class="eyebrow">Checkout</span>
-    <h3>Paylogic Embed</h3>
+    <h3>Schnapp dir dein Ticket!</h3>
   </div>
   <div class="iframe-wrap">
     <iframe
-      [src]="paylogicUrl"
+      [src]="paylogicEmbed"
+      marginwidth="0"
+      marginheight="0"
+      scrolling="auto"
+      width="100%"
+      height="1500"
+      name="paylogic_shop"
+      data-embed="true"
+      style="max-width: 100%"
+      frameborder="0"
+      id="paylogic_shop"
       title="Paylogic Checkout"
       loading="lazy"
-      sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
     ></iframe>
-    <div class="placeholder">
-      <p>
-        Füge hier deine finale Paylogic-URL ein. Wir haben das Embed responsive vorbereitet und mit
-        einem Sandbox-Setup gesichert.
-      </p>
-    </div>
   </div>
   <div class="notes">
     <div class="card">

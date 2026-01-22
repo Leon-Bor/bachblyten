@@ -7,6 +7,8 @@
   justify-content: space-between;
   z-index: 40;
   mix-blend-mode: lighten;
+  margin: 0 auto 48px;
+  max-width: 1410px;
 }
 
 .logo {
@@ -19,6 +21,11 @@
   border: 1px solid var(--border-glow);
   box-shadow: var(--shadow-soft);
   cursor: pointer;
+  &:hover {
+    transform: translateY(-1px);
+    border-color: var(--accent-lime);
+    box-shadow: 0 10px 30px rgba(91, 224, 255, 0.25);
+  }
 }
 
 .logo img {
