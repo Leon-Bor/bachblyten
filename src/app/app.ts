@@ -4,10 +4,11 @@ import { filter, Subscription } from 'rxjs';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BackgroundComponent } from './components/background/background.component';
+import { NewsletterModalComponent } from './components/newsletter-modal/newsletter-modal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavComponent, FooterComponent, BackgroundComponent],
+  imports: [RouterOutlet, NavComponent, FooterComponent, BackgroundComponent, NewsletterModalComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

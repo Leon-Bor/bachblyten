@@ -1,0 +1,82 @@
+<div class="modal-backdrop" *ngIf="modal.isOpen()" (click)="onBackdropClick($event)">
+  <div
+    class="modal-shell"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="newsletter-title"
+    aria-describedby="newsletter-desc"
+  >
+    <div class="glow orb-one"></div>
+    <div class="glow orb-two"></div>
+
+    <button class="close" type="button" aria-label="Schließen" (click)="modal.close()">
+      <span>&times;</span>
+    </button>
+
+    <div class="modal-grid">
+      <div class="intro">
+        <p class="eyebrow">Festivalfunk</p>
+        <h3 id="newsletter-title">Bachblyten Festivalfunk</h3>
+        <p id="newsletter-desc">
+          Drop Alerts, Presale-Keys, Bau-Tagebuch vom Gelände und ein paar Easter Eggs nur für die
+          Inbox.
+        </p>
+
+        <div class="perk-grid">
+          <div class="perk">
+            <span class="label">Drop Radar</span>
+            <p>Frühzeitig erfahren, wann Tickets, Timetable oder Camping-Infos live gehen.</p>
+          </div>
+          <div class="perk">
+            <span class="label">Backstage Bits</span>
+            <p>Mini-Interviews, Deko-Skizzen und Sound-Snippets direkt aus der Crew.</p>
+          </div>
+          <div class="perk">
+            <span class="label">Keine Flut</span>
+            <p>Max. 1–4 Mails pro Jahr und jederzeit mit einem Klick raus.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+        <label class="field">
+          <span>Dein Name (optional)</span>
+          <input type="text" formControlName="name" placeholder="z. B. Mira" />
+        </label>
+
+        <label class="field required">
+          <span>E-Mail</span>
+          <input type="email" formControlName="email" placeholder="du@beispiel.de" required />
+          <small class="error" *ngIf="hasError('email')">Bitte gib eine gültige Adresse an.</small>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" formControlName="consent" />
+          <div>
+            <span>Ich möchte Updates per Mail erhalten und habe die Datenschutzinfos gelesen.</span>
+            <small class="error" *ngIf="hasError('consent')">
+              Bitte stimme zu, damit wir dich anpingen können.
+            </small>
+            <small class="hint">Keine Werbung außerhalb von Bachblyten.</small>
+          </div>
+        </label>
+
+        <div class="actions">
+          <button class="cta" type="submit">
+            <span *ngIf="!submittedSuccess">Anmelden</span>
+            <span *ngIf="submittedSuccess">Vorgemerkt</span>
+          </button>
+          <button class="ghost" type="button" (click)="modal.close()">Abbrechen</button>
+        </div>
+
+        <div class="status" *ngIf="submittedSuccess">
+          <strong>Du stehst auf der Liste.</strong>
+          <p>
+            Sobald der Backend-Endpunkt steht, schicken wir deine Daten raus. Bis dahin bleibt alles
+            lokal.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

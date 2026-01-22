@@ -10,44 +10,6 @@
   </div>
 </section>
 
-<section class="section hero marquee">
-  <div class="hero-overlay">
-    <div class="pill-row">
-      <span class="tag">24–26 Jul 2026</span>
-      <span class="tag">Flugplatz Schwesing</span>
-      <span class="tag">3 Nächte · 4 Floors</span>
-    </div>
-    <h1>
-      Bachblyten <span class="gradient-word">Festival</span>
-      <small>Neon, Sonnenaufgang, Mystic Vibes</small>
-    </h1>
-    <p>
-      Vibe-heavy wie Mystic Creatures, aber nordisch klar: ein immersives Wochenende mit farbigen
-      Lichtwelten, viel Deko-Liebe und endlosen Sunrise-Sets.
-    </p>
-    <div class="hero-actions">
-      <a class="cta secondary" routerLink="/line-up">Line-Up entdecken</a>
-    </div>
-    <div class="hero-grid">
-      <div class="glass mini">
-        <p class="eyebrow">Highlight</p>
-        <h3>Sunrise Floor</h3>
-        <p class="muted">Progressive & Downtempo bis die Sonne im Hintergrund voll aufgeht.</p>
-      </div>
-      <div class="glass mini">
-        <p class="eyebrow">Experience</p>
-        <h3>Hangar Techno Dome</h3>
-        <p class="muted">Funktion-One, Laser und visuals à la Mystic – aber mit Bachblyten Deko.</p>
-      </div>
-      <div class="glass mini">
-        <p class="eyebrow">Crew</p>
-        <h3>Neue Macher:innen</h3>
-        <p class="muted">Mehr Kunst, mehr Awareness, alles privat finanziert und publikumsnah.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section highlights">
   <div class="section-heading">
     <span class="eyebrow">Warum kommen</span>
@@ -58,7 +20,7 @@
       <h3>{{ item.title }}</h3>
       <p>{{ item.description }}</p>
       <div class="dash-row">
-        <span class="pill">Bring deine Crew</span>
+        <a class="pill" routerLink="{{ item.link }}">{{ item.cta }}</a>
       </div>
     </article>
   </div>
@@ -75,6 +37,43 @@
       <h4>{{ slot.title }}</h4>
       <p>{{ slot.detail }}</p>
     </article>
+  </div>
+</section>
+
+<section class="section newsletter">
+  <div class="section-heading">
+    <span class="eyebrow">Loop dich ein</span>
+    <h2>Festivalfunk & Drop Alerts</h2>
+  </div>
+  <div class="newsletter-grid">
+    <div class="newsletter-copy">
+      <p>
+        Kein Feed-Overload, sondern das Wesentliche: Wir schicken dir Ticket-Fenster, Timetable
+        Drops und ein paar Backstage-Geschichten direkt in die Inbox.
+      </p>
+      <ul class="dash-list">
+        <li>Presale-Keys vor allen anderen.</li>
+        <li>Build-Updates vom Gelände, sobald etwas Neues steht.</li>
+        <li>Reminders für Anreise, Cashless und Camping.</li>
+      </ul>
+      <div class="chip-row">
+        <span class="pill">Presale Keys</span>
+        <span class="pill">Crew Stories</span>
+        <span class="pill">Timetable Drop</span>
+      </div>
+    </div>
+    <div class="newsletter-card card">
+      <h4>Mach dein Postfach rave-ready</h4>
+      <p>
+        Trag dich ein, wir merken dich vor. Der Link zum Backend folgt – bis dahin bleibt alles
+        lokal bei dir.
+      </p>
+      <div class="cta-row">
+        <button class="cta" type="button" (click)="newsletter.open()">Zum Festivalfunk</button>
+        <a class="ghost-link" routerLink="/datenschutz">Datenschutz</a>
+      </div>
+      <p class="fineprint">Max. 1–2 Mails pro Monat. Austragen geht jederzeit mit einem Klick.</p>
+    </div>
   </div>
 </section>
 
@@ -100,8 +99,10 @@
       allowfullscreen
     ></iframe>
   </div>
-  <div class="cta-row">
-    <a class="cta" routerLink="/tickets">Ticket kaufen</a>
-    <a class="cta secondary" routerLink="/anfahrt">Anfahrt planen</a>
+</section>
+
+<section style="margin-top: 100px">
+  <div class="sell-more-tickets">
+    <app-spark-button routerLink="/tickets" label="TICKETS SICHERN"></app-spark-button>
   </div>
 </section>
