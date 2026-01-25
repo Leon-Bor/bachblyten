@@ -1,14 +1,22 @@
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
-  padding: 18px 6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 40;
   // mix-blend-mode: lighten;
-  margin: 0 auto 48px;
-  max-width: 1410px;
+  max-width: 1200px;
+  padding: 18px 6vw 18px;
+
+  @media (max-width: 768px) {
+    padding: 14px 18px;
+  }
+
+  @media (min-width: 1380px) {
+    margin: 0 auto 0;
+    padding: 18px 0px 18px;
+  }
 }
 
 .logo {
@@ -234,10 +242,6 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
-    padding: 14px 16px;
-  }
-
   .logo img {
     width: 46px;
     height: 46px;
