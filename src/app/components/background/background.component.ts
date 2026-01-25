@@ -67,7 +67,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     this.sunTween?.kill();
 
     if (this.mode === 'sunrise') {
-      gsap.set(sun, { y: this.isMobile() ? -200 : 140, scale: 1.02, opacity: 0.85 });
+      gsap.set(sun, { y: this.isMobile() ? -300 : 140, scale: 1.02, opacity: 0.85 });
       this.sunTween = gsap.to(sun, {
         y: this.isMobile() ? -530 : -230,
         scale: this.isMobile() ? 2 : 1.12,
