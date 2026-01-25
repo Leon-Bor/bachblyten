@@ -1,12 +1,17 @@
 .bg-intro {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   min-height: min(500px, 100vh);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px 6vw;
   margin-bottom: 150px;
+
+  // make less margin bottom on mobile
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
 }
 
 .date {
