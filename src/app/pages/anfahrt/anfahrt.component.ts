@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface TravelOption {
   title: string;
@@ -20,6 +21,14 @@ export class AnfahrtComponent {
     address: 'Am Flugplatz 1, 25813 Schwesing',
     mapUrl: 'https://maps.google.com/?q=Flugplatz+Schwesing'
   };
+
+  protected readonly mapEmbedUrl: SafeResourceUrl;
+
+  constructor(sanitizer: DomSanitizer) {
+    const embedUrl =
+      'https://www.google.com/maps/embed/v1/place?key=AIzaSyAsNcyGv7shX6e1bNkuWbf4JNxxuBRSi7c&q=Flugplatz+Schwesing';
+    this.mapEmbedUrl = sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+  }
 
   protected options: TravelOption[] = [
     {

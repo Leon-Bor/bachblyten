@@ -1,10 +1,11 @@
-.venue .map-placeholder {
+.venue .map-wrapper {
   margin-top: 16px;
-  padding: 22px;
-  border-radius: var(--radius-lg);
-  border: 1px dashed var(--border-glow);
-  background: linear-gradient(120deg, rgba(91, 224, 255, 0.12), rgba(255, 138, 91, 0.12));
-  color: var(--text-muted);
+  border-radius: 10px;
+  border: 1px solid var(--border-glow);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+
+  height: 420px;
 }
 
 .options ul {

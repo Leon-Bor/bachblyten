@@ -1,21 +1,3 @@
-<section class="section venue">
-  <div class="section-heading">
-    <span class="eyebrow">Anfahrt</span>
-    <h2>Anflug zum Bachblyten</h2>
-  </div>
-  <p><strong>{{ venue.name }}</strong>, {{ venue.address }}</p>
-  <div class="chip-row">
-    <span class="tag">Park &amp; Camp ausgeschildert</span>
-    <span class="tag">Bitte Glasfrei</span>
-  </div>
-  <a class="cta secondary" [href]="venue.mapUrl" target="_blank" rel="noreferrer">
-    Route in Maps öffnen
-  </a>
-  <div class="map-placeholder">
-    <p>Hier könnte eine eingebettete Map liegen. Der Link oben öffnet Google Maps.</p>
-  </div>
-</section>
-
 <section class="section options">
   <div class="section-heading">
     <span class="eyebrow">Anreiseoptionen</span>
@@ -31,5 +13,38 @@
         <li *ngFor="let detail of option.details">{{ detail }}</li>
       </ul>
     </article>
+  </div>
+</section>
+
+<section class="section venue">
+  <div class="section-heading">
+    <span class="eyebrow">Anfahrt</span>
+    <h2>Anflug zum Bachblyten</h2>
+  </div>
+  <p>
+    <strong>{{ venue.name }}</strong
+    >, {{ venue.address }}
+  </p>
+  <div class="chip-row">
+    <span class="tag">Park &amp; Camp ausgeschildert</span>
+    <span class="tag">Bitte Glasfrei</span>
+  </div>
+  <div class="map-wrapper">
+    <iframe
+      [src]="mapEmbedUrl"
+      width="100%"
+      height="100%"
+      style="border: 0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Anfahrt zum Flugplatz Schwesing"
+    ></iframe>
+  </div>
+
+  <div class="cta-row">
+    <a class="cta secondary" [href]="venue.mapUrl" target="_blank" rel="noreferrer">
+      Route in Maps öffnen
+    </a>
   </div>
 </section>
