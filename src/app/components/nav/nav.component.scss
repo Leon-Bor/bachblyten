@@ -183,6 +183,11 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+
+  backdrop-filter: blur(3px);
+  @media (max-width: 768px) {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .menu-card {
@@ -191,7 +196,6 @@
   border-radius: var(--radius-lg);
   padding: 18px;
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(10px);
 }
 
 .menu-header {
