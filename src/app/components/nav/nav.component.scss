@@ -43,6 +43,13 @@
   backdrop-filter: blur(3px);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
   border-color: rgba(255, 255, 255, 0.3);
+
+  @media (max-width: 600px) {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    box-shadow: unset;
+    border-color: transparent;
+  }
 }
 
 .logo img {
@@ -79,6 +86,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  position: relative;
 }
 
 .cta.ghost {
@@ -150,10 +158,10 @@
 }
 
 .menu-panel {
-  position: fixed;
-  top: 82px;
-  right: 6vw;
-  width: min(420px, 88vw);
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: min(420px, calc(100vw - 32px));
   transform: translateY(-20px);
   opacity: 0;
   pointer-events: none;
@@ -233,12 +241,6 @@
   .logo img {
     width: 46px;
     height: 46px;
-  }
-
-  .menu-panel {
-    right: 16px;
-    top: 74px;
-    width: calc(100% - 32px);
   }
 
   .menu-header {

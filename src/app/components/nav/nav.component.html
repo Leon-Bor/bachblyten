@@ -23,30 +23,30 @@
       </svg>
       <span>{{ menuOpen() ? 'Close' : 'Menu' }}</span>
     </button>
+
+    <div class="menu-panel" [class.open]="menuOpen()">
+      <div class="menu-card">
+        <div class="menu-header">
+          <div>
+            <p class="eyebrow">Bunt. Ungebändigt.</p>
+            <h3>Was interessiert dich?</h3>
+          </div>
+          <a class="cta" routerLink="/tickets" (click)="closeMenu()">Tickets sichern</a>
+        </div>
+        <div class="link-grid">
+          <a
+            *ngFor="let link of headerLinks"
+            [routerLink]="link.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()"
+            [class.active]="activePath === link.path"
+          >
+            <span class="link-title">{{ link.label }}</span>
+            <span class="dash">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
-
-<div class="menu-panel" [class.open]="menuOpen()">
-  <div class="menu-card">
-    <div class="menu-header">
-      <div>
-        <p class="eyebrow">Bunt. Ungebändigt.</p>
-        <h3>Was interessiert dich?</h3>
-      </div>
-      <a class="cta" routerLink="/tickets" (click)="closeMenu()">Tickets sichern</a>
-    </div>
-    <div class="link-grid">
-      <a
-        *ngFor="let link of headerLinks"
-        [routerLink]="link.path"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        (click)="closeMenu()"
-        [class.active]="activePath === link.path"
-      >
-        <span class="link-title">{{ link.label }}</span>
-        <span class="dash">→</span>
-      </a>
-    </div>
-  </div>
-</div>
