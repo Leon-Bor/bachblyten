@@ -36,7 +36,7 @@ export class GalleryComponent {
     },
     {
       handle: '@bachblyten',
-      caption: 'Hangar Techno Dome: Laser-Tests laufen. Bereit für Nachtflüge?',
+      caption: 'Wurzelwerk: Nebel, Laserstreifen und tiefer Druck – bereit?',
       url: 'https://www.instagram.com',
       ago: 'vor 2 Wochen',
       image:
