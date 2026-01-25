@@ -40,6 +40,7 @@
         *ngFor="let link of headerLinks"
         [routerLink]="link.path"
         routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
         (click)="closeMenu()"
         [class.active]="activePath === link.path"
       >

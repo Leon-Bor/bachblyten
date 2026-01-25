@@ -16,7 +16,7 @@
   align-items: center;
   gap: 12px;
   padding: 8px 12px;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(11, 13, 28, 0.6));
+  // background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(11, 13, 28, 0.6));
   border-radius: 20px;
   border: 1px solid var(--border-glow);
   box-shadow: var(--shadow-soft);
@@ -104,7 +104,7 @@
 }
 
 .menu-button svg.open line:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
+  transform: translate(8px, 0px) rotate(45deg);
 }
 
 .menu-button svg.open line:nth-child(2) {
@@ -112,7 +112,7 @@
 }
 
 .menu-button svg.open line:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
+  transform: translate(-9px, 8px) rotate(-45deg);
 }
 
 .menu-panel {
