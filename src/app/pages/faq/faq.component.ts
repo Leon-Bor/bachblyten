@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
+interface FAQCategory {
+  id: string;
+  label: string;
+}
+
 interface FAQItem {
+  id: string;
   question: string;
   answer: string;
-  tag?: string;
+  category: FAQCategory['id'];
 }
+
+const FAQ_CATEGORIES: FAQCategory[] = [
+  { id: 'arrival', label: 'Anreise & Check-in' },
+  { id: 'tickets', label: 'Tickets & Zugang' },
+  { id: 'camping', label: 'Camping & Infrastruktur' },
+  { id: 'rules', label: 'Regeln & Safety' },
+  { id: 'service', label: 'Service vor Ort' },
+  { id: 'general', label: 'Allgemeines' }
+];
 
 @Component({
   selector: 'app-faq',
@@ -16,94 +31,184 @@ interface FAQItem {
   styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
-  protected faqs: FAQItem[] = [
+  protected readonly categories = FAQ_CATEGORIES;
+
+  protected readonly faqs: FAQItem[] = [
     {
+      id: 'arrival-early',
       question: 'Kann ich schon am Donnerstag anreisen?',
-      answer: 'Das Camping- und Festivalgelände öffnet am Freitag um 10:00 Uhr. Mit Early-Camper-Add-on darfst du ab Donnerstag 18:00 Uhr rauf aufs Rollfeld.'
+      answer: 'Das Camping- und Festivalgelände öffnet am Freitag um 10:00 Uhr. Mit Early-Camper-Add-on darfst du ab Donnerstag 18:00 Uhr rauf aufs Rollfeld.',
+      category: 'arrival'
     },
     {
+      id: 'arrival-dropoff',
       question: 'Nur jemanden absetzen oder Anhänger droppen?',
-      answer: 'Kurz anhalten zum Abladen ist möglich. Wir behalten den Ausweis als Pfand (150 €) bis zur Ausfahrt – spart Chaos, schützt alle.'
+      answer: 'Kurz anhalten zum Abladen ist möglich. Wir behalten den Ausweis als Pfand (150 €) bis zur Ausfahrt – spart Chaos, schützt alle.',
+      category: 'arrival'
     },
     {
+      id: 'service-payment',
       question: 'Wie zahle ich vor Ort?',
-      answer: 'Bargeld gegen 5 € Fee am Haupttresen. Kartenzahlung fast überall, Cashless-Armband auf Wunsch. Kein eigener Geldautomat auf dem Gelände.'
+      answer: 'Bargeld gegen 5 € Fee am Haupttresen. Kartenzahlung fast überall, Cashless-Armband auf Wunsch. Kein eigener Geldautomat auf dem Gelände.',
+      category: 'service'
     },
     {
+      id: 'arrival-bus',
       question: 'Bus-Shuttle?',
-      answer: 'Sunny Trips fährt aus Hamburg, Lübeck und Kiel direkt zum Eingang. 2026 kein zusätzliches Festival-Shuttle – plant eure Rückfahrt rechtzeitig.'
+      answer: 'Sunny Trips fährt aus Hamburg, Lübeck und Kiel direkt zum Eingang. 2026 kein zusätzliches Festival-Shuttle – plant eure Rückfahrt rechtzeitig.',
+      category: 'arrival'
     },
     {
+      id: 'camping-rules',
       question: 'Camping-Regeln',
-      answer: 'Camping mit PKW, Camper oder Anhänger auf ausgewiesenen Flächen. Zelten ohne Auto bleibt kostenlos. Lautstärke bitte nachts runter in den Quiet-Zones.'
+      answer: 'Camping mit PKW, Camper oder Anhänger auf ausgewiesenen Flächen. Zelten ohne Auto bleibt kostenlos. Lautstärke bitte nachts runter in den Quiet-Zones.',
+      category: 'camping'
     },
     {
+      id: 'camping-sanitary',
       question: 'Duschen & Sanitär',
-      answer: 'Dixi-Toiletten sind kostenfrei, feste Sanitärs und warme Duschen gibt es als Upgrade. Wir reinigen regelmäßig – helft mit, sauber zu bleiben.'
+      answer: 'Dixi-Toiletten sind kostenfrei, feste Sanitärs und warme Duschen gibt es als Upgrade. Wir reinigen regelmäßig – helft mit, sauber zu bleiben.',
+      category: 'camping'
     },
     {
+      id: 'rules-first-aid',
       question: 'Erste Hilfe',
-      answer: 'Eine deutlich ausgeschilderte Erste-Hilfe-Station ist 24/7 besetzt. Notfall? Sprecht unser Team oder die Security direkt an.'
+      answer: 'Eine deutlich ausgeschilderte Erste-Hilfe-Station ist 24/7 besetzt. Notfall? Sprecht unser Team oder die Security direkt an.',
+      category: 'rules'
     },
     {
+      id: 'service-lost-and-found',
       question: 'Fundsachen',
-      answer: 'Während des Festivals am Haupttresen abgeben/abholen. Danach per Mail an info@bachblyten-festival.com mit Beschreibung und Fundort melden.'
+      answer: 'Während des Festivals am Haupttresen abgeben/abholen. Danach per Mail an info@bachblyten-festival.com mit Beschreibung und Fundort melden.',
+      category: 'service'
     },
     {
+      id: 'rules-glass-ban',
       question: 'Getränke & Glasverbot',
-      answer: 'Eigenbedarf auf dem Campingplatz erlaubt, aber ausschließlich in PET. Auf dem gesamten Gelände gilt striktes Glasverbot – schützt Füße & Floors.'
+      answer: 'Eigenbedarf auf dem Campingplatz erlaubt, aber ausschließlich in PET. Auf dem gesamten Gelände gilt striktes Glasverbot – schützt Füße & Floors.',
+      category: 'rules'
     },
     {
+      id: 'rules-fire',
       question: 'Grillen & offenes Feuer',
-      answer: 'Offenes Feuer ist untersagt. Grillen nur zu festen Zeiten in den ausgewiesenen Zonen – bitte Funkenflug vermeiden.'
+      answer: 'Offenes Feuer ist untersagt. Grillen nur zu festen Zeiten in den ausgewiesenen Zonen – bitte Funkenflug vermeiden.',
+      category: 'rules'
     },
     {
+      id: 'rules-liability',
       question: 'Haftung',
-      answer: 'Aufenthalt auf eigene Gefahr. Bitte respektiert Gelände, Technik und Deko. Für selbst verursachte Schäden haftet ihr selbst.'
+      answer: 'Aufenthalt auf eigene Gefahr. Bitte respektiert Gelände, Technik und Deko. Für selbst verursachte Schäden haftet ihr selbst.',
+      category: 'rules'
     },
     {
+      id: 'rules-kids-animals',
       question: 'Kinder & Tiere',
-      answer: 'Das Festival ist 18+. Tiere bleiben bitte zuhause – zu laut, zu voll, zu heiß für Vierbeiner.'
+      answer: 'Das Festival ist 18+. Tiere bleiben bitte zuhause – zu laut, zu voll, zu heiß für Vierbeiner.',
+      category: 'rules'
     },
     {
+      id: 'camping-rain',
       question: 'Bei Regen?',
-      answer: 'Wir feiern weiter. Große Zelte, überdachte Floors und stabile Wege helfen. Packt Regenzeug und feste Schuhe ein.'
+      answer: 'Wir feiern weiter. Große Zelte, überdachte Floors und stabile Wege helfen. Packt Regenzeug und feste Schuhe ein.',
+      category: 'camping'
     },
     {
+      id: 'arrival-onsite-shuttle',
       question: 'Shuttle on site',
-      answer: 'Kein internes Shuttle 2026. Plant Wege ein, folgt der Beschilderung. Mobility Help Points gibt es bei Bedarf.'
+      answer: 'Kein internes Shuttle 2026. Plant Wege ein, folgt der Beschilderung. Mobility Help Points gibt es bei Bedarf.',
+      category: 'arrival'
     },
     {
+      id: 'service-sofa-deposit',
       question: 'Sofa-Pfand',
-      answer: 'Für Sofas oder sperriges Mobiliar nehmen wir 50 € Pfand. Gebt es sauber zurück, bekommt ihr alles wieder.'
+      answer: 'Für Sofas oder sperriges Mobiliar nehmen wir 50 € Pfand. Gebt es sauber zurück, bekommt ihr alles wieder.',
+      category: 'service'
     },
     {
+      id: 'camping-power',
       question: 'Strom & Generatoren',
-      answer: 'Eigene Stromerzeuger und große Soundsysteme sind verboten. Es gibt ausgewiesene Ladestationen und Powerbank-Points.'
+      answer: 'Eigene Stromerzeuger und große Soundsysteme sind verboten. Es gibt ausgewiesene Ladestationen und Powerbank-Points.',
+      category: 'camping'
     },
     {
+      id: 'tickets-day-pass',
       question: 'Gibt es Tagestickets?',
-      answer: 'Klassische Tagestickets bieten wir nicht. Alternativen: 2-Day-Pass oder Groove Sundae für Sonntag.'
+      answer: 'Klassische Tagestickets bieten wir nicht. Alternativen: 2-Day-Pass oder Groove Sundae für Sonntag.',
+      category: 'tickets'
     },
     {
+      id: 'tickets-resale',
       question: 'Tickets weitergeben',
-      answer: 'Nutze ausschließlich die offizielle Paylogic-Resale-Plattform. Private Weitergabe auf dem Gelände ist nicht gestattet.'
+      answer: 'Nutze ausschließlich die offizielle Paylogic-Resale-Plattform. Private Weitergabe auf dem Gelände ist nicht gestattet.',
+      category: 'tickets'
     },
     {
+      id: 'tickets-lost',
       question: 'Ticket verloren?',
-      answer: 'Über Paylogic kannst du dein Ticket erneut zusenden lassen. Vor Ort hilft dir das Helpdesk am Haupttresen.'
+      answer: 'Über Paylogic kannst du dein Ticket erneut zusenden lassen. Vor Ort hilft dir das Helpdesk am Haupttresen.',
+      category: 'tickets'
     },
     {
+      id: 'rules-safe-space',
       question: 'Toleranz & Safe Spaces',
-      answer: 'Null Toleranz für Diskriminierung, Rassismus oder sonstige -ismen. Sprecht uns an, wir reagieren sofort.'
+      answer: 'Null Toleranz für Diskriminierung, Rassismus oder sonstige -ismen. Sprecht uns an, wir reagieren sofort.',
+      category: 'rules'
     },
     {
+      id: 'service-water',
       question: 'Trinkwasser',
-      answer: 'Kostenlose Wasserstationen auf dem Gelände – bitte Bring-Your-Own-PET. Kein Glas, keine Metallkanister.'
+      answer: 'Kostenlose Wasserstationen auf dem Gelände – bitte Bring-Your-Own-PET. Kein Glas, keine Metallkanister.',
+      category: 'service'
     },
     {
+      id: 'rules-deposit',
       question: 'Umwelt-Pfand',
-      answer: '5 € Umweltpfand, den ihr gegen einen gefüllten Müllbeutel zurückerhaltet. Danke fürs Mitmachen.'
+      answer: '5 € Umweltpfand, den ihr gegen einen gefüllten Müllbeutel zurückerhaltet. Danke fürs Mitmachen.',
+      category: 'rules'
+    },
+    {
+      id: 'general-hours',
+      question: 'Wann öffnen Gelände und Floors?',
+      answer:
+        'Check-in ab Freitag 10:00 Uhr, Floors laufen bis Sonntag tief in die Nacht. Abreise bis Montag 12:00 Uhr – plant genug Zeit für den Abbau ein.',
+      category: 'general'
+    },
+    {
+      id: 'general-timetable',
+      question: 'Wo finde ich den Timetable?',
+      answer:
+        'Wir veröffentlichen den Timetable im Sommer auf der Website, per Newsletter und Socials. Vor Ort hängen große Timetable-Boards an allen Eingängen.',
+      category: 'general'
+    },
+    {
+      id: 'general-accessibility',
+      question: 'Ist das Gelände barrierearm?',
+      answer:
+        'Weite, ebene Wege auf dem Rollfeld, rollstuhlgerechte Sanitäranlagen und markierte Viewing-Areas an den Hauptfloors. Melde dich beim Awareness-Team, wenn du Unterstützung brauchst.',
+      category: 'general'
     }
   ];
+
+  protected readonly groupedFaqs = this.categories.map((category) => ({
+    ...category,
+    items: this.faqs.filter((faq) => faq.category === category.id)
+  }));
+
+  protected openQuestions = signal<Set<string>>(new Set());
+
+  protected toggleQuestion(id: string): void {
+    const next = new Set(this.openQuestions());
+    if (next.has(id)) {
+      next.delete(id);
+    } else {
+      next.add(id);
+    }
+    this.openQuestions.set(next);
+  }
+
+  protected isOpen(id: string): boolean {
+    return this.openQuestions().has(id);
+  }
+
+  protected trackByFaq = (_: number, item: FAQItem): string => item.id;
 }

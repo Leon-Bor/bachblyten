@@ -3,10 +3,45 @@
     <span class="eyebrow">FAQ</span>
     <h2>Alles, was du vor dem Abflug wissen musst</h2>
   </div>
-  <div class="faq-grid">
-    <article class="card" *ngFor="let item of faqs">
-      <h3>{{ item.question }}</h3>
-      <p>{{ item.answer }}</p>
+
+  <div class="faq-categories">
+    <article class="faq-category" *ngFor="let category of groupedFaqs">
+      <div class="category-header">
+        <span class="eyebrow">{{ category.label }}</span>
+        <span class="pill">{{ category.items.length }} Fragen</span>
+      </div>
+      <div class="accordion">
+        <div class="faq-item" *ngFor="let item of category.items; trackBy: trackByFaq">
+          <button
+            type="button"
+            class="faq-toggle"
+            (click)="toggleQuestion(item.id)"
+            [attr.aria-expanded]="isOpen(item.id)"
+            [attr.aria-controls]="item.id + '-answer'"
+            [id]="item.id + '-question'"
+          >
+            <span>{{ item.question }}</span>
+            <svg
+              viewBox="0 0 24 24"
+              class="chevron"
+              [class.open]="isOpen(item.id)"
+              aria-hidden="true"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div
+            class="faq-answer"
+            [id]="item.id + '-answer'"
+            role="region"
+            [attr.aria-labelledby]="item.id + '-question'"
+            [attr.aria-hidden]="!isOpen(item.id)"
+            [class.open]="isOpen(item.id)"
+          >
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      </div>
     </article>
   </div>
   <div class="cta-row">
