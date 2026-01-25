@@ -29,7 +29,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
   @ViewChild('wiesel', { static: false }) wiesel?: ElementRef<HTMLImageElement>;
   @ViewChildren('cloud') clouds?: QueryList<ElementRef<HTMLImageElement>>;
 
-  protected cloudCount = Array.from({ length: 6 });
+  protected cloudCount = Array.from({ length: this.isMobile() ? 4 : 6 });
 
   private sunTween?: gsap.core.Tween;
   private cloudTweens: gsap.core.Tween[] = [];
@@ -54,6 +54,10 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     this.wieselTween?.kill();
   }
 
+  protected isMobile(): boolean {
+    return window.innerWidth <= 600;
+  }
+
   private setupSunAnimation(): void {
     if (!this.sunLayer) {
       return;
@@ -63,12 +67,12 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
     this.sunTween?.kill();
 
     if (this.mode === 'sunrise') {
-      gsap.set(sun, { y: 140, scale: 1.02, opacity: 0.85 });
+      gsap.set(sun, { y: this.isMobile() ? -200 : 140, scale: 1.02, opacity: 0.85 });
       this.sunTween = gsap.to(sun, {
-        y: -230,
-        scale: 1.12,
+        y: this.isMobile() ? -530 : -230,
+        scale: this.isMobile() ? 2 : 1.12,
         opacity: 1,
-        duration: 20,
+        duration: this.isMobile() ? 20 : 20,
         ease: 'power2.out',
       });
     } else {
