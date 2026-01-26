@@ -74,6 +74,7 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
         opacity: 1,
         duration: 10,
         ease: 'power2.out',
+        delay: 3,
       });
     } else {
       gsap.set(sun, { y: 30, scale: 1.05, opacity: 0.95 });
