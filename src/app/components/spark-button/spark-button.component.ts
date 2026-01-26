@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './spark-button.component.html',
-  styleUrl: './spark-button.component.scss'
+  styleUrl: './spark-button.component.scss',
 })
 export class SparkButtonComponent {
   @Input() label = 'Jetzt starten';
