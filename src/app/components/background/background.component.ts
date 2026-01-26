@@ -65,14 +65,14 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
 
     const sun = this.sunLayer.nativeElement;
     this.sunTween?.kill();
-
+    console.log(this.mode);
     if (this.mode === 'sunrise') {
-      gsap.set(sun, { y: this.isMobile() ? -300 : 140, scale: 1.02, opacity: 0.85 });
+      gsap.set(sun, { y: this.isMobile() ? '-20vh' : '0vh', scale: 1, opacity: 0.85 });
       this.sunTween = gsap.to(sun, {
-        y: this.isMobile() ? -530 : -230,
-        scale: this.isMobile() ? 2 : 1.12,
+        y: this.isMobile() ? '-90vh' : '-35vh',
+        scale: this.isMobile() ? 2 : 1,
         opacity: 1,
-        duration: this.isMobile() ? 20 : 20,
+        duration: 10,
         ease: 'power2.out',
       });
     } else {
