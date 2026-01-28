@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 interface TicketTier {
   name: string;
@@ -15,29 +15,48 @@ interface TicketTier {
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './tickets.component.html',
-  styleUrl: './tickets.component.scss'
+  styleUrl: './tickets.component.scss',
 })
 export class TicketsComponent {
-  protected readonly paylogicUrl = 'https://shop.paylogic.com/b6bc9231e9ca428a96862b6b04394506/?wmode=opaque';
+  protected readonly paylogicUrl =
+    'https://shop.paylogic.com/b6bc9231e9ca428a96862b6b04394506/?wmode=opaque';
   private readonly sanitizer = inject(DomSanitizer);
-  protected readonly paylogicEmbed: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.paylogicUrl);
+  protected readonly paylogicEmbed: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+    this.paylogicUrl,
+  );
 
   protected tiers: TicketTier[] = [
     {
       name: 'Weekend Pass',
       price: 'ab 139 €',
       tag: 'Beliebt',
-      perks: ['72h Zugang zu allen Floors', 'Camping inkl.', 'Cashless-Armband vorab']
+      perks: ['72h Zugang zu allen Floors', 'Camping inkl.', 'Cashless-Armband vorab'],
     },
     {
       name: 'Groove Sundae',
       price: '69 €',
-      perks: ['Sonntag bis Open End', 'Brunch & Disco', 'Perfekt für einen Tagestrip']
+      perks: ['Sonntag bis Open End', 'Brunch & Disco', 'Perfekt für einen Tagestrip'],
     },
     {
       name: 'Early Camper Add-on',
       price: '25 €',
-      perks: ['Frühanreise am Donnerstag ab 18:00', 'Camp in Ruhe aufbauen', 'Exklusiver Pre-Party Slot']
-    }
+      perks: [
+        'Frühanreise am Donnerstag ab 18:00',
+        'Camp in Ruhe aufbauen',
+        'Exklusiver Pre-Party Slot',
+      ],
+    },
   ];
+
+  @ViewChild('iframe') iframe!: ElementRef<HTMLIFrameElement>;
+
+  iframeHeight = 1500;
+
+  onIframeLoad() {
+    // is mobile?
+    const isMobile = window.innerWidth <= 768;
+    const baseHeight = isMobile ? 1600 : 1500;
+
+    this.iframeHeight = baseHeight;
+  }
 }
