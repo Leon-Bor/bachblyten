@@ -14,6 +14,16 @@
 
 .section-heading {
   padding-left: 32px;
+  @media (max-width: 600px) {
+    padding-left: 24px;
+  }
+}
+
+.eyebrow {
+  // hide on small screens
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .iframe-wrap {
