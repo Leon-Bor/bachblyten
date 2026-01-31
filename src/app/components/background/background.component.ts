@@ -109,7 +109,6 @@ export class BackgroundComponent implements AfterViewInit, OnDestroy, OnChanges 
         x: endX,
         duration: 18 + Math.random() * 10,
 
-        ease: 'none',
         repeat: -1,
         yoyo: true,
       });
