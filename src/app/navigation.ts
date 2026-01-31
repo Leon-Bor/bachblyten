@@ -11,6 +11,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/', order: 1, placement: 'header' },
   { label: 'Tickets', path: '/tickets', order: 2, placement: 'header' },
   { label: 'Line-Up', path: '/line-up', order: 3, placement: 'header' },
+  { label: 'Gallery', path: '/gallery', order: 6, placement: 'header' },
   { label: 'FAQ', path: '/faq', order: 4, placement: 'header' },
   { label: 'Anfahrt', path: '/anfahrt', order: 5, placement: 'header' },
   { label: 'About Us', path: '/about', order: 1, placement: 'footer' },
