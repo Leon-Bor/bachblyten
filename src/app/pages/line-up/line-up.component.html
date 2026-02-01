@@ -22,18 +22,18 @@
   </div>
   <div class="days">
     <div class="day" *ngFor="let day of ['Freitag', 'Samstag', 'Sonntag']">
-      <h4>{{ day }}</h4>
       <div class="card artist" *ngFor="let artist of artistsByDay(day)">
         <app-artist-visual class="artist-visual" [alt]="artist.name"></app-artist-visual>
 
         <div class="row">
           <div>
-            <h3>{{ artist.name }}</h3>
+            <div class="slots">
+              <h3>{{ artist.name }}</h3>
+
+              <span class="pill">{{ artist.stage }}</span>
+            </div>
+
             <p class="muted">{{ artist.profile }}</p>
-          </div>
-          <div class="slots">
-            <span class="pill">{{ artist.slot }}</span>
-            <span class="pill">{{ artist.stage }}</span>
           </div>
         </div>
         <div class="links" *ngIf="artist.links?.length">

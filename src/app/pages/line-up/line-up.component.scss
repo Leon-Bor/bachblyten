@@ -30,13 +30,20 @@
 }
 
 .artist-days .days {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.artist-days .day {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 14px;
 }
 
 .artist {
-  margin-bottom: 12px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -107,9 +114,10 @@
 
   .muted {
     margin: 0;
-    max-height: 4.8em; /* ~3 lines at 1.6 line-height */
-    min-height: 4.8em;
+    max-height: 2em; /* ~3 lines at 1.6 line-height */
+    min-height: 2em;
     overflow: hidden;
+    line-height: 1;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -162,8 +170,19 @@
 
 .slots {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
+  h3 {
+    padding-right: 50px;
+  }
+  .pill {
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    transform: scale(0.66);
+  }
 }
 
 .playlists .tiny {
@@ -174,6 +193,12 @@
 @media (max-width: 768px) {
   .artist .row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .artist-days .day {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
