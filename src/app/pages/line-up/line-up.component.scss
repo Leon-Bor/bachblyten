@@ -29,6 +29,28 @@
   font-weight: 600;
 }
 
+.stage-experience {
+  position: relative;
+  isolation: isolate;
+
+  .section-heading,
+  .section-grid {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tent-graphic {
+    position: absolute;
+    top: -190px;
+    right: 121px;
+    width: 463px;
+    pointer-events: none;
+    filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.35));
+    user-select: none;
+    z-index: 0;
+  }
+}
+
 .artist-days .days {
   display: flex;
   flex-direction: column;
@@ -193,6 +215,15 @@
 @media (max-width: 768px) {
   .artist .row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .stage-experience .tent-graphic {
+    top: -140px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 300px;
   }
 }
 
