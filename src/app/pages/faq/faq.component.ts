@@ -83,6 +83,13 @@ export class FaqComponent {
       category: 'rules',
     },
     {
+      id: 'rules-respectful-conduct',
+      question: 'Respektvoller Umgang & Kleidung',
+      answer:
+        'Auf dem Festivalgelände wünschen wir uns einen respektvollen Umgang miteinander. Dazu gehört auch, dass wir auf vollständige Nacktheit verzichten. So stellen wir sicher, dass sich alle Menschen unabhängig von Alter, Herkunft oder persönlichem Empfinden gleichermaßen wohl und sicher fühlen können.',
+      category: 'rules',
+    },
+    {
       id: 'rules-awareness',
       question: 'Gibt es eine Awareness- und Safe Area?',
       answer:
