@@ -38,7 +38,7 @@ export class FaqComponent {
       id: 'arrival-early',
       question: 'Kann ich schon am Donnerstag anreisen?',
       answer:
-        'Das Camping- und Festivalgelände öffnet am Freitag um 10:00 Uhr. Mit Early-Camper-Add-on darfst du ab Donnerstag 18:00 Uhr rauf aufs Rollfeld.',
+        'Das Camping- und Festivalgelände öffnet am Freitag um 10:00 Uhr. Bitte denkt an Auto und Wohnmobil Pässe.',
       category: 'arrival',
     },
     {
@@ -48,25 +48,25 @@ export class FaqComponent {
         'Kurz anhalten zum Abladen ist möglich. Wir behalten den Ausweis als Pfand (150 €) bis zur Ausfahrt – spart Chaos, schützt alle.',
       category: 'arrival',
     },
-    {
-      id: 'service-payment',
-      question: 'Wie zahle ich vor Ort?',
-      answer:
-        'Bargeld gegen 5 € Fee am Haupttresen. Kartenzahlung fast überall, Cashless-Armband auf Wunsch. Kein eigener Geldautomat auf dem Gelände.',
-      category: 'service',
-    },
-    {
-      id: 'arrival-bus',
-      question: 'Bus-Shuttle?',
-      answer:
-        'Sunny Trips fährt aus Hamburg, Lübeck und Kiel direkt zum Eingang. 2026 kein zusätzliches Festival-Shuttle – plant eure Rückfahrt rechtzeitig.',
-      category: 'arrival',
-    },
+    // {
+    //   id: 'service-payment',
+    //   question: 'Wie zahle ich vor Ort?',
+    //   answer:
+    //     'Bargeld gegen 5 € Fee am Haupttresen. Kartenzahlung fast überall, Cashless-Armband auf Wunsch. Kein eigener Geldautomat auf dem Gelände.',
+    //   category: 'service',
+    // },
+    // {
+    //   id: 'arrival-bus',
+    //   question: 'Bus-Shuttle?',
+    //   answer:
+    //     'Sunny Trips fährt aus Hamburg, Lübeck und Kiel direkt zum Eingang. 2026 kein zusätzliches Festival-Shuttle – plant eure Rückfahrt rechtzeitig.',
+    //   category: 'arrival',
+    // },
     {
       id: 'camping-rules',
       question: 'Camping-Regeln',
       answer:
-        'Camping mit PKW, Camper oder Anhänger auf ausgewiesenen Flächen. Zelten ohne Auto bleibt kostenlos. Lautstärke bitte nachts runter in den Quiet-Zones.',
+        'Camping mit PKW, Camper oder Anhänger auf ausgewiesenen Flächen. Zelten ohne Auto bleibt kostenlos. Lautstärke bitte nachts runter und auf minimum halten.',
       category: 'camping',
     },
     {
@@ -81,6 +81,13 @@ export class FaqComponent {
       question: 'Erste Hilfe',
       answer:
         'Eine deutlich ausgeschilderte Erste-Hilfe-Station ist 24/7 besetzt. Notfall? Sprecht unser Team oder die Security direkt an.',
+      category: 'rules',
+    },
+    {
+      id: 'rules-awareness',
+      question: 'Gibt es eine Awareness- und Safe Area?',
+      answer:
+        'Ja. Das Awareness-Team ist auf dem Gelände unterwegs und an markierten Points erreichbar. Zusätzlich gibt es eine ausgeschilderte Safe Area in Nähe des Haupttresens, zu der du jederzeit begleitet werden kannst – dort bekommst du Ruhe, Support und falls nötig weitere Hilfe.',
       category: 'rules',
     },
     {
@@ -135,7 +142,8 @@ export class FaqComponent {
     {
       id: 'camping-power',
       question: 'Strom & Generatoren',
-      answer: 'Eigene Generatoren/Stromerzeuger und Soundsysteme jeglicher Größe sind verboten.',
+      answer:
+        'Eigene Generatoren/Stromerzeuger jeglicher Größe sind verboten. Größere Soundanlagen mitbringen ist nicht gestattet.',
       category: 'camping',
     },
     {
