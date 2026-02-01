@@ -1,0 +1,15 @@
+<div
+  class="profile-popover"
+  tabindex="0"
+  (mouseenter)="onEnter()"
+  (mouseleave)="onLeave()"
+  (focus)="onFocus()"
+  (blur)="onBlur()"
+>
+  <p class="muted profile-preview">{{ text }}</p>
+
+  <div class="popover" *ngIf="show" role="tooltip">
+    {{ text }}
+    <span class="arrow" aria-hidden="true"></span>
+  </div>
+</div>

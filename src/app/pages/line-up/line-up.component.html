@@ -60,7 +60,7 @@
               <span class="pill">{{ artist.stage }}</span>
             </div>
 
-            <p class="muted">{{ artist.profile }}</p>
+            <app-profile-popover [text]="artist.profile"></app-profile-popover>
           </div>
         </div>
         <div class="links" *ngIf="artist.links?.length">

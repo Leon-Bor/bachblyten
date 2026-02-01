@@ -1,0 +1,63 @@
+:host {
+  display: block;
+}
+
+.profile-popover {
+  position: relative;
+  cursor: help;
+  z-index: 3;
+}
+
+.profile-preview {
+  margin: 0;
+  overflow: hidden;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.popover {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  padding: 12px 14px;
+  max-width: 360px;
+  background: var(--card-strong);
+  border: 1px solid var(--border-glow);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  color: var(--text-main);
+  line-height: 1.45;
+  font-size: 14px;
+  animation: fadeIn 150ms ease;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--card-strong);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 540px) {
+  .popover {
+    max-width: min(80vw, 360px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

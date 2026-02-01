@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ArtistVisualComponent } from '../../components/artist-visual/artist-visual.component';
+import { ProfilePopoverComponent } from '../../components/profile-popover/profile-popover.component';
 import { LINEUP_DATA } from '../../data/lineup';
 
 @Component({
   selector: 'app-line-up',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, ArtistVisualComponent],
+  imports: [CommonModule, RouterLink, FormsModule, ArtistVisualComponent, ProfilePopoverComponent],
   templateUrl: './line-up.component.html',
   styleUrl: './line-up.component.scss',
 })
