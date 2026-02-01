@@ -87,7 +87,7 @@ export const LINEUP_DATA: LineupData = {
       profile:
         'Gizmo ist ein aufstrebender DJ und Produzent aus Berlin, der für seine energiegeladenen Sets und innovativen Produktionen bekannt ist. Mit einer Leidenschaft für elektronische Musik hat Gizmo sich schnell einen Namen in der Szene gemacht und begeistert das Publikum mit seinen mitreißenden Beats und kreativen Klanglandschaften.',
       time: new Date('2024-07-26T22:00:00'),
-      stage: 'Schlupfbau',
+      stage: 'Wurzelwerk',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/gizmo.berlin/?hl=de' },
 
@@ -100,10 +100,30 @@ export const LINEUP_DATA: LineupData = {
       image: '/artists/saltz-bachblyten-festival-line-up-2026.jpg',
       profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
       time: new Date('2024-07-27T15:00:00'),
-      stage: 'Schlupfbau',
+      stage: 'Wurzelwerk',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
+      ],
+    },
+    // softdrive-bachblyten-festival-line-up-2026
+    {
+      name: 'Softdrive',
+      image: '/artists/softdrive-bachblyten-festival-line-up-2026.jpg',
+      profile: `Oliver and Bennet started working together in 2020 and merged
+into the non-divisible duo „Softdrive“ ever since. Oliver´s
+production skills which he gained over the last 10 years, combined
+with Bennet´s fresh ideas and different approach on music making
+brings up a mix of Hard House, New Wave and Trance.
+During Late-night studio sessions listening to old records,
+sampling, and twisting music from all kinds of genres Softdrive has
+developed their unique signature sound.`,
+
+      time: new Date('2024-07-26T18:00:00'),
+      stage: 'Schlupfbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
       ],
     },
   ],
