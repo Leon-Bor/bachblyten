@@ -3,6 +3,7 @@
     <span class="eyebrow">Datenschutz</span>
     <h2>Deine Daten, unser Versprechen</h2>
   </div>
+  <p class="muted"><em>Stand: 01.02.2026</em></p>
   <div class="section-grid">
     <article class="card">
       <h3>Verantwortlicher</h3>
@@ -16,6 +17,7 @@
         Wir verarbeiten nur, was nötig ist, speichern so kurz wie möglich und übertragen Daten nur an
         geprüfte Auftragsverarbeiter.
       </p>
+      <p class="muted">Löschanfragen erfüllen wir unverzüglich, sofern keine Aufbewahrungspflichten entgegenstehen.</p>
     </article>
   </div>
 </section>
@@ -35,13 +37,33 @@
 
 <section class="section">
   <div class="section-heading">
+    <span class="eyebrow">Drittanbieter</span>
+    <h3>Embeds &amp; Scripts</h3>
+  </div>
+  <div class="card">
+    <ul>
+      <li *ngFor="let tool of tools">
+        <strong>{{ tool.name }}:</strong> {{ tool.detail }}<br />
+        <span class="muted">{{ tool.legal }}</span>
+      </li>
+    </ul>
+    <p class="muted">
+      Externe Inhalte laden auf den jeweiligen Seiten/Embeds. Wir nutzen keine zusätzlichen Werbe- oder Social-Pixel;
+      die genannten Anbieter können dennoch eigene Cookies/Logs führen.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
     <span class="eyebrow">Speicherdauer</span>
     <h3>Wie lange?</h3>
   </div>
   <div class="card">
     <p>
       Wir speichern Vertragsdaten gemäß gesetzlichen Pflichten (z. B. steuerlich 10 Jahre), Newsletter-Daten bis
-      zum Widerruf, technische Logs maximal 14 Tage. Danach löschen oder anonymisieren wir.
+      zum Widerruf, technische Logs maximal 14 Tage. Danach löschen oder anonymisieren wir. Löschanfragen nach Art. 17
+      DSGVO erfüllen wir, sofern keine Aufbewahrungspflichten entgegenstehen.
     </p>
   </div>
 </section>
@@ -56,7 +78,8 @@
       <li *ngFor="let rec of recipients">{{ rec }}</li>
     </ul>
     <p class="muted">
-      Kein Drittlandtransfer ohne geeignete Garantien. Verträge zur Auftragsverarbeitung liegen vor.
+      Drittlandtransfer (USA) für Google-Dienste und Unsplash auf Basis von Standardvertragsklauseln; übrige
+      Dienstleistungen laufen über EU/EWR-Partner mit Auftragsverarbeitung.
     </p>
   </div>
 </section>
@@ -71,8 +94,8 @@
       <li *ngFor="let right of rights">{{ right }}</li>
     </ul>
     <p class="muted">
-      Kontaktiere uns via privacy@bachblyten-festival.com. Zuständige Aufsichtsbehörde: Unabhängiges
-      Landeszentrum für Datenschutz Schleswig-Holstein.
+      Kontaktiere uns via privacy@bachblyten-festival.com. Wir beantworten Auskunfts- und Löschersuchen in der Regel
+      binnen 30 Tagen. Zuständige Aufsichtsbehörde: Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein.
     </p>
   </div>
 </section>
@@ -86,6 +109,9 @@
     <ul>
       <li *ngFor="let cookie of cookies">{{ cookie }}</li>
     </ul>
-    <p class="muted">Opt-Outs und Tool-Liste folgen im Consent-Tool.</p>
+    <p class="muted">
+      Du kannst Cookies im Browser löschen/blocken; Google-Analytics-Opt-out zusätzlich per Browser-Add-on möglich.
+      Kein zusätzliches Werbe-Tracking durch uns, kein Cross-Device-Tracking.
+    </p>
   </div>
 </section>

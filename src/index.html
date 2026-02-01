@@ -15,13 +15,23 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E87RMH8X56"></script>
     <script>
+      const GA_ID = 'G-E87RMH8X56';
+      const dntEnabled = navigator.doNotTrack === '1' || window.doNotTrack === '1';
+      if (dntEnabled) {
+        window['ga-disable-' + GA_ID] = true;
+      }
+
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
-      gtag('config', 'G-E87RMH8X56');
+      gtag('config', GA_ID, {
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+        transport_type: 'beacon'
+      });
     </script>
   </head>
   <body>

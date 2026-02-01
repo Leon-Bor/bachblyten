@@ -11,6 +11,12 @@ interface Contact {
   value: string;
 }
 
+interface Tool {
+  name: string;
+  detail: string;
+  legal: string;
+}
+
 @Component({
   selector: 'app-datenschutz',
   standalone: true,
@@ -27,8 +33,9 @@ export class DatenschutzComponent {
 
   protected processing: ProcessingItem[] = [
     {
-      title: 'Ticketing (Paylogic)',
-      detail: 'Zweck: Vertragsabwicklung und Einlass. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.'
+      title: 'Ticketing & Zahlungsabwicklung (Paylogic / See Tickets)',
+      detail:
+        'Zweck: Ticketkauf, Zahlungsabwicklung, Betrugsprävention im eingebetteten Paylogic-Shop. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO; für Betrugsabwehr Art. 6 Abs. 1 lit. f DSGVO.'
     },
     {
       title: 'Newsletter / CRM',
@@ -36,33 +43,70 @@ export class DatenschutzComponent {
         'Double-Opt-In, nur nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Abmeldelink in jeder Mail.'
     },
     {
-      title: 'Webtracking',
+      title: 'Webtracking (Google Analytics 4, gtag.js)',
       detail:
-        'Privacy-first Analytics (IP-Anonymisierung). Kein Profiling, keine Weitergabe an Dritte ohne Einwilligung.'
-    },
-    {
-      title: 'Zahlungsdienstleister',
-      detail:
-        'Abhängig von gewählter Payment-Methode (z. B. Paylogic-Provider, PayPal). Daten werden nur für Zahlungsabwicklung genutzt.'
+        'Zweck: Reichweitenmessung und Fehlersuche. IP-Anonymisierung aktiviert, keine Werbe- oder Signal-Funktionen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse); Opt-out über Browser-Add-on oder Do-Not-Track.'
     }
   ];
 
   protected recipients: string[] = [
-    'Ticketing- und Paymentdienstleister',
-    'Newsletter-Provider (EU-Server, kein Drittlandtransfer ohne Einwilligung)',
-    'Technik- und Hostingpartner nach Auftragsverarbeitung'
+    'See Tickets B.V. (Paylogic) inkl. angebundene Zahlungsdienstleister für Checkout (EU/UK/USA je nach Zahlungsmethode)',
+    'Google Ireland Ltd. / Google LLC für Analytics, Maps, YouTube und Google Fonts',
+    'Unsplash / Getty Images CDN für Bildauslieferung',
+    'Hosting- und Technikpartner in der EU nach Auftragsverarbeitung'
   ];
 
   protected rights: string[] = [
-    'Auskunft, Berichtigung, Löschung, Einschränkung',
-    'Widerspruch gegen Direktwerbung',
+    'Auskunft, Berichtigung, Löschung (Art. 17) – wir löschen auf Anfrage, sofern keine Aufbewahrungspflichten entgegenstehen',
+    'Einschränkung der Verarbeitung und Widerspruch, insbesondere gegen Analytics',
+    'Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft',
     'Datenübertragbarkeit',
     'Beschwerderecht bei der zuständigen Aufsichtsbehörde'
   ];
 
   protected cookies: string[] = [
-    'Consent-Tool: aktiviert bei erstem Seitenaufruf',
-    'Essenzielle Cookies für Session/Checkout',
-    'Optionale Cookies nur nach Opt-In (Analytics, Embeds)'
+    'Essenzielle Cookies/Speicher: Session, Security und Paylogic-Checkout (Art. 6 Abs. 1 lit. b/f DSGVO)',
+    'Analytics: Google Analytics 4 (gtag.js) mit IP-Anonymisierung; Cookies/Local Storage, Standard-Speicherdauer 14 Monate',
+    'Embeds: YouTube-Videos und Google Maps setzen eigene Cookies, sobald die Seite mit dem Embed geladen wird',
+    'Fonts & Media-CDN: Google Fonts und Unsplash liefern Assets ohne Cookies, aber mit Server-Logdaten beim Anbieter'
+  ];
+
+  protected tools: Tool[] = [
+    {
+      name: 'Google Analytics 4 (gtag.js)',
+      detail:
+        'Lädt von googletagmanager.com/google-analytics.com; verarbeitet pseudonyme Nutzungsdaten, setzt Cookies/Local Storage; IP-Anonymisierung aktiv, keine Google-Signals.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO; Opt-out via Browser-Add-on oder Do-Not-Track.'
+    },
+    {
+      name: 'YouTube Embed',
+      detail:
+        'Videos auf Landing- und Gallery-Seite werden von youtube.com geladen; Google erhält IP-Adresse, User-Agent und setzt ggf. Cookies auch ohne Play.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Darstellung des Aftermovies).'
+    },
+    {
+      name: 'Google Maps Embed API',
+      detail:
+        'Anfahrt-Karte (maps.google.com / googleapis.com) nutzt API-Key; es werden Verbindungsdaten, ggf. Standort-/Geräteinfos verarbeitet.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Bereitstellung der Anfahrtsbeschreibung).'
+    },
+    {
+      name: 'Paylogic Ticketshop (See Tickets)',
+      detail:
+        'Checkout im iFrame (shop.paylogic.com); überträgt Browser- und Zahlungsdaten an See Tickets B.V. sowie angebundene Payment-Provider für Vertragsabwicklung.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Ticketkauf).'
+    },
+    {
+      name: 'Google Fonts CDN',
+      detail:
+        'Schriften werden von fonts.googleapis.com / fonts.gstatic.com geladen; dabei fallen IP-Adresse und Geräte-Infos in Server-Logs an.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (einheitliches Erscheinungsbild).'
+    },
+    {
+      name: 'Unsplash CDN',
+      detail:
+        'Galerie-Bilder kommen von images.unsplash.com; der Anbieter verarbeitet IP/User-Agent zur Auslieferung.',
+      legal: 'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Bilddarstellung).'
+    }
   ];
 }
