@@ -31,7 +31,7 @@
   --drift-x-end: -20%;
   --drift-y-end: 14%;
   transform: translateX(0) translateY(0) scale(var(--cloud-scale)) rotate(var(--cloud-tilt));
-  animation: drift 22s ease-in-out infinite alternate;
+  animation: drift 15s ease-in-out infinite alternate;
 }
 
 .cloud-1 {
