@@ -51,6 +51,53 @@
   }
 }
 
+.lineup-heading {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  .heading-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .heading-actions {
+    margin-left: auto;
+  }
+}
+
+.stage-filter {
+  appearance: none;
+  border: 1px solid var(--border-glow);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  min-width: 170px;
+  background-image: linear-gradient(120deg, rgba(255, 138, 91, 0.14), rgba(91, 224, 255, 0.14));
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+.stage-filter:focus {
+  outline: 2px solid rgba(255, 205, 67, 0.6);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .artist-days .days {
   display: flex;
   flex-direction: column;
@@ -224,6 +271,19 @@
     right: 50%;
     transform: translateX(50%);
     width: 300px;
+  }
+
+  .lineup-heading {
+    flex-direction: column;
+
+    .heading-actions {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .stage-filter {
+    width: 100%;
   }
 }
 

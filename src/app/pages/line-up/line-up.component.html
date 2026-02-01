@@ -24,13 +24,28 @@
 </section>
 
 <section class="section artist-days">
-  <div class="section-heading">
-    <span class="eyebrow">Programm</span>
-    <h3>Line-Up: TBA</h3>
+  <div class="section-heading lineup-heading">
+    <div class="heading-left">
+      <span class="eyebrow">Programm</span>
+      <h3>Line-Up: TBA</h3>
+    </div>
+
+    <div class="heading-actions">
+      <label class="sr-only" for="stageFilter">Stage filtern</label>
+      <select
+        id="stageFilter"
+        class="stage-filter"
+        [ngModel]="selectedStage"
+        (ngModelChange)="onStageChange($event)"
+      >
+        <option value="all">Alle Stages</option>
+        <option *ngFor="let stage of stageNames" [value]="stage">{{ stage }}</option>
+      </select>
+    </div>
   </div>
   <div class="days">
     <div class="day">
-      <div class="card artist" *ngFor="let artist of randomizedArtists">
+      <div class="card artist" *ngFor="let artist of filteredArtists">
         <app-artist-visual
           class="artist-visual"
           [alt]="artist.name"
