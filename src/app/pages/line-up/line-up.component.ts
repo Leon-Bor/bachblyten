@@ -1,20 +1,27 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ArtistVisualComponent } from '../../components/artist-visual/artist-visual.component';
-import { LINEUP_DATA, Artist } from '../../data/lineup';
+import { LINEUP_DATA } from '../../data/lineup';
 
 @Component({
   selector: 'app-line-up',
   standalone: true,
   imports: [CommonModule, RouterLink, ArtistVisualComponent],
   templateUrl: './line-up.component.html',
-  styleUrl: './line-up.component.scss'
+  styleUrl: './line-up.component.scss',
 })
 export class LineUpComponent {
   protected data = LINEUP_DATA;
 
-  protected artistsByDay(day: string): Artist[] {
-    return this.data.artists.filter((artist) => artist.day === day);
+  randomizedArtists = this.getRandomizedArtists();
+  constructor() {}
+
+  // randomize artist visuals
+  protected getRandomizedArtists() {
+    return this.data.artists
+      .map((artist) => ({ artist, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ artist }) => artist);
   }
 }

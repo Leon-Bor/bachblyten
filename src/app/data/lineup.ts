@@ -1,13 +1,14 @@
 export interface ArtistLink {
-  label: string;
+  label: 'Instagram' | 'Soundcloud';
   url: string;
 }
 
 export interface Artist {
   name: string;
+  image: string;
   profile: string;
   time: Date;
-  stage: string;
+  stage: 'Wurzelwerk' | 'Parallelwelten' | 'Schlupfbau' | 'Bassblyten';
   links?: ArtistLink[];
   tag?: string;
 }
@@ -40,15 +41,12 @@ export const LINEUP_DATA: LineupData = {
   artists: [
     {
       name: 'Roman Adam',
+      image: '/artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
       profile: 'DJ I Producer I Peak-Time Techno Alula Tunes • Senso • Set About From Hamburg',
       time: new Date('2024-07-26T19:30:00'),
       stage: 'Wurzelwerk',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/roman_adam_ofc/?hl=de' },
-        {
-          label: 'Spotify',
-          url: 'https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F0csjhGW5NyESJpJBUvGK6N%3Fsi%3DEoCcrBLwRmKTNu7VNsbVHw&e=AT3p6L5Cd_z8wFJZVJ4uNdASjt6FV0UX1kH5si7O-G4ee7hH7szSKT26WsUxRY6qFfnrwIggaHrAU53i_ofBZnvZtB6jdM0wb_Isv-i0w0u8cR-W',
-        },
         {
           label: 'Soundcloud',
           url: 'https://l.instagram.com/?u=https%3A%2F%2Fon.soundcloud.com%2FKKfPAaGfuy9IdNomrz&e=AT3YJgfzwqCfp59vo4D9-4_0bzGypstVyjgN_8rWOd74tyrS70lT29Sm3AObz-Vkx2xOidYq25FUrp54H_Y5mGKEPMgo2Pq9o60bJEN35DxtHw3Q',
@@ -56,44 +54,57 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     {
-      name: 'Marvin Phase',
-      profile: 'Raw Techno, lange Builds, kein Schnickschnack.',
-      slot: 'Fr · 02:00',
-      day: 'Freitag',
+      name: 'Maurice Mino',
+      image: '/artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Der gebürtige Berliner Maurice Mino entdeckte seine Leidenschaft für elektronische Musik im jungen Alter von zwölf Jahren. Seine Wurzeln liegen in verschiedenen Genres der elektronischen Musik und zogen ihn mit kräftigen Basslines und vollen Sounds in ihren Bann.',
+      time: new Date('2024-07-27T01:00:00'),
       stage: 'Wurzelwerk',
-      links: [{ label: 'Soundcloud', url: 'https://soundcloud.com' }],
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/mauricemino/?hl=de' },
+
+        { label: 'Soundcloud', url: 'https://soundcloud.com/mauricemino' },
+      ],
     },
+
     {
-      name: 'Cielo Norte',
-      profile: 'Psytrance mit Tribal Vocals, liebt lange Sunrise-Sets.',
-      slot: 'Sa · 07:00',
-      day: 'Samstag',
-      stage: 'Parallelwelten',
-      links: [{ label: 'Instagram', url: 'https://instagram.com' }],
+      name: 'Shabiki',
+      image: '/artists/shabiki-bachblyten-festival-line-up-2026.jpg',
+      profile: '𝚂𝙷𝙰𝙱𝙸𝙺𝙸 – In Swahili, “Msichana na shabiki” means “girl with the fan.” 🪭',
+      time: new Date('2024-07-27T01:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/shabiki.music/?hl=de' },
+
+        { label: 'Soundcloud', url: 'https://soundcloud.com/shabiki_music' },
+      ],
     },
+
+    // gizmo-bachblyten-festival-line-up-2026.jpg
     {
-      name: 'Frida Flux',
-      profile: 'Leftfield Electronica und Breaks für den Bassblyten (New Comer Floor).',
-      slot: 'Sa · 16:00',
-      day: 'Samstag',
-      stage: 'Bassblyten',
-      links: [{ label: 'Bandcamp', url: 'https://bandcamp.com' }],
-    },
-    {
-      name: 'North Sea Disco Club',
-      profile: 'Disco & Italo, viel Glitzer, viel Liebe.',
-      slot: 'So · 14:00',
-      day: 'Sonntag',
+      name: 'Gizmo',
+      image: '/artists/gizmo-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Gizmo ist ein aufstrebender DJ und Produzent aus Berlin, der für seine energiegeladenen Sets und innovativen Produktionen bekannt ist. Mit einer Leidenschaft für elektronische Musik hat Gizmo sich schnell einen Namen in der Szene gemacht und begeistert das Publikum mit seinen mitreißenden Beats und kreativen Klanglandschaften.',
+      time: new Date('2024-07-26T22:00:00'),
       stage: 'Schlupfbau',
-      links: [{ label: 'Spotify', url: 'https://open.spotify.com' }],
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/gizmo.berlin/?hl=de' },
+
+        { label: 'Soundcloud', url: 'https://soundcloud.com/gizmoberlin' },
+      ],
     },
+    // saltz-bachblyten-festival-line-up-2026
     {
-      name: 'Aero & Bloom',
-      profile: 'Live Ambient für den Anflug – perfekt zum Ankommen.',
-      slot: 'Fr · 12:30',
-      day: 'Freitag',
-      stage: 'Parallelwelten',
-      links: [{ label: 'YouTube', url: 'https://youtube.com' }],
+      name: 'Saltz',
+      image: '/artists/saltz-bachblyten-festival-line-up-2026.jpg',
+      profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
+      time: new Date('2024-07-27T15:00:00'),
+      stage: 'Schlupfbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
+      ],
     },
   ],
   stages: [
