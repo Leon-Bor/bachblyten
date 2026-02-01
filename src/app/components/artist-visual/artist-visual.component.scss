@@ -1,0 +1,68 @@
+.visual {
+  position: relative;
+  overflow: hidden;
+  //  border: 1px solid var(--border-glow);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  aspect-ratio: 4 / 5; /* match 1080x1350 jpg format */
+  isolation: isolate;
+}
+
+.artist {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cloud {
+  position: absolute;
+  width: 48%;
+  max-width: 320px;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 2;
+  --cloud-scale: 1;
+  --cloud-tilt: 0deg;
+  --drift-x-mid: 22%;
+  --drift-y-mid: 16%;
+  --drift-x-end: -20%;
+  --drift-y-end: 14%;
+  transform: translateX(0) translateY(0) scale(var(--cloud-scale)) rotate(var(--cloud-tilt));
+  animation: drift 22s ease-in-out infinite alternate;
+}
+
+.cloud-1 {
+  left: -6%;
+}
+
+.cloud-2 {
+  right: -4%;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0) translateY(10%) scale(var(--cloud-scale)) rotate(var(--cloud-tilt));
+  }
+  50% {
+    transform: translateX(var(--drift-x-mid)) translateY(var(--drift-y-mid))
+      scale(calc(var(--cloud-scale) * 1.04)) rotate(var(--cloud-tilt));
+  }
+  100% {
+    transform: translateX(var(--drift-x-end)) translateY(var(--drift-y-end))
+      scale(calc(var(--cloud-scale) * 0.98)) rotate(var(--cloud-tilt));
+  }
+}
+
+@media (max-width: 768px) {
+  .visual {
+    aspect-ratio: 4 / 5;
+    border-radius: 14px;
+  }
+
+  .cloud {
+    width: 58%;
+  }
+}

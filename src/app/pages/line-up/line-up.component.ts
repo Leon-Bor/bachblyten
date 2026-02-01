@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { ArtistVisualComponent } from '../../components/artist-visual/artist-visual.component';
 import { LINEUP_DATA, Artist } from '../../data/lineup';
 
 @Component({
   selector: 'app-line-up',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ArtistVisualComponent],
   templateUrl: './line-up.component.html',
   styleUrl: './line-up.component.scss'
 })

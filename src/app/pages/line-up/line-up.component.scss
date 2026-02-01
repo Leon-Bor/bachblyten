@@ -37,6 +37,29 @@
 
 .artist {
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.artist-days {
+  .card {
+    padding: 0px;
+  }
+
+  .muted {
+    margin: 0;
+  }
+
+  .row {
+    padding: 12px 16px 16px;
+    padding-bottom: 0px;
+  }
+
+  .links {
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
 }
 
 .artist .row {
@@ -44,6 +67,10 @@
   justify-content: space-between;
   gap: 12px;
   align-items: flex-start;
+}
+
+.artist-visual {
+  width: 100%;
 }
 
 .slots {

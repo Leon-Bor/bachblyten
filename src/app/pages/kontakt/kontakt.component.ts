@@ -20,7 +20,7 @@ export class KontaktComponent {
     { title: 'Presse', detail: 'presse@bachblyten-festival.com' },
     { title: 'Partner & Sponsoring', detail: 'partners@bachblyten-festival.com' },
     { title: 'Booking / Artists', detail: 'booking@bachblyten-festival.com' },
-    { title: 'Mitarbeit / Jobs', detail: 'jobs@bachblyten-festival.com' },
+    { title: 'Mitarbeit / Jobs', detail: 'arbeiten@bachblyten-festival.com' },
   ];
 
   protected channels: ContactChannel[] = [
