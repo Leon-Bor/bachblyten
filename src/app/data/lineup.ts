@@ -39,6 +39,19 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // hallert-bachblyten-festival-line-up-2026
+    {
+      name: 'Hallert',
+      image: '/artists/hallert-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Seit 2013 in elektronischen Sounds zuhause: Hallert aus Norddeutschland liebt es, eigene Produktionen auf Festivals zu spielen – tanzbare, kraftvolle Beats mit melodischem Drive.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
+      ],
+    },
     {
       name: 'Roman Adam',
       image: '/artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
@@ -57,7 +70,7 @@ export const LINEUP_DATA: LineupData = {
       name: 'Maurice Mino',
       image: '/artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
       profile:
-        'Der gebürtige Berliner Maurice Mino entdeckte seine Leidenschaft für elektronische Musik im jungen Alter von zwölf Jahren. Seine Wurzeln liegen in verschiedenen Genres der elektronischen Musik und zogen ihn mit kräftigen Basslines und vollen Sounds in ihren Bann.',
+        'Berliner DJ Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
       time: new Date('2024-07-27T01:00:00'),
       stage: 'Wurzelwerk',
       links: [
@@ -85,7 +98,7 @@ export const LINEUP_DATA: LineupData = {
       name: 'Gizmo',
       image: '/artists/gizmo-bachblyten-festival-line-up-2026.jpg',
       profile:
-        'Gizmo ist ein aufstrebender DJ und Produzent aus Berlin, der für seine energiegeladenen Sets und innovativen Produktionen bekannt ist. Mit einer Leidenschaft für elektronische Musik hat Gizmo sich schnell einen Namen in der Szene gemacht und begeistert das Publikum mit seinen mitreißenden Beats und kreativen Klanglandschaften.',
+        'Gizmo aus Berlin liefert energiegeladene Sets und innovative Produktionen. Mitreißende Beats und kreative Klanglandschaften ziehen das Publikum schnell in seinen Bann.',
       time: new Date('2024-07-26T22:00:00'),
       stage: 'Wurzelwerk',
       links: [
@@ -110,20 +123,27 @@ export const LINEUP_DATA: LineupData = {
     {
       name: 'Softdrive',
       image: '/artists/softdrive-bachblyten-festival-line-up-2026.jpg',
-      profile: `Oliver and Bennet started working together in 2020 and merged
-into the non-divisible duo „Softdrive“ ever since. Oliver´s
-production skills which he gained over the last 10 years, combined
-with Bennet´s fresh ideas and different approach on music making
-brings up a mix of Hard House, New Wave and Trance.
-During Late-night studio sessions listening to old records,
-sampling, and twisting music from all kinds of genres Softdrive has
-developed their unique signature sound.`,
+      profile:
+        'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
 
       time: new Date('2024-07-26T18:00:00'),
       stage: 'Schlupfbau',
       links: [
         { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
+      ],
+    },
+    // sabura-bachblyten-festival-line-up-2026
+    {
+      name: 'Sabura',
+      image: '/artists/sabura-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Sabura, Resident im Hamburger Waagenbau, mit Releases auf Tragedie, Legend und Alula Tunes. Technisch stark, spielt er Support und Headliner-Sets mit druckvollem, hypnotischem Techno.',
+      time: new Date('2024-07-27T17:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
       ],
     },
   ],

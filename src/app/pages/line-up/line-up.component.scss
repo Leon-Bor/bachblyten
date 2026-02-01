@@ -183,14 +183,14 @@
 
   .muted {
     margin: 0;
-    max-height: 2em; /* ~3 lines at 1.6 line-height */
-    min-height: 2em;
+    // max-height: 2em; /* ~3 lines at 1.6 line-height */
+    // min-height: 2em;
     overflow: hidden;
     line-height: 1;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    transition: max-height 0.35s ease;
+    // transition: all 3s ease;
   }
 
   .row {
@@ -228,8 +228,8 @@
 }
 
 .artist:hover .muted {
-  max-height: 480px;
-  -webkit-line-clamp: unset;
+  // max-height: 480px;
+  // -webkit-line-clamp: unset;
 }
 
 .artist > *:not(.artist-visual) {
