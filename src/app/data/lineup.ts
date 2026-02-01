@@ -6,8 +6,7 @@ export interface ArtistLink {
 export interface Artist {
   name: string;
   profile: string;
-  slot: string;
-  day: string;
+  time: Date;
   stage: string;
   links?: ArtistLink[];
   tag?: string;
@@ -40,12 +39,21 @@ export interface LineupData {
 export const LINEUP_DATA: LineupData = {
   artists: [
     {
-      name: 'Kora Nova',
-      profile: 'Deep House mit Afro-Elementen und handgemachten Percussions.',
-      slot: 'Fr · 19:30',
-      day: 'Freitag',
-      stage: 'Schlupfbau',
-      links: [{ label: 'Spotify', url: 'https://open.spotify.com' }],
+      name: 'Roman Adam',
+      profile: 'DJ I Producer I Peak-Time Techno Alula Tunes • Senso • Set About From Hamburg',
+      time: new Date('2024-07-26T19:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/roman_adam_ofc/?hl=de' },
+        {
+          label: 'Spotify',
+          url: 'https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F0csjhGW5NyESJpJBUvGK6N%3Fsi%3DEoCcrBLwRmKTNu7VNsbVHw&e=AT3p6L5Cd_z8wFJZVJ4uNdASjt6FV0UX1kH5si7O-G4ee7hH7szSKT26WsUxRY6qFfnrwIggaHrAU53i_ofBZnvZtB6jdM0wb_Isv-i0w0u8cR-W',
+        },
+        {
+          label: 'Soundcloud',
+          url: 'https://l.instagram.com/?u=https%3A%2F%2Fon.soundcloud.com%2FKKfPAaGfuy9IdNomrz&e=AT3YJgfzwqCfp59vo4D9-4_0bzGypstVyjgN_8rWOd74tyrS70lT29Sm3AObz-Vkx2xOidYq25FUrp54H_Y5mGKEPMgo2Pq9o60bJEN35DxtHw3Q',
+        },
+      ],
     },
     {
       name: 'Marvin Phase',
