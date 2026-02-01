@@ -48,13 +48,12 @@ export class FaqComponent {
         'Kurz anhalten zum Abladen ist möglich. Wir behalten den Ausweis als Pfand (150 €) bis zur Ausfahrt – spart Chaos, schützt alle.',
       category: 'arrival',
     },
-    // {
-    //   id: 'service-payment',
-    //   question: 'Wie zahle ich vor Ort?',
-    //   answer:
-    //     'Bargeld gegen 5 € Fee am Haupttresen. Kartenzahlung fast überall, Cashless-Armband auf Wunsch. Kein eigener Geldautomat auf dem Gelände.',
-    //   category: 'service',
-    // },
+    {
+      id: 'service-payment',
+      question: 'Wie zahle ich vor Ort?',
+      answer: 'Mit Karte oder Bargeld. Es gibt vor Ort keine Geldautomaten.',
+      category: 'service',
+    },
     // {
     //   id: 'arrival-bus',
     //   question: 'Bus-Shuttle?',
@@ -183,23 +182,23 @@ export class FaqComponent {
     },
     {
       id: 'rules-deposit',
-      question: 'Umwelt-Pfand',
+      question: 'Müllpfand',
       answer:
-        '5 € Umweltpfand, den ihr gegen einen gefüllten Müllbeutel zurückerhaltet. Danke fürs Mitmachen.',
+        '10 € Müllpfand, den ihr gegen einen gefüllten Müllbeutel zurückerhaltet. Danke fürs Mitmachen.',
       category: 'rules',
     },
     {
       id: 'general-hours',
       question: 'Wann öffnen Gelände und Floors?',
       answer:
-        'Check-in ab Freitag 10:00 Uhr, Floors laufen bis Sonntag tief in die Nacht. Abreise bis Montag 12:00 Uhr – plant genug Zeit für den Abbau ein.',
+        'Check-in ab Freitag 10:00 Uhr, Floors laufen bis Sonntag abend. Abreise bis Montag 12:00 Uhr.',
       category: 'general',
     },
     {
       id: 'general-timetable',
       question: 'Wo finde ich den Timetable?',
       answer:
-        'Wir veröffentlichen den Timetable im Sommer auf der Website, per Newsletter und Socials. Vor Ort hängen große Timetable-Boards an allen Eingängen.',
+        'Wir veröffentlichen den Timetable direkt vor Ort auf dem Festivalgelände. Ihr bekommt beim Check-in einen gedruckten Guide mit allen wichtigen Infos.',
       category: 'general',
     },
     {
