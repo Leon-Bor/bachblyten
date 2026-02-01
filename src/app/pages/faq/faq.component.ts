@@ -67,7 +67,8 @@ export class FaqComponent {
     {
       id: 'camping-sanitary',
       question: 'Duschen & Sanitär',
-      answer: 'Dixi-Toiletten sind kostenfrei, feste Sanitärs und warme Duschen gibt es als Upgrade. Wir reinigen regelmäßig – helft mit, sauber zu bleiben.',
+      answer:
+        'Auf dem Campingplatz stehen kostenlose Dixi-Toiletten bereit. Auf dem Festivalgelände bieten wir zusätzlich saubere, regelmäßig gereinigte Toiletten gegen einen kleinen Beitrag. Warme Duschen gibt es als kostenpflichtige Flatrate, weil es vor Ort keine feste Wasserinfrastruktur gibt.',
       category: 'camping'
     },
     {
@@ -151,7 +152,8 @@ export class FaqComponent {
     {
       id: 'rules-safe-space',
       question: 'Toleranz & Safe Spaces',
-      answer: 'Null Toleranz für Diskriminierung, Rassismus oder sonstige -ismen. Sprecht uns an, wir reagieren sofort.',
+      answer:
+        'Wir stehen für Offenheit, Respekt und Gleichberechtigung. Alle sind willkommen (u. a. FLINTA*, LGBTQ+, non-binär). Null Toleranz für Diskriminierung, Homophobie, Transfeindlichkeit, Rassismus, Sexismus sowie rechts­extreme oder menschenverachtende Ideologien. Meldet Vorfälle direkt beim Awareness- oder Security-Team.',
       category: 'rules'
     },
     {
@@ -186,6 +188,34 @@ export class FaqComponent {
       answer:
         'Weite, ebene Wege auf dem Rollfeld, rollstuhlgerechte Sanitäranlagen und markierte Viewing-Areas an den Hauptfloors. Melde dich beim Awareness-Team, wenn du Unterstützung brauchst.',
       category: 'general'
+    },
+    {
+      id: 'general-whats-new',
+      question: 'Was ist neu 2026?',
+      answer:
+        'Ein neues Team baut auf 15 Jahren Bachblyten auf: gleicher Ort, neuer Spirit – klar in der Haltung, reduziert im Auftritt und offen für Entwicklung.',
+      category: 'general'
+    },
+    {
+      id: 'general-bassblyten-stage',
+      question: 'Was ist die Bassblyten Stage?',
+      answer:
+        'Unsere vierte Bühne ist als Newcomer-Stage gedacht: erste große Floors und Anlagen für junge Artists und DJs, Fokus auf Potenzial und Mut statt Reichweite.',
+      category: 'general'
+    },
+    {
+      id: 'general-sound',
+      question: 'Welche Musik erwartet mich?',
+      answer:
+        'Techno bildet die Basis und verzweigt sich in Indie Dance, Psy Techno, modernen Tech House, Bouncy Techno und ausgewählte Hardtechno-Momente. Ergänzt wird das Spektrum durch Drum and Bass, Psytrance, Goa und Proggy – tanzbar, hypnotisch, mit Raum für Kontraste und lange Nächte.',
+      category: 'general'
+    },
+    {
+      id: 'camping-sustainability',
+      question: 'Wie geht ihr mit Nachhaltigkeit um?',
+      answer:
+        'Nachhaltigkeit ist ein Prozess: Wir verbessern Schritt für Schritt. Aktuell gibt es Dixi-Toiletten auf dem Campingplatz, saubere Toiletten auf dem Gelände gegen Beitrag und kostenpflichtige Duschen per Flatrate, weil es keine feste Wasserinfrastruktur gibt. Für kommende Jahre arbeiten wir an besseren, nachhaltigeren Lösungen.',
+      category: 'camping'
     }
   ];
 

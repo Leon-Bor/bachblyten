@@ -62,24 +62,23 @@ export class LandingComponent {
       detail: 'Warm tanzen, Drinks genießen, Bässe & Lichter starten.',
       time: 'Fr · 16:00',
     },
-
     {
       title: 'Entspannungsphase',
-      detail: 'Yoga workshops, kreative Pausen, Zeit zum Durchatmen und Auftanken.',
+      detail: 'Yoga-Workshops, kreative Pausen, Zeit zum Durchatmen und Auftanken.',
       time: 'Sa · 10:00',
     },
     {
       title: 'Erneutes Aufblyhen',
-      detail: 'Sound an, Vibes steigen, der Tag nimmt Fahrt auf.',
+      detail: 'Feierstäbe ausfahren, bunte Outfits anziehen, Spaß haben.',
       time: 'Sa · 18:00',
     },
     {
-      title: 'Festival Ende',
+      title: 'Festivalende',
       detail: 'Letzte Beats, Abschiedsrunden, Festival klingt aus.',
       time: 'So · 18:00',
     },
     {
-      title: 'Campingplatz Schließt',
+      title: 'Campingplatz schließt',
       detail: 'Camping abbauen, aufräumen und Gelände (spätestens) verlassen.',
       time: 'Mo · 12:00',
     },

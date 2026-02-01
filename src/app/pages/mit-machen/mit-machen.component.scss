@@ -1,0 +1,33 @@
+.list-soft {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.list-soft li {
+  margin: 8px 0;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.application {
+  background: linear-gradient(140deg, rgba(255, 138, 91, 0.14), rgba(91, 224, 255, 0.12));
+  border-color: var(--accent-lime);
+}
+
+.application a {
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .chip-row {
+    gap: 8px;
+  }
+
+  .chip-row .pill {
+    width: 100%;
+    justify-content: center;
+  }
+}

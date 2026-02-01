@@ -6,6 +6,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { AnfahrtComponent } from './pages/anfahrt/anfahrt.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
+import { MitMachenComponent } from './pages/mit-machen/mit-machen.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'anfahrt', component: AnfahrtComponent, data: { background: 'static' } },
   { path: 'gallery', component: GalleryComponent, data: { background: 'static' } },
   { path: 'about', component: AboutComponent, data: { background: 'static' } },
+  { path: 'mit-machen', component: MitMachenComponent, data: { background: 'static' } },
   { path: 'impressum', component: ImpressumComponent, data: { background: 'static' } },
   { path: 'kontakt', component: KontaktComponent, data: { background: 'static' } },
   { path: 'datenschutz', component: DatenschutzComponent, data: { background: 'static' } },
