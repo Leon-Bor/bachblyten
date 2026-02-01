@@ -3,11 +3,9 @@
     <span class="eyebrow">Gallery</span>
     <h2>Aktuelle Insta-Highlights</h2>
   </div>
-  <p>
-    Wir zeigen hier aktuell ausgewählte Posts. Ersetze die Daten in der Component oder binde den
-    offiziellen Instagram-Embed ein – das Layout ist vorbereitet.
-  </p>
-  <div class="section-grid gallery-grid">
+  <p *ngIf="loading">Lade die neuesten Posts …</p>
+  <p *ngIf="!loading && errorMessage">{{ errorMessage }}</p>
+  <div class="section-grid gallery-grid" *ngIf="posts.length">
     <a
       class="card post"
       *ngFor="let post of posts"
