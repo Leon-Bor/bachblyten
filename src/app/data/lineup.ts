@@ -97,8 +97,7 @@ export const LINEUP_DATA: LineupData = {
     {
       name: 'Gizmo',
       image: '/artists/gizmo-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Gizmo aus Berlin liefert energiegeladene Sets und innovative Produktionen. Mitreißende Beats und kreative Klanglandschaften ziehen das Publikum schnell in seinen Bann.',
+      profile: 'Producer • DJ - Energetic, forward-driving, vigorous.',
       time: new Date('2024-07-26T22:00:00'),
       stage: 'Wurzelwerk',
       links: [
