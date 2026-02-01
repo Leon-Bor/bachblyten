@@ -193,3 +193,12 @@ img {
     padding: 24px 20px 28px;
   }
 }
+
+.sell-more-tickets {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}

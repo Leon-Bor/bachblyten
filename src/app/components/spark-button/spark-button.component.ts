@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Input, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,5 +13,10 @@ export class SparkButtonComponent {
   @Input() label = 'Jetzt starten';
   @Input() routerLink?: string;
 
+  private readonly document = inject(DOCUMENT);
   protected readonly spots = Array.from({ length: 52 });
+  protected readonly sparkTexture = `url(${new URL(
+    'Sonne_Layer_mitte_scrolleffect.png',
+    this.document?.baseURI ?? '/',
+  ).toString()})`;
 }

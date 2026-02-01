@@ -4,12 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ArtistVisualComponent } from '../../components/artist-visual/artist-visual.component';
 import { ProfilePopoverComponent } from '../../components/profile-popover/profile-popover.component';
+import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
 import { LINEUP_DATA } from '../../data/lineup';
 
 @Component({
   selector: 'app-line-up',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, ArtistVisualComponent, ProfilePopoverComponent],
+  imports: [
+    CommonModule,
+    RouterLink,
+    FormsModule,
+    ArtistVisualComponent,
+    ProfilePopoverComponent,
+    SparkButtonComponent,
+  ],
   templateUrl: './line-up.component.html',
   styleUrl: './line-up.component.scss',
 })

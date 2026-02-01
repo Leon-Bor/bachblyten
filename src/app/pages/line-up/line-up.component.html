@@ -1,11 +1,11 @@
 <section class="section stage-experience">
   <div class="section-heading">
-    <span class="eyebrow">Stufenweise Eskalation</span>
-    <h3>Stages & Experience</h3>
+    <span class="eyebrow">Orte der Musik</span>
+    <h3>4 Stages & Experience</h3>
   </div>
   <img
     class="tent-graphic"
-    src="/bachblyten/Zirkuszelt-freigestellt.png"
+    src="Zirkuszelt-freigestellt.png"
     alt=""
     aria-hidden="true"
     loading="eager"
@@ -15,10 +15,10 @@
     <article class="card" *ngFor="let stage of data.stages">
       <h3>{{ stage.name }}</h3>
       <p>{{ stage.vibe }}</p>
-      <div class="chip-row">
+      <!-- <div class="chip-row">
         <span class="tag">{{ stage.capacity }}</span>
         <span class="tag">{{ stage.spec }}</span>
-      </div>
+      </div> -->
     </article>
   </div>
 </section>
@@ -91,3 +91,9 @@
     </article>
   </div>
 </section> -->
+
+<section style="margin-top: 100px">
+  <div class="sell-more-tickets">
+    <app-spark-button routerLink="/tickets" label="TICKETS SICHERN"></app-spark-button>
+  </div>
+</section>

@@ -35,6 +35,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/bachblyten/",
+              "deployUrl": "/bachblyten/",
               "budgets": [
                 {
                   "type": "initial",

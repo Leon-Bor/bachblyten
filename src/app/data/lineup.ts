@@ -42,7 +42,7 @@ export const LINEUP_DATA: LineupData = {
     // hallert-bachblyten-festival-line-up-2026
     {
       name: 'Hallert',
-      image: '/bachblyten/artists/hallert-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/hallert-bachblyten-festival-line-up-2026.jpg',
       profile:
         'Seit 2013 in elektronischen Sounds zuhause: Hallert aus Norddeutschland liebt es, eigene Produktionen auf Festivals zu spielen – tanzbare, kraftvolle Beats mit melodischem Drive.',
       time: new Date('2024-07-26T20:30:00'),
@@ -54,7 +54,7 @@ export const LINEUP_DATA: LineupData = {
     },
     {
       name: 'Roman Adam',
-      image: '/bachblyten/artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
       profile: 'DJ I Producer I Peak-Time Techno Alula Tunes • Senso • Set About From Hamburg',
       time: new Date('2024-07-26T19:30:00'),
       stage: 'Wurzelwerk',
@@ -68,7 +68,7 @@ export const LINEUP_DATA: LineupData = {
     },
     {
       name: 'Maurice Mino',
-      image: '/bachblyten/artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
       profile:
         'Berliner DJ Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
       time: new Date('2024-07-27T01:00:00'),
@@ -82,7 +82,7 @@ export const LINEUP_DATA: LineupData = {
 
     {
       name: 'Shabiki',
-      image: '/bachblyten/artists/shabiki-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/shabiki-bachblyten-festival-line-up-2026.jpg',
       profile: '𝚂𝙷𝙰𝙱𝙸𝙺𝙸 – In Swahili, “Msichana na shabiki” means “girl with the fan.” 🪭',
       time: new Date('2024-07-27T01:00:00'),
       stage: 'Wurzelwerk',
@@ -96,7 +96,7 @@ export const LINEUP_DATA: LineupData = {
     // gizmo-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Gizmo',
-      image: '/bachblyten/artists/gizmo-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/gizmo-bachblyten-festival-line-up-2026.jpg',
       profile: 'Producer • DJ - Energetic, forward-driving, vigorous.',
       time: new Date('2024-07-26T22:00:00'),
       stage: 'Wurzelwerk',
@@ -109,7 +109,7 @@ export const LINEUP_DATA: LineupData = {
     // saltz-bachblyten-festival-line-up-2026
     {
       name: 'Saltz',
-      image: '/bachblyten/artists/saltz-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
       profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
       time: new Date('2024-07-27T15:00:00'),
       stage: 'Wurzelwerk',
@@ -121,7 +121,7 @@ export const LINEUP_DATA: LineupData = {
     // softdrive-bachblyten-festival-line-up-2026
     {
       name: 'Softdrive',
-      image: '/bachblyten/artists/softdrive-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/softdrive-bachblyten-festival-line-up-2026.jpg',
       profile:
         'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
 
@@ -135,7 +135,7 @@ export const LINEUP_DATA: LineupData = {
     // sabura-bachblyten-festival-line-up-2026
     {
       name: 'Sabura',
-      image: '/bachblyten/artists/sabura-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
       profile:
         'Sabura, Resident im Hamburger Waagenbau, mit Releases auf Tragedie, Legend und Alula Tunes. Technisch stark, spielt er Support und Headliner-Sets mit druckvollem, hypnotischem Techno.',
       time: new Date('2024-07-27T17:00:00'),
@@ -151,25 +151,25 @@ export const LINEUP_DATA: LineupData = {
       name: 'Parallelwelten',
       capacity: '5.000 Pax',
       spec: '360° LED-Portal, Haze-Tunnel, Pyro & Laser-Bridges',
-      vibe: 'Immersive Storytelling-Sets, Reisen zwischen den Welten',
+      vibe: 'Psychedelic Trance und Proggy in Reinform. Hypnotisch, treibend, verspielt, Goa von A bis Z, irgendwo zwischen Realität und Rausch.',
     },
     {
       name: 'Wurzelwerk',
       capacity: '2.000 Pax',
       spec: 'Funktion-One Stack im Kreis, Low-Light, Laser durch Baumkronen',
-      vibe: 'Erdig, hypnotisch, tiefer Techno bis Morgengrauen',
+      vibe: 'Techno in all seinen tiefen Facetten. Indie Dance, Melodic Techno, viel Groove, viel Druck, viel Wumms und diese Momente, bei denen man nur noch „Ohaaa!“ denkt.',
     },
     {
       name: 'Schlupfbau',
       capacity: '1.200 Pax',
-      spec: 'Holzdeck, Pflanzen, Hängematten, Surround Sound',
-      vibe: 'House, Disco und sonnige Nachmittage',
+      spec: 'Overhead-PA, warme Lichter, gemütliche Atmosphäre',
+      vibe: 'Kleiner Zappelkäfig mit ordentlich Bewegung. Von groovigem Techno über härtere Kanten bis zu ausgewählten Drum-and-Bass-Parts, roh, wild und unberechenbar.',
     },
     {
       name: 'Bassblyten',
       capacity: '600 Pax',
       spec: 'Offene Holzbühne, Club-PA und 180° Visual-Panel',
-      vibe: 'Frische Talente, Debüts und viel Nähe zum Floor',
+      vibe: 'Der neue Floor für Newcomer. Grooviger Techno bis Peak-Time-Bretter, gespielt von Stick und Platte, direkt, ehrlich und mit voller Energie.',
     },
   ],
   playlists: [

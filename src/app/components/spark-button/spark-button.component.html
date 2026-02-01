@@ -5,12 +5,17 @@
   </span>
 </ng-template>
 
-<a *ngIf="routerLink; else plainButton" class="spark-btn" [routerLink]="routerLink">
+<a
+  *ngIf="routerLink; else plainButton"
+  class="spark-btn"
+  [routerLink]="routerLink"
+  [style.background-image]="sparkTexture"
+>
   <ng-container *ngTemplateOutlet="sparkContent"></ng-container>
 </a>
 
 <ng-template #plainButton>
-  <button class="spark-btn" type="button">
+  <button class="spark-btn" type="button" [style.background-image]="sparkTexture">
     <ng-container *ngTemplateOutlet="sparkContent"></ng-container>
   </button>
 </ng-template>
