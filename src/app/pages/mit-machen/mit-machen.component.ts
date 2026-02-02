@@ -53,5 +53,19 @@ export class MitMachenComponent {
         'Erster Kontakt zum Festival – klare Infos und Ruhe auch bei Andrang.',
       ],
     },
+    {
+      title: 'DJ-Slots',
+      bullets: [
+        'Du möchtest einen Floor bespielen – schick Mix/Link und deinen gewünschten Slot (Tag/Nacht).',
+        'Gage oder Reisekosten sind möglich; Tech-Rider kurz beilegen.',
+      ],
+    },
+    {
+      title: 'Kunst & Bauprojekte',
+      bullets: [
+        'Installationen, Deko oder Holz-/Upcycling-Projekte, die das Gelände schöner machen.',
+        'Materialbudget und Aufbauzeiten klären wir mit dir; gern Skizzen oder Referenzen mitschicken.',
+      ],
+    },
   ];
 }
