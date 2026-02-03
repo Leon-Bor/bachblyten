@@ -44,7 +44,18 @@
         </div>
       </div>
 
-      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+      <form
+        class="form"
+        [formGroup]="form"
+        (ngSubmit)="onSubmit()"
+        novalidate
+        [attr.action]="ckAction"
+        method="post"
+        [attr.data-sv-form]="ckFormId"
+        [attr.data-uid]="ckUid"
+        attr.data-format="inline"
+        attr.data-version="5"
+      >
         <label class="field">
           <span>Dein Name (optional)</span>
           <input type="text" formControlName="name" placeholder="z. B. Mira" />
@@ -68,19 +79,21 @@
         </label>
 
         <div class="actions">
-          <button class="cta" type="submit">
-            <span *ngIf="!submittedSuccess">Anmelden</span>
-            <span *ngIf="submittedSuccess">Vorgemerkt</span>
+          <button class="cta" type="submit" [disabled]="isSubmitting">
+            <span *ngIf="isSubmitting">Sende...</span>
+            <span *ngIf="!isSubmitting && !submittedSuccess">Anmelden</span>
+            <span *ngIf="!isSubmitting && submittedSuccess">Vorgemerkt</span>
           </button>
           <button class="ghost" type="button" (click)="modal.close()">Abbrechen</button>
         </div>
 
         <div class="status" *ngIf="submittedSuccess">
-          <strong>Du stehst auf der Liste.</strong>
-          <p>
-            Sobald der Backend-Endpunkt steht, schicken wir deine Daten raus. Bis dahin bleibt alles
-            lokal.
-          </p>
+          <strong>Erfolg!</strong>
+          <p>Check deine Inbox und bestätige die Anmeldung.</p>
+        </div>
+        <div class="status error" *ngIf="submitError">
+          <strong>Hmm, das hat nicht geklappt.</strong>
+          <p>{{ submitError }}</p>
         </div>
 
         <p class="fineprint">Max. 2–4 Mails pro Jahr. Austragen geht jederzeit mit einem Klick.</p>

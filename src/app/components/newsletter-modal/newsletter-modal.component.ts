@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, effect, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { NewsletterModalService, NewsletterPayload } from './newsletter-modal.service';
+import {
+  NewsletterModalService,
+  NewsletterPayload,
+  NewsletterSubmitResult
+} from './newsletter-modal.service';
 
 @Component({
   selector: 'app-newsletter-modal',
@@ -15,6 +19,11 @@ export class NewsletterModalComponent {
   private readonly fb = inject(FormBuilder);
   protected submitted = false;
   protected submittedSuccess = false;
+  protected submitError: string | null = null;
+  protected isSubmitting = false;
+  protected readonly ckFormId = '9048132';
+  protected readonly ckUid = '8e20593361';
+  protected readonly ckAction = 'https://app.kit.com/forms/9048132/subscriptions';
 
   protected readonly form = this.fb.nonNullable.group({
     name: [''],
@@ -44,16 +53,27 @@ export class NewsletterModalComponent {
   }
 
   protected onSubmit(): void {
+    if (this.isSubmitting) return;
     this.submitted = true;
     this.submittedSuccess = false;
+    this.submitError = null;
 
     if (this.form.invalid) {
       return;
     }
 
     const payload = this.form.getRawValue();
-    this.modal.submit(payload);
-    this.submittedSuccess = true;
+    this.isSubmitting = true;
+
+    this.modal
+      .submit(payload)
+      .then((result: NewsletterSubmitResult) => {
+        this.submittedSuccess = result.success;
+        this.submitError = result.success ? null : result.message ?? 'Da ging was schief.';
+      })
+      .finally(() => {
+        this.isSubmitting = false;
+      });
   }
 
   protected hasError(controlName: 'email' | 'consent'): boolean {
