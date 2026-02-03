@@ -43,9 +43,9 @@ export class LandingComponent {
       link: '/line-up',
     },
     {
-      title: 'Bassblyten Stage und Offenheit',
+      title: 'Knospe Stage und Offenheit',
       description:
-        'Mit der Bassblyten Stage schaffen wir Platz für Stimmen von morgen. Eine Bühne für Newcomer, für erste Festivalmomente und echte Chancen. Offen für alle Menschen, unabhängig von Identität, Herkunft oder Ausdruck, auf wie hinter den Decks.',
+        'Mit der Knospe Stage schaffen wir Platz für Stimmen von morgen. Eine Bühne für Newcomer, für erste Festivalmomente und echte Chancen. Offen für alle Menschen, unabhängig von Identität, Herkunft oder Ausdruck, auf wie hinter den Decks.',
       cta: 'Regeln lesen',
       link: '/faq',
     },

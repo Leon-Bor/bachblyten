@@ -8,7 +8,7 @@ export interface Artist {
   image: string;
   profile: string;
   time: Date;
-  stage: 'Wurzelwerk' | 'Parallelwelten' | 'Schlupfbau' | 'Bassblyten';
+  stage: 'Wurzelwerk' | 'Parallelwald' | 'Blytenbau' | 'Knospe';
   links?: ArtistLink[];
   tag?: string;
 }
@@ -126,7 +126,7 @@ export const LINEUP_DATA: LineupData = {
     //     'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
 
     //   time: new Date('2024-07-26T18:00:00'),
-    //   stage: 'Schlupfbau',
+    //   stage: 'Blytenbau',
     //   links: [
     //     { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
     //     { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
@@ -148,7 +148,7 @@ export const LINEUP_DATA: LineupData = {
   ],
   stages: [
     {
-      name: 'Parallelwelten',
+      name: 'Parallelwald',
       capacity: '5.000 Pax',
       spec: '360° LED-Portal, Haze-Tunnel, Pyro & Laser-Bridges',
       vibe: 'Psychedelic Trance und Proggy in Reinform. Hypnotisch, treibend, verspielt, Goa von A bis Z, irgendwo zwischen Realität und Rausch.',
@@ -160,28 +160,28 @@ export const LINEUP_DATA: LineupData = {
       vibe: 'Techno in all seinen tiefen Facetten. Indie Dance, Melodic Techno, viel Groove, viel Druck, viel Wumms und diese Momente, bei denen man nur noch „Ohaaa!“ denkt.',
     },
     {
-      name: 'Schlupfbau',
+      name: 'Blytenbau',
       capacity: '1.200 Pax',
       spec: 'Overhead-PA, warme Lichter, gemütliche Atmosphäre',
       vibe: 'Kleiner Zappelkäfig mit ordentlich Bewegung. Von groovigem Techno über härtere Kanten bis zu ausgewählten Drum-and-Bass-Parts, roh, wild und unberechenbar.',
     },
     {
-      name: 'Bassblyten',
+      name: 'Knospe',
       capacity: '600 Pax',
       spec: 'Offene Holzbühne, Club-PA und 180° Visual-Panel',
       vibe: 'Der neue Floor für Newcomer. Grooviger Techno bis Peak-Time-Bretter, gespielt von Stick und Platte, direkt, ehrlich und mit voller Energie.',
     },
   ],
   playlists: [
-    { label: 'Official Warm-Up', url: 'https://open.spotify.com/playlist/37i9dQZF1DX0BcQWzuB7ZO' },
-    {
-      label: 'Wurzelwerk Pulse',
-      url: 'https://open.spotify.com/playlist/37i9dQZF1DX6J5NfMJS675',
-    },
-    {
-      label: 'Schlupfbau Sunday',
-      url: 'https://open.spotify.com/playlist/37i9dQZF1DX4pUKG1kS0Ac',
-    },
+    // { label: 'Official Warm-Up', url: 'https://open.spotify.com/playlist/37i9dQZF1DX0BcQWzuB7ZO' },
+    // {
+    //   label: 'Wurzelwerk Pulse',
+    //   url: 'https://open.spotify.com/playlist/37i9dQZF1DX6J5NfMJS675',
+    // },
+    // {
+    //   label: 'Blytenbau Sunday',
+    //   url: 'https://open.spotify.com/playlist/37i9dQZF1DX4pUKG1kS0Ac',
+    // },
   ],
   downloads: [
     { label: 'Stageplan (PDF) – Platzhalter', url: 'https://example.com/bachblyten-stageplan.pdf' },
