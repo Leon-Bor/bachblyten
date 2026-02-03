@@ -62,7 +62,7 @@ export const LINEUP_DATA: LineupData = {
         { label: 'Instagram', url: 'https://www.instagram.com/roman_adam_ofc/?hl=de' },
         {
           label: 'Soundcloud',
-          url: 'https://l.instagram.com/?u=https%3A%2F%2Fon.soundcloud.com%2FKKfPAaGfuy9IdNomrz&e=AT3YJgfzwqCfp59vo4D9-4_0bzGypstVyjgN_8rWOd74tyrS70lT29Sm3AObz-Vkx2xOidYq25FUrp54H_Y5mGKEPMgo2Pq9o60bJEN35DxtHw3Q',
+          url: 'https://soundcloud.com/roman-adam-ofc?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
         },
       ],
     },
