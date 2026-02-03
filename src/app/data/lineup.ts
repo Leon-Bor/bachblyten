@@ -40,18 +40,18 @@ export interface LineupData {
 export const LINEUP_DATA: LineupData = {
   artists: [
     // hallert-bachblyten-festival-line-up-2026
-    {
-      name: 'Hallert',
-      image: 'artists/hallert-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Seit 2013 in elektronischen Sounds zuhause: Hallert aus Norddeutschland liebt es, eigene Produktionen auf Festivals zu spielen – tanzbare, kraftvolle Beats mit melodischem Drive.',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
-      ],
-    },
+    // {
+    //   name: 'Hallert',
+    //   image: 'artists/hallert-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Seit 2013 in elektronischen Sounds zuhause: Hallert aus Norddeutschland liebt es, eigene Produktionen auf Festivals zu spielen – tanzbare, kraftvolle Beats mit melodischem Drive.',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
+    //   ],
+    // },
     {
       name: 'Roman Adam',
       image: 'artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
@@ -107,31 +107,31 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // saltz-bachblyten-festival-line-up-2026
-    {
-      name: 'Saltz',
-      image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
-      profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
-      time: new Date('2024-07-27T15:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
-      ],
-    },
+    // {
+    //   name: 'Saltz',
+    //   image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
+    //   profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
+    //   time: new Date('2024-07-27T15:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
+    //   ],
+    // },
     // softdrive-bachblyten-festival-line-up-2026
-    {
-      name: 'Softdrive',
-      image: 'artists/softdrive-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
+    // {
+    //   name: 'Softdrive',
+    //   image: 'artists/softdrive-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
 
-      time: new Date('2024-07-26T18:00:00'),
-      stage: 'Schlupfbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
-      ],
-    },
+    //   time: new Date('2024-07-26T18:00:00'),
+    //   stage: 'Schlupfbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
+    //   ],
+    // },
     // sabura-bachblyten-festival-line-up-2026
     {
       name: 'Sabura',
