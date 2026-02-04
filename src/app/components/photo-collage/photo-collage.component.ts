@@ -38,6 +38,7 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
   protected isMobile = false;
   protected isHovering = false;
   private scrollTimer: number | null = null;
+  private scrollDirection: 1 | -1 = 1;
 
   protected readonly photos: CollagePhoto[] = [
     {
@@ -282,12 +283,19 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.stopAutoScroll();
     const el = this.stripRef?.nativeElement;
     if (!el) return;
+    this.scrollDirection = 1;
     this.scrollTimer = window.setInterval(() => {
       if (this.isHovering) return;
       const maxScroll = el.scrollWidth - el.clientWidth;
       if (maxScroll <= 0) return;
-      const atEnd = el.scrollLeft >= maxScroll - 2;
-      el.scrollLeft = atEnd ? 0 : el.scrollLeft + 0.6;
+      const atEnd = el.scrollLeft >= maxScroll - 1;
+      const atStart = el.scrollLeft <= 1;
+      if (atEnd) this.scrollDirection = -1;
+      if (atStart) this.scrollDirection = 1;
+      el.scrollLeft = Math.min(
+        maxScroll,
+        Math.max(0, el.scrollLeft + this.scrollDirection * 0.7),
+      );
     }, 20);
   }
 
