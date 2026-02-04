@@ -19,7 +19,7 @@ interface TicketTier {
 })
 export class TicketsComponent {
   protected readonly paylogicUrl =
-    'https://shop.paylogic.com/b6bc9231e9ca428a96862b6b04394506/?wmode=opaque';
+    'https://shop.paylogic.com/bb04103b5d0e4c8491d10dd9e7c96ec3?wmode=opaque';
   private readonly sanitizer = inject(DomSanitizer);
   protected readonly paylogicEmbed: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
     this.paylogicUrl,
