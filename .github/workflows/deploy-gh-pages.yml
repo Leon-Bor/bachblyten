@@ -38,6 +38,9 @@ jobs:
       - name: Add CNAME for custom domain
         run: echo "bachblyten-festival.com" > dist/bachblyten/browser/CNAME
 
+      - name: Add SPA fallback (404 -> index.html)
+        run: cp dist/bachblyten/browser/index.html dist/bachblyten/browser/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
