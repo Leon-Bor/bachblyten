@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* Global styling */
 :root {
+  /* Opt out of forced/light theme transformations (e.g., Samsung Internet) */
+  color-scheme: dark;
   --bg-deep: #0c1024;
   --bg-surface: #12183a;
   --bg-glow: linear-gradient(135deg, rgba(255, 111, 145, 0.24), rgba(96, 207, 255, 0.18));
