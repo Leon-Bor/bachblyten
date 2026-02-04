@@ -41,6 +41,10 @@ export class LineUpComponent {
     this.selectedStage = stage;
   }
 
+  protected selectStage(stage: string) {
+    this.onStageChange(stage);
+  }
+
   // randomize artist visuals
   protected getRandomizedArtists() {
     return this.data.artists

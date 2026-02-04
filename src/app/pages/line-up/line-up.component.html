@@ -12,7 +12,18 @@
     decoding="async"
   />
   <div class="section-grid">
-    <article class="card" *ngFor="let stage of data.stages">
+    <article
+      class="card stage-card"
+      *ngFor="let stage of data.stages"
+      role="button"
+      tabindex="0"
+      (click)="selectStage(stage.name)"
+      (keydown.enter)="selectStage(stage.name)"
+      (keydown.space)="selectStage(stage.name); $event.preventDefault()"
+      [class.is-active]="selectedStage === stage.name"
+      aria-pressed="{{ selectedStage === stage.name }}"
+      [attr.aria-label]="'Stage filtern: ' + stage.name"
+    >
       <h3>{{ stage.name }}</h3>
       <p>{{ stage.vibe }}</p>
       <!-- <div class="chip-row">

@@ -68,6 +68,33 @@
   }
 }
 
+.stage-card {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 205, 67, 0.5);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.35);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(255, 205, 67, 0.8);
+    outline-offset: 3px;
+  }
+
+  &.is-active {
+    border-color: rgba(255, 205, 67, 0.75);
+    box-shadow:
+      0 16px 42px rgba(255, 205, 67, 0.18),
+      0 10px 30px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+  }
+}
+
 .stage-filter {
   appearance: none;
   border: 1px solid var(--border-glow);
