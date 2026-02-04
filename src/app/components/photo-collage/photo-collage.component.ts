@@ -39,6 +39,7 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
   protected isHovering = false;
   private scrollTimer: number | null = null;
   private scrollDirection: 1 | -1 = 1;
+  private scrollVelocity = 0;
 
   protected readonly photos: CollagePhoto[] = [
     {
@@ -283,7 +284,11 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.stopAutoScroll();
     const el = this.stripRef?.nativeElement;
     if (!el) return;
+    const maxScrollInitial = el.scrollWidth - el.clientWidth;
+    if (maxScrollInitial < 50) return; // only auto-scroll when there's enough overflow
     this.scrollDirection = 1;
+    this.scrollVelocity = 0;
+    const baseSpeed = 0.7;
     this.scrollTimer = window.setInterval(() => {
       if (this.isHovering) return;
       const maxScroll = el.scrollWidth - el.clientWidth;
@@ -292,10 +297,17 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
       const atStart = el.scrollLeft <= 1;
       if (atEnd) this.scrollDirection = -1;
       if (atStart) this.scrollDirection = 1;
-      el.scrollLeft = Math.min(
-        maxScroll,
-        Math.max(0, el.scrollLeft + this.scrollDirection * 0.7),
-      );
+      const targetVelocity = this.scrollDirection * baseSpeed;
+      // ease velocity so direction changes feel smooth rather than abrupt
+      this.scrollVelocity = this.scrollVelocity * 0.88 + targetVelocity * 0.12;
+
+      let next = el.scrollLeft + this.scrollVelocity;
+      if (next <= 0 || next >= maxScroll) {
+        next = Math.min(maxScroll, Math.max(0, next));
+        // dampen residual speed when we hit the edge to avoid a hard bounce
+        this.scrollVelocity *= 0.05;
+      }
+      el.scrollLeft = next;
     }, 20);
   }
 
