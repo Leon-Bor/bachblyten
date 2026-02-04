@@ -1,5 +1,17 @@
-<div class="collage-block">
-  <div class="collage-strip">
+<div class="collage-block" [class.has-heading]="showHeading">
+  <div class="collage-heading" *ngIf="showHeading">
+    <span class="eyebrow">{{ eyebrow }}</span>
+    <h3>{{ heading }}</h3>
+  </div>
+
+  <div
+    class="collage-strip"
+    #strip
+    (mouseenter)="isHovering = true"
+    (mouseleave)="isHovering = false"
+    (touchstart)="isHovering = true"
+    (touchend)="isHovering = false"
+  >
     <button
       type="button"
       class="tile"

@@ -1,5 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, Input, OnDestroy } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 
 interface CollagePhoto {
   src: string;
@@ -14,14 +23,21 @@ interface CollagePhoto {
   templateUrl: './photo-collage.component.html',
   styleUrl: './photo-collage.component.scss',
 })
-export class PhotoCollageComponent implements OnDestroy {
+export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() heading = 'Momente 2024';
   @Input() eyebrow = 'Gallery 2024';
+  @Input() showHeading = false;
   @Input() start = 0;
   @Input() count = 12;
+  @Input() mobileCount?: number;
+
+  @ViewChild('strip', { static: true }) private stripRef?: ElementRef<HTMLDivElement>;
 
   protected activePhoto: CollagePhoto | null = null;
   private previousOverflow = '';
+  protected isMobile = false;
+  protected isHovering = false;
+  private scrollTimer: number | null = null;
 
   protected readonly photos: CollagePhoto[] = [
     {
@@ -211,7 +227,9 @@ export class PhotoCollageComponent implements OnDestroy {
       ...this.photos.slice(normalizedStart),
       ...this.photos.slice(0, normalizedStart),
     ];
-    const limit = Math.max(1, Math.min(this.count, this.photos.length));
+    const limitDesktop = Math.max(1, Math.min(this.count, this.photos.length));
+    const mobileLimit = this.mobileCount ?? Math.min(10, limitDesktop);
+    const limit = this.isMobile ? mobileLimit : limitDesktop;
     return ordered.slice(0, limit);
   }
 
@@ -235,9 +253,48 @@ export class PhotoCollageComponent implements OnDestroy {
     }
   }
 
+  @HostListener('window:resize')
+  protected onResize(): void {
+    this.updateIsMobile();
+    this.startAutoScroll();
+  }
+
+  ngOnInit(): void {
+    this.updateIsMobile();
+  }
+
+  ngAfterViewInit(): void {
+    this.startAutoScroll();
+  }
+
   ngOnDestroy(): void {
     if (this.activePhoto) {
       this.close();
+    }
+    this.stopAutoScroll();
+  }
+
+  private updateIsMobile(): void {
+    this.isMobile = window.innerWidth < 768;
+  }
+
+  private startAutoScroll(): void {
+    this.stopAutoScroll();
+    const el = this.stripRef?.nativeElement;
+    if (!el) return;
+    this.scrollTimer = window.setInterval(() => {
+      if (this.isHovering) return;
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll <= 0) return;
+      const atEnd = el.scrollLeft >= maxScroll - 2;
+      el.scrollLeft = atEnd ? 0 : el.scrollLeft + 0.6;
+    }, 20);
+  }
+
+  private stopAutoScroll(): void {
+    if (this.scrollTimer !== null) {
+      window.clearInterval(this.scrollTimer);
+      this.scrollTimer = null;
     }
   }
 }
