@@ -80,7 +80,7 @@ export class FaqComponent {
       question: 'Erste Hilfe',
       answer:
         'Eine deutlich ausgeschilderte Erste-Hilfe-Station ist 24/7 besetzt. Notfall? Sprecht unser Team oder die Security direkt an.',
-      category: 'rules',
+      category: 'service',
     },
     {
       id: 'rules-respectful-conduct',
@@ -94,7 +94,7 @@ export class FaqComponent {
       question: 'Gibt es eine Awareness- und Safe Area?',
       answer:
         'Ja. Das Awareness-Team ist auf dem Gelände unterwegs und an markierten Points erreichbar. Zusätzlich gibt es eine ausgeschilderte Safe Area in Nähe des Haupttresens, zu der du jederzeit begleitet werden kannst – dort bekommst du Ruhe, Support und falls nötig weitere Hilfe.',
-      category: 'rules',
+      category: 'service',
     },
     {
       id: 'service-lost-and-found',
@@ -191,8 +191,8 @@ export class FaqComponent {
       id: 'rules-deposit',
       question: 'Müllpfand',
       answer:
-        '10 € Müllpfand, den ihr gegen einen gefüllten Müllbeutel zurückerhaltet. Danke fürs Mitmachen.',
-      category: 'rules',
+        'Denk an die 10 € Müllpfand. Den Pfand bekommst du gegen einen gut gefüllten Müllbeutel zurück. Danke fürs Mitmachen.',
+      category: 'arrival',
     },
     {
       id: 'general-hours',
