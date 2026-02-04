@@ -32,8 +32,11 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          BASE_PATH: /
         run: npm run build -- --configuration production --base-href "$BASE_PATH"
+
+      - name: Add CNAME for custom domain
+        run: echo "bachblyten-festival.com" > dist/bachblyten/browser/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
