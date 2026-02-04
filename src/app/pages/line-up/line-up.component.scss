@@ -82,6 +82,12 @@
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
+/* Ensure dropdown options stay readable on Windows default UI */
+.stage-filter option {
+  color: #0c1024;
+  background-color: #ffffff;
+}
+
 .stage-filter:focus {
   outline: 2px solid rgba(255, 205, 67, 0.6);
   outline-offset: 2px;
