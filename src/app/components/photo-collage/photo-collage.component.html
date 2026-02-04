@@ -1,0 +1,21 @@
+<div class="collage-block">
+  <div class="collage-strip">
+    <button
+      type="button"
+      class="tile"
+      *ngFor="let photo of displayPhotos"
+      [ngClass]="photo.classes"
+      (click)="open(photo)"
+      [attr.aria-label]="'Bild vergrößern: ' + photo.alt"
+    >
+      <img [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+    </button>
+  </div>
+</div>
+
+<div class="lightbox" *ngIf="activePhoto" (click)="close()" aria-modal="true" role="dialog">
+  <div class="lightbox-inner" (click)="$event.stopPropagation()">
+    <button type="button" class="close" (click)="close()" aria-label="Schließen">×</button>
+    <img [src]="activePhoto?.src" [alt]="activePhoto?.alt" />
+  </div>
+</div>

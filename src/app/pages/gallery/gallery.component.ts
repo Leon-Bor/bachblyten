@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PhotoCollageComponent } from '../../components/photo-collage/photo-collage.component';
 
 interface Post {
   handle: string;
@@ -27,7 +28,7 @@ interface InstagramFeed {
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, PhotoCollageComponent],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
 })

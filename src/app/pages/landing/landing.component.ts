@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NewsletterModalService } from '../../components/newsletter-modal/newsletter-modal.service';
+import { PhotoCollageComponent } from '../../components/photo-collage/photo-collage.component';
 import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
 
 interface Highlight {
@@ -20,7 +21,7 @@ interface TimelineDrop {
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, RouterLink, SparkButtonComponent],
+  imports: [CommonModule, RouterLink, SparkButtonComponent, PhotoCollageComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss',
 })
