@@ -88,8 +88,18 @@
 
 .timeline-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 14px;
+
+  // make it double column on tablets
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // make it single column on mobile
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .timeline .card {
