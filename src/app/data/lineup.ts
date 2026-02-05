@@ -182,16 +182,16 @@ export const LINEUP_DATA: LineupData = {
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/m.a.r.v_i.n/' }],
     },
     // puy-bachblyten-festival-line-up-2026
-    {
-      name: 'Puy',
-      image: 'artists/puy-bachblyten-festival-line-up-2026.jpg',
-      profile: `Puy ist Teil des neuen Kapitels und bringt mit UIUIUI seine eigene frische Veranstaltungsreihe an den Start.
-Seit über 20 Jahren prägt er die Szene in NMS mit Events, die hängen bleiben.
-Als DJ bewegt er sich zwischen Peak-Time-Techno und groovigem Tech-House, immer druckvoll, immer tanzbar, immer nach vorne.`,
-      time: new Date('2024-07-26T21:30:00'),
-      stage: 'Blytenbau',
-      links: [],
-    },
+    //     {
+    //       name: 'Puy',
+    //       image: 'artists/puy-bachblyten-festival-line-up-2026.jpg',
+    //       profile: `Puy ist Teil des neuen Kapitels und bringt mit UIUIUI seine eigene frische Veranstaltungsreihe an den Start.
+    // Seit über 20 Jahren prägt er die Szene in NMS mit Events, die hängen bleiben.
+    // Als DJ bewegt er sich zwischen Peak-Time-Techno und groovigem Tech-House, immer druckvoll, immer tanzbar, immer nach vorne.`,
+    //       time: new Date('2024-07-26T21:30:00'),
+    //       stage: 'Blytenbau',
+    //       links: [],
+    //     },
     // rauschhaus-bachblyten-festival-line-up-2026
     {
       name: 'Rauschhaus',
