@@ -9,13 +9,13 @@ export interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/', order: 1, placement: 'header' },
-  { label: 'Mit Machen', path: '/mit-machen', order: 2, placement: 'header' },
+  { label: 'Mitmachen', path: '/mit-machen', order: 2, placement: 'header' },
   { label: 'Line-Up', path: '/line-up', order: 3, placement: 'header' },
   { label: 'Gallery', path: '/gallery', order: 6, placement: 'header' },
   { label: 'FAQ', path: '/faq', order: 4, placement: 'header' },
   { label: 'Anfahrt', path: '/anfahrt', order: 5, placement: 'header' },
   { label: 'About Us', path: '/about', order: 1, placement: 'footer' },
-  { label: 'Mit machen', path: '/mit-machen', order: 2, placement: 'footer' },
+  { label: 'Mitmachen', path: '/mit-machen', order: 2, placement: 'footer' },
   { label: 'Impressum', path: '/impressum', order: 3, placement: 'footer' },
   { label: 'Kontakt', path: '/kontakt', order: 4, placement: 'footer' },
   { label: 'Datenschutz', path: '/datenschutz', order: 5, placement: 'footer' },
