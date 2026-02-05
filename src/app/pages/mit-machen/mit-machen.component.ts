@@ -14,7 +14,7 @@ interface CrewRole {
   styleUrl: './mit-machen.component.scss',
 })
 export class MitMachenComponent {
-  protected readonly mail = 'arbeiten@bachblyten-festival.com';
+  protected readonly mail = 'jobs@bachblyten-festival.com';
   protected readonly mailLink = `mailto:${this.mail}?subject=${encodeURIComponent('Mitmachen Crew 2026')}`;
 
   protected readonly roles: CrewRole[] = [
