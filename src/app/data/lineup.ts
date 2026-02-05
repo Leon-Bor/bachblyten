@@ -145,6 +145,63 @@ export const LINEUP_DATA: LineupData = {
         { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
       ],
     },
+    // dlusion-bachblyten-festival-line-up-2026
+    {
+      name: 'dLusion',
+      image: 'artists/dlusion-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Mit einem ausgeprägten Gespür für melodische Progressionen und energiegeladene Rhythmen, schafft dLusion eine mitreißende Fusion aus den verschiedenen Trance-Genres. Von treibenden Basslines bis hin zu spirituellen Vocal-Elementen verleiht er seinem Sound eine vielseitige Dimension, die die Tanzfläche zum Beben bringt.',
+      time: new Date('2024-07-26T23:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/dlusion.official/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/dlusion_official' },
+      ],
+    },
+    // lisa-cropp-bachblyten-festival-line-up-2026
+    {
+      name: 'Lisa Cropp',
+      image: 'artists/lisa-cropp-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'As her music is connected with her travels, Lisa creates in her sets and productions a mental journey from Micro House, through Latin House, Minimal, Deep Techno and Techno.',
+      time: new Date('2024-07-27T16:00:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/lisa.cropp/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/lisacropp' },
+      ],
+    },
+    // marv-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Marv',
+      image: 'artists/marv-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Hat vor kurzem die Welt hinter den Decks für sich entdeckt. Dreht richtig auch und wird uns mit seiem Hardtechno Set bedienen.',
+      time: new Date('2024-07-27T00:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/m.a.r.v_i.n/' }],
+    },
+    // puy-bachblyten-festival-line-up-2026
+    {
+      name: 'Puy',
+      image: 'artists/puy-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T21:30:00'),
+      stage: 'Blytenbau',
+      links: [],
+    },
+    // rauschhaus-bachblyten-festival-line-up-2026
+    {
+      name: 'Rauschhaus',
+      image: 'artists/rauschhaus-bachblyten-festival-line-up-2026.jpg',
+      profile: 'Dj and Producer from Kiel / Germany.',
+      time: new Date('2024-07-27T02:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/rauschhausmusic/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/Rauschhaus' },
+      ],
+    },
   ],
   stages: [
     {
