@@ -17,9 +17,9 @@ interface ContactChannel {
 export class KontaktComponent {
   protected contacts: ContactChannel[] = [
     { title: 'Allgemein', detail: 'info@bachblyten-festival.com' },
-    { title: 'Presse', detail: 'presse@bachblyten-festival.com' },
-    { title: 'Partner & Sponsoring', detail: 'partners@bachblyten-festival.com' },
-    { title: 'Booking / Artists', detail: 'booking@bachblyten-festival.com' },
+    { title: 'Presse', detail: 'info@bachblyten-festival.com' },
+    { title: 'Partner & Sponsoring', detail: 'jobs@bachblyten-festival.com' },
+    { title: 'Booking / Artists', detail: 'jobs@bachblyten-festival.com' },
     { title: 'Mitarbeit / Jobs', detail: 'jobs@bachblyten-festival.com' },
   ];
 
