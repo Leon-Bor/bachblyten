@@ -167,6 +167,13 @@ export class FaqComponent {
       category: 'tickets',
     },
     {
+      id: 'tickets-schwesing',
+      question: 'Schwesing Ticket (Anwohner*innen)?',
+      answer:
+        'Ja. Für Einwohner*innen von Schwesing gibt es an der Abendkasse ein stark vergünstigtes Kontingent. Bringt bitte einen Adressnachweis (z. B. Ausweis oder Meldebestätigung) mit.',
+      category: 'tickets',
+    },
+    {
       id: 'tickets-lost',
       question: 'Ticket verloren?',
       answer:
