@@ -179,7 +179,12 @@ export const LINEUP_DATA: LineupData = {
         'Hat vor kurzem die Welt hinter den Decks für sich entdeckt. Dreht richtig auch und wird uns mit seiem Hardtechno Set bedienen.',
       time: new Date('2024-07-27T00:30:00'),
       stage: 'Blytenbau',
-      links: [{ label: 'Instagram', url: 'https://www.instagram.com/m.a.r.v_i.n/' }],
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/m.a.r.v_i.n/' }
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/marv-m-wiese',
+        }
+      ],
     },
     // puy-bachblyten-festival-line-up-2026
     //     {
