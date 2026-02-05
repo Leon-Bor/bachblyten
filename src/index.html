@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="BACHBLYTEN® Festival 24.–26. Juli 2026 am Flugplatz Schwesing. Techno, Indie Dance, Drum & Bass, Tickets, Line-up, Anfahrt & alle Infos."
+      content="BACHBLYTEN® Festival 24.–26. Juli 2026 am Flugplatz Schwesing (Schleswig-Holstein). Techno, Indie Dance, Psy Techno, Goa & Drum & Bass in Norddeutschland. Tickets, Line-up, Anfahrt & alle Infos."
     />
     <link rel="canonical" href="https://bachblyten-festival.com/" />
     <!-- Prevent Samsung Internet / forced dark modes from overriding our palette -->
@@ -17,7 +17,7 @@
     <meta property="og:title" content="BACHBLYTEN® Festival 2026 – Flugplatz Schwesing" />
     <meta
       property="og:description"
-      content="24.–26. Juli 2026 | Techno, Indie Dance, Psy Techno, Goa, Drum & Bass und mehr auf dem Flugplatz Schwesing. Tickets, Line-up, Anfahrt & Infos."
+      content="24.–26. Juli 2026 | Techno, Indie Dance, Psy Techno, Goa, Drum & Bass in Schleswig-Holstein. Rollfeld-Vibes in Norddeutschland: Tickets, Line-up, Anfahrt & Infos."
     />
     <meta property="og:site_name" content="BACHBLYTEN Festival" />
     <meta property="og:url" content="https://bachblyten-festival.com/" />
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="BACHBLYTEN® Festival 2026 – Flugplatz Schwesing" />
     <meta
       name="twitter:description"
-      content="24.–26. Juli 2026 | Techno, Indie Dance, Psy Techno, Goa, Drum & Bass und mehr auf dem Flugplatz Schwesing. Tickets, Line-up, Anfahrt & Infos."
+      content="24.–26. Juli 2026 | Techno, Indie Dance, Psy Techno, Goa, Drum & Bass in Schleswig-Holstein. Rollfeld-Festival in Norddeutschland: Tickets, Line-up, Anfahrt & Infos."
     />
     <meta
       name="twitter:image"
@@ -70,29 +70,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Festival",
-        "name": "BACHBLYTEN Festival 2026",
-        "startDate": "2026-07-24",
-        "endDate": "2026-07-26",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-          "@type": "Place",
-          "name": "Flugplatz Schwesing",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Schwesing",
-            "addressCountry": "DE"
+        "@graph": [
+          {
+            "@type": "Festival",
+            "name": "BACHBLYTEN Festival 2026",
+            "startDate": "2026-07-24",
+            "endDate": "2026-07-26",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+              "@type": "Place",
+              "name": "Flugplatz Schwesing",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Schwesing",
+                "addressCountry": "DE"
+              }
+            },
+            "url": "https://bachblyten-festival.com/",
+            "image": "https://bachblyten-festival.com/og-image-bachblyten-2026.jpg",
+            "description": "Techno, Indie Dance, Psy Techno, Goa, Drum & Bass und mehr – 24.–26. Juli 2026 am Flugplatz Schwesing.",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://bachblyten-festival.com/tickets",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "Organization",
+            "name": "BACHBLYTEN Festival",
+            "url": "https://bachblyten-festival.com/",
+            "logo": "https://bachblyten-festival.com/bb_mainbrand_light_24.svg",
+            "sameAs": ["https://www.instagram.com/bachblyten/?hl=de"]
           }
-        },
-        "url": "https://bachblyten-festival.com/",
-        "image": "https://bachblyten-festival.com/og-image-bachblyten-2026.jpg",
-        "description": "Techno, Indie Dance, Psy Techno, Goa, Drum & Bass und mehr – 24.–26. Juli 2026 am Flugplatz Schwesing.",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://bachblyten-festival.com/tickets",
-          "availability": "https://schema.org/InStock"
-        }
+        ]
       }
     </script>
   </head>
