@@ -132,10 +132,17 @@ export class FaqComponent {
       category: 'camping',
     },
     {
-      id: 'arrival-onsite-shuttle',
-      question: 'Shuttle on site',
+      id: 'camping-accessible',
+      question: 'Gibt es einen ausgewiesenen Campingbereich für Gehbehinderte?',
       answer:
-        'Kein internes Shuttle 2026. Plant Wege ein, folgt der Beschilderung. Mobility Help Points gibt es bei Bedarf.',
+        'Ja. Wir richten einen separaten Bereich nahe am Eingang ein, damit mobilitätseingeschränkte Gäste das Festivalgelände schneller erreichen. Dort ist es etwas lauter (Nähe zu Wegen/Floors) – bringt also Gehörschutz mit. Wenn ihr Unterstützung bei der Anreise braucht, meldet euch vorab per Mail, damit wir euch einplanen können.',
+      category: 'camping',
+    },
+    {
+      id: 'arrival-bus-shuttle',
+      question: 'Shuttlebus',
+      answer:
+        'Wir klären aktuell die Shuttle-Optionen mit dem Anbieter. Ziel ist ein Angebot u. a. ab Hamburg und Kiel (ggf. weitere Städte). Sobald die Details feststehen, geben wir hier und auf den Kanälen Bescheid.',
       category: 'arrival',
     },
     {
