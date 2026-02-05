@@ -3,3 +3,63 @@
   position: relative;
   color: var(--text-main);
 }
+
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(12, 16, 36, 0.92);
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-soft);
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: min(480px, calc(100vw - 20px));
+  z-index: 50;
+}
+
+.cookie-copy {
+  color: var(--text-main);
+}
+
+.cookie-btn {
+  border: 1px solid var(--accent-lime);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.cookie-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+  .cookie-banner {
+    left: 5%;
+    right: 0;
+    transform: none;
+    max-width: 90%;
+    bottom: 10px;
+    padding: 10px 12px;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .cookie-btn {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}

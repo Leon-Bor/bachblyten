@@ -5,5 +5,13 @@
   <router-outlet />
 </main>
 
+<section class="cookie-banner" *ngIf="showCookieBanner()">
+  <div class="cookie-copy">
+    Wir nutzen Cookies & ähnliche Technologien, teils technisch nötig, teils zur
+    Optimierung/Analyse. Einverstanden?
+  </div>
+  <button type="button" class="cookie-btn" (click)="acceptCookies()">OKAY</button>
+</section>
+
 <app-footer></app-footer>
 <app-newsletter-modal></app-newsletter-modal>
