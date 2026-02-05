@@ -9,7 +9,7 @@ export interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/', order: 1, placement: 'header' },
-  { label: 'Tickets', path: '/tickets', order: 2, placement: 'header' },
+  { label: 'Mit Machen', path: '/mit-machen', order: 2, placement: 'header' },
   { label: 'Line-Up', path: '/line-up', order: 3, placement: 'header' },
   { label: 'Gallery', path: '/gallery', order: 6, placement: 'header' },
   { label: 'FAQ', path: '/faq', order: 4, placement: 'header' },
@@ -18,13 +18,13 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Mit machen', path: '/mit-machen', order: 2, placement: 'footer' },
   { label: 'Impressum', path: '/impressum', order: 3, placement: 'footer' },
   { label: 'Kontakt', path: '/kontakt', order: 4, placement: 'footer' },
-  { label: 'Datenschutz', path: '/datenschutz', order: 5, placement: 'footer' }
+  { label: 'Datenschutz', path: '/datenschutz', order: 5, placement: 'footer' },
 ];
 
 export const HEADER_LINKS = NAV_ITEMS.filter((item) => item.placement === 'header').sort(
-  (a, b) => a.order - b.order
+  (a, b) => a.order - b.order,
 );
 
 export const FOOTER_LINKS = NAV_ITEMS.filter((item) => item.placement === 'footer').sort(
-  (a, b) => a.order - b.order
+  (a, b) => a.order - b.order,
 );
