@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Static Angular site – no crawl traps or restricted areas.
