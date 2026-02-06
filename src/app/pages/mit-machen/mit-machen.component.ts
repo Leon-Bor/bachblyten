@@ -16,6 +16,8 @@ interface CrewRole {
 export class MitMachenComponent {
   protected readonly mail = 'jobs@bachblyten-festival.com';
   protected readonly mailLink = `mailto:${this.mail}?subject=${encodeURIComponent('Mitmachen Crew 2026')}`;
+  protected readonly bookingMail = 'booking@bachblyten-festival.com';
+  protected readonly bookingMailLink = `mailto:${this.bookingMail}?subject=${encodeURIComponent('DJ / Special Submission')}`;
 
   protected readonly roles: CrewRole[] = [
     {
@@ -51,13 +53,6 @@ export class MitMachenComponent {
       bullets: [
         'Tickets scannen, Bändchen anlegen und Besucher:innen willkommen heißen.',
         'Erster Kontakt zum Festival – klare Infos und Ruhe auch bei Andrang.',
-      ],
-    },
-    {
-      title: 'DJ-Slots',
-      bullets: [
-        'Du möchtest einen Floor bespielen – schick Mix/Link und deinen gewünschten Slot (Tag/Nacht).',
-        'Gage oder Reisekosten sind möglich; Tech-Rider kurz beilegen.',
       ],
     },
     {

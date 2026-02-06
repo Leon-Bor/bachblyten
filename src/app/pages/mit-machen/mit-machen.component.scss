@@ -15,6 +15,11 @@
   border-color: var(--accent-lime);
 }
 
+.booking-card {
+  border-color: var(--accent-lime);
+  background: linear-gradient(125deg, rgba(163, 255, 212, 0.16), rgba(255, 215, 141, 0.14));
+}
+
 .application a {
   font-weight: 600;
   color: var(--text-main);
