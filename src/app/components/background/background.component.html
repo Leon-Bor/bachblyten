@@ -1,35 +1,51 @@
 <div class="background" [class.static]="mode === 'static'">
-  <img
-    class="layer back"
-    src="Background_Layer_ganz-unten.png"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
+  <picture>
+    <source
+      media="(max-width: 768px)"
+      type="image/webp"
+      srcset="Background_Layer_ganz-unten_mobile.webp"
+    />
+    <source media="(max-width: 768px)" srcset="Background_Layer_ganz-unten_mobile.png" />
+    <img
+      class="layer back"
+      src="Background_Layer_ganz-unten.webp"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+  </picture>
 
   <img
     #sunLayer
     class="layer sun"
-    src="Sonne_Layer_mitte_scrolleffect.png"
+    src="Sonne_Layer_mitte_scrolleffect.webp"
     alt=""
     aria-hidden="true"
     loading="lazy"
   />
 
-  <img
-    class="layer front"
-    src="Background_Layer_ganz-oben.png"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
+  <picture>
+    <source
+      media="(max-width: 768px)"
+      type="image/webp"
+      srcset="Background_Layer_ganz-oben_mobile.webp"
+    />
+    <source media="(max-width: 768px)" srcset="Background_Layer_ganz-oben_mobile.png" />
+    <img
+      class="layer front"
+      src="Background_Layer_ganz-oben.webp"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+  </picture>
 
   <div class="cloud-wrap">
     <img
       #cloud
       *ngFor="let _ of cloudCount; let i = index"
       class="cloud"
-      src="Wolken_Layer_ueber-allem_scrolleffect.png"
+      src="Wolken_Layer_ueber-allem_scrolleffect.webp"
       [style.opacity]="0.65 + i * 0.1"
       alt=""
       aria-hidden="true"
@@ -40,7 +56,7 @@
   <img
     #wiesel
     class="wiesel"
-    src="Wiesel_Layer_ueber-allem_scrolleffect.png"
+    src="Wiesel_Layer_ueber-allem_scrolleffect.webp"
     alt="Das neugierige Wiesel schaut vorbei."
     loading="lazy"
   />
