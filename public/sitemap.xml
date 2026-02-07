@@ -2,46 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bachblyten-festival.com/</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bachblyten-festival.com/tickets</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bachblyten-festival.com/line-up</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bachblyten-festival.com/gallery</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bachblyten-festival.com/faq</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://bachblyten-festival.com/anfahrt</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://bachblyten-festival.com/about</loc>
-    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://bachblyten-festival.com/mit-machen</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bachblyten-festival.com/impressum</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://bachblyten-festival.com/anfahrt</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bachblyten-festival.com/faq</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bachblyten-festival.com/kontakt</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bachblyten-festival.com/datenschutz</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://bachblyten-festival.com/about</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bachblyten-festival.com/gallery</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
