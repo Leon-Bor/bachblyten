@@ -29,6 +29,7 @@ export const routes: Routes = [
   { path: 'infos-und-hinweise', redirectTo: 'faq', pathMatch: 'full' },
   { path: 'programm', redirectTo: 'line-up', pathMatch: 'full' },
   { path: 'Programm', redirectTo: 'line-up', pathMatch: 'full' },
+  { path: 'bachblyten-line-up-2025', redirectTo: 'line-up', pathMatch: 'full' },
   { path: 'anreise', redirectTo: 'anfahrt', pathMatch: 'full' },
   { path: 'imprint', redirectTo: 'impressum', pathMatch: 'full' },
   { path: 'projekte', redirectTo: 'about', pathMatch: 'full' },
