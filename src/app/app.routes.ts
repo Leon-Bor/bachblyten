@@ -23,5 +23,17 @@ export const routes: Routes = [
   { path: 'impressum', component: ImpressumComponent, data: { background: 'static' } },
   { path: 'kontakt', component: KontaktComponent, data: { background: 'static' } },
   { path: 'datenschutz', component: DatenschutzComponent, data: { background: 'static' } },
+  // Legacy slugs from alten Google-Listings → auf neue Seiten leiten
+  { path: 'ueber-das-festival', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'uber-das-festival', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'infos-und-hinweise', redirectTo: 'faq', pathMatch: 'full' },
+  { path: 'programm', redirectTo: 'line-up', pathMatch: 'full' },
+  { path: 'Programm', redirectTo: 'line-up', pathMatch: 'full' },
+  { path: 'anreise', redirectTo: 'anfahrt', pathMatch: 'full' },
+  { path: 'imprint', redirectTo: 'impressum', pathMatch: 'full' },
+  { path: 'projekte', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'Projekte', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'ein-letztes-mal-bachblyten', redirectTo: '', pathMatch: 'full' },
+  { path: 'ein-letztes-mal-bachbl', redirectTo: '', pathMatch: 'full' },
   { path: '**', redirectTo: '' }
 ];
