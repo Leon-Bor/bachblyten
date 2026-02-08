@@ -180,12 +180,12 @@ export class FaqComponent {
         'Ja, es wird eine Abendkasse geben. Wir empfehlen, dein Ticket im Vorverkauf zu sichern, da du so Geld und eventuelle Wartezeit sparst.',
       category: 'tickets',
     },
-    {
-      id: 'tickets-day-pass',
-      question: 'Gibt es Tagestickets?',
-      answer: 'Ja. Preise kündigen wir zeitnah über Website und Socials an.',
-      category: 'tickets',
-    },
+    // {
+    //   id: 'tickets-day-pass',
+    //   question: 'Gibt es Tagestickets?',
+    //   answer: 'Ja. Preise kündigen wir zeitnah über Website und Socials an.',
+    //   category: 'tickets',
+    // },
     {
       id: 'tickets-schwesing',
       question: 'Schwesing Ticket (Anwohner*innen)?',
