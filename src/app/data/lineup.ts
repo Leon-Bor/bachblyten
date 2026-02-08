@@ -176,7 +176,7 @@ export const LINEUP_DATA: LineupData = {
       name: 'Marv',
       image: 'artists/marv-bachblyten-festival-line-up-2026.jpg',
       profile:
-        'Hat vor kurzem die Welt hinter den Decks für sich entdeckt. Dreht richtig auch und wird uns mit seiem Hardtechno Set bedienen.',
+        'Hat vor kurzem die Welt hinter den Decks für sich entdeckt. Dreht richtig auf und wird uns mit seinem Hardtechno-Set bedienen.',
       time: new Date('2024-07-27T00:30:00'),
       stage: 'Blytenbau',
       links: [
