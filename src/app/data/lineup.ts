@@ -39,6 +39,18 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    //novae-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Novae',
+      image: 'artists/novae-bachblyten-festival-line-up-2026.jpg',
+      profile: `Die Reise in die Welt der elektronischen Musik begann für nøvae 2017 im Norden, führte sie kurze Zeit später nach Leipzig und mitten hinein in die Szene. Dort gründete sie ihr eigenes Techno-Kollektiv, wurde Teil des Brotfabrik Kollektivs und ist inzwischen weit über die lokale Szene hinaus unterwegs, unter anderem mit dem legendären 3000Grad Kollektiv.`,
+      time: new Date('2024-07-26T19:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/laranovae/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/n-o-v-a-e' },
+      ],
+    },
     // hallert-bachblyten-festival-line-up-2026
     // {
     //   name: 'Hallert',
