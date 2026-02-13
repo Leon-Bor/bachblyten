@@ -119,17 +119,18 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // saltz-bachblyten-festival-line-up-2026
-    // {
-    //   name: 'Saltz',
-    //   image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
-    //   profile: 'Köln - Techhouse / Basshouse / Indie Dance.',
-    //   time: new Date('2024-07-27T15:00:00'),
-    //   stage: 'Wurzelwerk',
-    //   links: [
-    //     { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
-    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
-    //   ],
-    // },
+    {
+      name: 'Saltz',
+      image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'SALTZ steht für treibende Grooves, klare Energie und genau das richtige Gespür für den Dancefloor. Zwischen deepen Vibes und druckvollem Techno baut sie Spannung auf, ohne den Flow zu verlieren.',
+      time: new Date('2024-07-27T15:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
+      ],
+    },
     // softdrive-bachblyten-festival-line-up-2026
     // {
     //   name: 'Softdrive',
