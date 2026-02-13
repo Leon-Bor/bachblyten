@@ -39,6 +39,21 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // roman-adam-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Roman Adam',
+      image: 'artists/roman-adam-bachblyten-festival-line-up-2026.webp',
+      profile: `Seine Sets überzeugen mit treibender Energie, rollenden Grooves und präzise konstruierten Peaks, die jede Nacht zum Erlebnis machen 🎛️ Seine musikalische Reise startete 2013, seitdem hat er sich als DJ und Producer in der elektronischen Szene etabliert und seinen Sound stetig weiterentwickelt – vom groovenden Tech House bis zu markantem, energiegeladenem Techno mit kompromisslosen Build-Ups 🔥`,
+      time: new Date('2024-07-26T19:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/roman_adam_ofc/?hl=en' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/roman-adam-ofc',
+        },
+      ],
+    },
     //novae-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Novae',
