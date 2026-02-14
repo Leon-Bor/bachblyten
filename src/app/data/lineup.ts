@@ -80,20 +80,6 @@ export const LINEUP_DATA: LineupData = {
     //   ],
     // },
     {
-      name: 'Roman Adam',
-      image: 'artists/roman-adam-bachblyten-festival-line-up-2026.jpg',
-      profile: 'DJ I Producer I Peak-Time Techno Alula Tunes • Senso • Set About From Hamburg',
-      time: new Date('2024-07-26T19:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/roman_adam_ofc/?hl=de' },
-        {
-          label: 'Soundcloud',
-          url: 'https://soundcloud.com/roman-adam-ofc?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
-        },
-      ],
-    },
-    {
       name: 'Maurice Mino',
       image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
       profile:
