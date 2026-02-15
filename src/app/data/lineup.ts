@@ -39,6 +39,20 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // Heartbeat-A-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Heartbeat A',
+      image: 'artists/heartbeat-a-bachblyten-festival-line-up-2026.webp',
+      profile: `Heartbeat-A steht für progressiv-energetischen Psytrance mit klarer Linie und ordentlich Drive. Seit über zehn Jahren ist Psytrance ihre Leidenschaft, und genau das spürt man in ihren Sets.
+
+Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den Floor und hat unter anderem bereits auf Festivals wie Nibirii, Rave the Planet und Tarmac gespielt. Seit Ende 2023 veröffentlicht sie regelmäßig eigene Tracks und entwickelt ihren Sound konsequent weiter.`,
+      time: new Date('2024-07-26T21:00:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/heartbeata_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/heartbeat_a' },
+      ],
+    },
     // roman-adam-bachblyten-festival-line-up-2026.webp
     {
       name: 'Roman Adam',
