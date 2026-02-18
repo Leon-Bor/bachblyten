@@ -39,6 +39,20 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // naturalize-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Naturalize',
+      image: 'artists/naturalize-bachblyten-festival-line-up-2026.webp',
+      profile: `Der dänische Artist ist seit vielen Jahren fester Bestandteil der Psytrance-Szene und bringt eine Erfahrung mit, die man auf dem Dancefloor sofort spürt.
+
+Er stand bereits auf großen Bühnen wie dem Indian Spirit Festival und weiß genau, wie man eine Crowd mitnimmt, aufbaut und gemeinsam durch die Nacht trägt. Sein Sound ist kraftvoll, progressiv und gleichzeitig präzise – keine Spielerei, sondern klarer Fokus auf Energie und Flow.`,
+      time: new Date('2024-07-26T20:00:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/naturalize_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/naturalizemusic' },
+      ],
+    },
     // Heartbeat-A-bachblyten-festival-line-up-2026.webp
     {
       name: 'Heartbeat A',
