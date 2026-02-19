@@ -22,3 +22,20 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.options .card.shuttle-partner {
+  position: relative;
+}
+
+.options .card.shuttle-partner .shuttle-logo {
+  position: absolute;
+  top: -6px;
+  right: -29px;
+  width: 167px;
+  height: auto;
+  transform: rotate(23deg);
+}
+
+.options .card.shuttle-partner .cta {
+  margin-top: 12px;
+}

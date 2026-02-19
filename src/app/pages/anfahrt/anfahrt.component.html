@@ -4,13 +4,67 @@
     <h3>So kommst du hin</h3>
   </div>
   <div class="section-grid">
-    <article class="card" *ngFor="let option of options">
+    <article class="card">
       <div class="header">
-        <h3>{{ option.title }}</h3>
-        <span class="tag" *ngIf="option.tag">{{ option.tag }}</span>
+        <h3>Bahn / ÖPNV</h3>
+        <span class="tag">Empfehlung</span>
       </div>
       <ul>
-        <li *ngFor="let detail of option.details">{{ detail }}</li>
+        <li>Bahnhof Husum anfahren (stündliche Verbindungen ab Hamburg/Kiel).</li>
+        <li>
+          Ab Husum: Buslinie 150/155 Richtung Schwesing, Haltestelle „Flugplatz“. Letzte Verbindung
+          Freitags ca. 19:30.
+        </li>
+        <li>Taxi / On-Demand-Shuttles vom Bahnhof Husum planen (ca. 10 min Fahrt).</li>
+      </ul>
+    </article>
+    <article class="card shuttle-partner">
+      <img
+        class="shuttle-logo"
+        src="/Sunny-Trips_lang_auf-schwarz_web_1000px-2.png"
+        alt="Sunny Trips"
+      />
+      <div class="header">
+        <h3>Shuttle Partner</h3>
+      </div>
+      <ul>
+        <li>Sunny Trips Busse ab Hamburg, Lübeck, Kiel.</li>
+        <li>Bequeme An- und Abreise ohne Parkplatzstress.</li>
+        <li>Tickets direkt über Sunny Trips buchen.</li>
+      </ul>
+      <a
+        class="cta secondary"
+        href="https://shop.paylogic.com/0e0cbca1b1b7494c94ab359788c81d54/offsale?utm_source=bachblyten-festival.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Tickets buchen
+      </a>
+    </article>
+    <article class="card">
+      <div class="header">
+        <h3>Auto</h3>
+      </div>
+      <ul>
+        <li>Adresse ins Navi: Am Flugplatz 1, 25813 Schwesing.</li>
+        <li>
+          Folgt der Beschilderung ab Husum, nutzt nur die ausgewiesenen Park- und Campingflächen.
+        </li>
+        <li>
+          Bitte bildet Fahrgemeinschaften. Zufahrten sind One-Way geregelt – Geduld beim
+          Ankommen/Abfahren.
+        </li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="header">
+        <h3>Fahrrad</h3>
+        <span class="tag">Green Choice</span>
+      </div>
+      <ul>
+        <li>Von Husum ca. 20 Minuten durch flaches Gelände.</li>
+        <li>Teilweise beleuchtete Radwege, Fahrradflächen am Eingang.</li>
+        <li>Lampen mitbringen – Nordseeabend kann dunkel werden.</li>
       </ul>
     </article>
   </div>
