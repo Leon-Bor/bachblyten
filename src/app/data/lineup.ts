@@ -39,6 +39,23 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // chrizzlix-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Chrizzlix',
+      image: 'artists/chrizzlix-bachblyten-festival-line-up-2026.webp',
+      profile: `Chrizzlix bringt seinen ganz eigenen Sound aus Hamburg mit zum Bachblyten Festival 🌍
+
+Mit Auftritten auf Festivals wie Fusion, Indian Spirit oder Psychedelic Circus und Gigs von Kanada über Goa bis nach Südafrika und Ägypten hat er seine Musik längst international getragen.
+Als Mitgründer von Sun Department Records und Sun Department Mastering steht er nicht nur selbst hinter den Decks, sondern fördert auch aktiv den Producer-Nachwuchs in Deutschland.
+
+Musikalisch bewegt er sich zwischen Psy- und Progressive Trance, kraftvoll, detailreich und mit klarer Handschrift. Releases auf Labels wie Spin Twist, Blue Tunes, Nutek Records und natürlich Sun Department sprechen für sich.`,
+      time: new Date('2024-07-26T22:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/chrizzlix/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/chrizzlix' },
+      ],
+    },
     // naturalize-bachblyten-festival-line-up-2026.webp
     {
       name: 'Naturalize',
