@@ -25,7 +25,7 @@ export class TicketsComponent {
     return `Nur noch ${this.remainingPercentage}% übrig`;
   }
   get urgencyCopy() {
-    return `Über ${this.soldPercentage}% der Early-Bird-Tickets weg. Die nächste Preisstufe wird teurer – ${this.textline}`;
+    return `Über ${this.soldPercentage}% der Early-Bird-Tickets sind schon weg. ${this.textline}`;
   }
 
   protected textline = this.chooseRandomTextline();
