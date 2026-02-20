@@ -25,7 +25,7 @@ export class TicketsComponent {
     return `Nur noch ${this.remainingPercentage}% übrig`;
   }
   get urgencyCopy() {
-    return `Bereits ${this.soldPercentage}% der Early-Bird-Tickets sind weg. Die nächste Preisstufe wird teurer – sichere dir jetzt den günstigsten Preis.`;
+    return `${this.soldPercentage}% der Early-Bird-Tickets sind tatsächlich schon weg. Die nächste Preisstufe wird teurer – Dat is ’n Schnapper, sach ich dir!`;
   }
 
   protected readonly paylogicUrl =
