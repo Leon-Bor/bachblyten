@@ -25,8 +25,10 @@ export class TicketsComponent {
     return `Nur noch ${this.remainingPercentage}% übrig`;
   }
   get urgencyCopy() {
-    return `Über ${this.soldPercentage}% der Early-Bird-Tickets weg. Die nächste Preisstufe wird teurer – Dat is ’n Schnapper, sach ich dir. Seh to!`;
+    return `Über ${this.soldPercentage}% der Early-Bird-Tickets weg. Die nächste Preisstufe wird teurer – ${this.textline}`;
   }
+
+  protected textline = this.chooseRandomTextline();
 
   protected readonly paylogicUrl =
     'https://shop.paylogic.com/bb04103b5d0e4c8491d10dd9e7c96ec3?wmode=opaque';
@@ -38,6 +40,17 @@ export class TicketsComponent {
   @ViewChild('iframe') iframe!: ElementRef<HTMLIFrameElement>;
 
   iframeHeight = 1500;
+
+  chooseRandomTextline() {
+    const options = [
+      'Dat is ’n Schnapper, sach ich dir. Seh to!',
+      'Hol dir dat Ding jetzt, sonst is dat futsch wie Ebbe bei Nordsee!',
+      'Erst ma sichern, dann ’n Tee trinken – so geiht dat hier oben!',
+      'Sicher dir den Bestpreis, ganz entspannt – aber flott!',
+      'Greif to, mien Jung – so billig kriegst dat nich nochmal!',
+    ];
+    return options[Math.floor(Math.random() * options.length)];
+  }
 
   onIframeLoad() {
     // is mobile?
