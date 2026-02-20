@@ -39,19 +39,50 @@
 }
 
 .ticket-urgency {
+  --ticket-urgency-rotate: 20deg;
+  --ticket-urgency-scale: 1;
+  --ticket-urgency-scale-pulse: 1.03;
   position: absolute;
   top: -18px;
-  right: 24px;
+  right: 260px;
   z-index: 2;
   width: min(240px, 72vw);
   margin: 0;
   padding: 12px 12px 10px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
   background: rgba(12, 16, 36, 0.78);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
-  transform: rotate(20deg);
+  transform: rotate(var(--ticket-urgency-rotate)) scale(var(--ticket-urgency-scale));
   transform-origin: top right;
+  animation: ticket-urgency-pulse 4s ease-in-out infinite;
+  isolation: isolate;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.ticket-urgency::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(120deg, #ff9a62, #ffcd43, #5be0ff, #ff6bd6, #ff9a62);
+  background-size: 400% 400%;
+  animation: ticket-urgency-rainbow 2s ease-in-out infinite alternate;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(0.25px) brightness(1.1);
+}
+
+.ticket-urgency > * {
+  position: relative;
+  z-index: 1;
 }
 
 .ticket-urgency__header {
@@ -199,13 +230,39 @@
   }
 }
 
+@keyframes ticket-urgency-pulse {
+  0% {
+    transform: rotate(var(--ticket-urgency-rotate)) scale(var(--ticket-urgency-scale));
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  }
+  50% {
+    transform: rotate(var(--ticket-urgency-rotate)) scale(var(--ticket-urgency-scale-pulse));
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: rotate(var(--ticket-urgency-rotate)) scale(var(--ticket-urgency-scale));
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@keyframes ticket-urgency-rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 @media (max-width: 600px) {
   .ticket-urgency {
     right: 12px;
     top: -70px;
     width: min(210px, 78vw);
     padding: 10px 10px 8px;
-    transform: scale(0.75) rotate(10deg);
+    --ticket-urgency-rotate: 10deg;
+    --ticket-urgency-scale: 0.75;
+    --ticket-urgency-scale-pulse: 0.78;
   }
 
   .ticket-urgency__header {
