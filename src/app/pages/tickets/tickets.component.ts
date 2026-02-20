@@ -18,6 +18,16 @@ interface TicketTier {
   styleUrl: './tickets.component.scss',
 })
 export class TicketsComponent {
+  readonly soldPercentage = 80;
+  readonly remainingPercentage = 100 - this.soldPercentage;
+  readonly urgencyEyebrow = 'Early Bird';
+  get urgencyHeadline() {
+    return `Nur noch ${this.remainingPercentage}% übrig`;
+  }
+  get urgencyCopy() {
+    return `Bereits ${this.soldPercentage}% der Early-Bird-Tickets sind weg. Die nächste Preisstufe wird teurer – sichere dir jetzt den günstigsten Preis.`;
+  }
+
   protected readonly paylogicUrl =
     'https://shop.paylogic.com/bb04103b5d0e4c8491d10dd9e7c96ec3?wmode=opaque';
   private readonly sanitizer = inject(DomSanitizer);
