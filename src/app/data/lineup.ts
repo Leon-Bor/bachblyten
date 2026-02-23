@@ -39,6 +39,34 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // total-balance-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Total Balance',
+      image: 'artists/total-balance-bachblyten-festival-line-up-2026.webp',
+      profile: `Total Balance ist das Musikprojekt von Moritz Schneider, das 2019 ins Leben gerufen wurde. Seitdem steht sein Sound für emotionale Tiefe, musikalische Vielfalt und eine Reise, die Kopf und Herz gleichermaßen erreicht.
+
+Zwischen melodischen Momenten und minimalistisch-progressiven Elementen schafft er Klangwelten, die sowohl zu Hause zum Abschalten als auch auf dem Dancefloor zum Abheben einladen. Seine Musik will nicht nur antreiben, sondern Gefühle wecken und die Fantasie stimulieren.`,
+      time: new Date('2024-07-26T18:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/totalbalancemusic/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/totalbalancemusik' },
+      ],
+    },
+    // isy-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'ISY',
+      image: 'artists/isy-bachblyten-festival-line-up-2026.webp',
+      profile: `sy lebt und atmet Musik – und genau das spürt man ab der ersten Minute, sobald sie an den Decks steht. Mit purer Leidenschaft und einem offenen Herzen bringt sie progressiven Trance und Psytrance auf den Dancefloor.
+
+Ihre Sets sind facettenreich, energiegeladen und voller Emotionen. Mal treibend, mal verspielt, aber immer ehrlich und mit Gefühl. Ganz nach ihrem Motto: #followmyheartandpressplay 💫`,
+      time: new Date('2024-07-26T23:00:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/isy_music.hh/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/isy_musichh' },
+      ],
+    },
     // chrizzlix-bachblyten-festival-line-up-2026.webp
     {
       name: 'Chrizzlix',
