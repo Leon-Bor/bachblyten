@@ -219,18 +219,18 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
     //   ],
     // },
     // sabura-bachblyten-festival-line-up-2026
-    {
-      name: 'Sabura',
-      image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Sabura, Resident im Hamburger Waagenbau, mit Releases auf Tragedie, Legend und Alula Tunes. Technisch stark, spielt er Support und Headliner-Sets mit druckvollem, hypnotischem Techno.',
-      time: new Date('2024-07-27T17:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
-      ],
-    },
+    // {
+    //   name: 'Sabura',
+    //   image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Sabura, Resident im Hamburger Waagenbau, mit Releases auf Tragedie, Legend und Alula Tunes. Technisch stark, spielt er Support und Headliner-Sets mit druckvollem, hypnotischem Techno.',
+    //   time: new Date('2024-07-27T17:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
+    //   ],
+    // },
     // dlusion-bachblyten-festival-line-up-2026
     {
       name: 'dLusion',
