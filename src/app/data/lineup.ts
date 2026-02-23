@@ -57,7 +57,7 @@ Zwischen melodischen Momenten und minimalistisch-progressiven Elementen schafft 
     {
       name: 'ISY',
       image: 'artists/isy-bachblyten-festival-line-up-2026.webp',
-      profile: `sy lebt und atmet Musik – und genau das spürt man ab der ersten Minute, sobald sie an den Decks steht. Mit purer Leidenschaft und einem offenen Herzen bringt sie progressiven Trance und Psytrance auf den Dancefloor.
+      profile: `Isy lebt und atmet Musik – und genau das spürt man ab der ersten Minute, sobald sie an den Decks steht. Mit purer Leidenschaft und einem offenen Herzen bringt sie progressiven Trance und Psytrance auf den Dancefloor.
 
 Ihre Sets sind facettenreich, energiegeladen und voller Emotionen. Mal treibend, mal verspielt, aber immer ehrlich und mit Gefühl. Ganz nach ihrem Motto: #followmyheartandpressplay 💫`,
       time: new Date('2024-07-26T23:00:00'),
