@@ -102,7 +102,7 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     {
       src: 'gallery-2024/497457623_1243122857826010_5840723699023006613_n.webp',
-      alt: 'DJ an Decks',
+      alt: 'Artist an Decks',
       classes: ['tilt-left'],
     },
     {
@@ -141,7 +141,7 @@ export class PhotoCollageComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     {
       src: 'gallery-2024/497533697_1243121881159441_8281387432961022991_n.webp',
-      alt: 'DJ Close-up',
+      alt: 'Artist Close-up',
       classes: ['tall'],
     },
     {

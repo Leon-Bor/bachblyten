@@ -75,7 +75,7 @@ Er stand bereits auf großen Bühnen wie dem Indian Spirit Festival und weiß ge
       image: 'artists/heartbeat-a-bachblyten-festival-line-up-2026.webp',
       profile: `Heartbeat-A steht für progressiv-energetischen Psytrance mit klarer Linie und ordentlich Drive. Seit über zehn Jahren ist Psytrance ihre Leidenschaft, und genau das spürt man in ihren Sets.
 
-Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den Floor und hat unter anderem bereits auf Festivals wie Nibirii, Rave the Planet und Tarmac gespielt. Seit Ende 2023 veröffentlicht sie regelmäßig eigene Tracks und entwickelt ihren Sound konsequent weiter.`,
+Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den Floor und hat unter anderem bereits auf Festivals wie Nibirii, Rave the Planet und Tarmac gespielt. Seit Ende 2023 veröffentlicht sie regelmäßig eigene Tracks und entwickelt ihren Sound konsequent weiter.`,
       time: new Date('2024-07-26T21:00:00'),
       stage: 'Parallelwald',
       links: [
@@ -87,7 +87,7 @@ Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den 
     {
       name: 'Roman Adam',
       image: 'artists/roman-adam-bachblyten-festival-line-up-2026.webp',
-      profile: `Seine Sets überzeugen mit treibender Energie, rollenden Grooves und präzise konstruierten Peaks, die jede Nacht zum Erlebnis machen 🎛️ Seine musikalische Reise startete 2013, seitdem hat er sich als DJ und Producer in der elektronischen Szene etabliert und seinen Sound stetig weiterentwickelt – vom groovenden Tech House bis zu markantem, energiegeladenem Techno mit kompromisslosen Build-Ups 🔥`,
+      profile: `Seine Sets überzeugen mit treibender Energie, rollenden Grooves und präzise konstruierten Peaks, die jede Nacht zum Erlebnis machen 🎛️ Seine musikalische Reise startete 2013, seitdem hat er sich als Artist und Producer in der elektronischen Szene etabliert und seinen Sound stetig weiterentwickelt – vom groovenden Tech House bis zu markantem, energiegeladenem Techno mit kompromisslosen Build-Ups 🔥`,
       time: new Date('2024-07-26T19:30:00'),
       stage: 'Wurzelwerk',
       links: [
@@ -127,7 +127,7 @@ Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den 
       name: 'Maurice Mino',
       image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
       profile:
-        'Berliner DJ Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
+        'Berliner Artist Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
       time: new Date('2024-07-27T01:00:00'),
       stage: 'Wurzelwerk',
       links: [
@@ -154,7 +154,7 @@ Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den 
     {
       name: 'Gizmo',
       image: 'artists/gizmo-bachblyten-festival-line-up-2026.jpg',
-      profile: 'Producer • DJ - Energetic, forward-driving, vigorous.',
+      profile: 'Producer • Artist - Energetic, forward-driving, vigorous.',
       time: new Date('2024-07-26T22:00:00'),
       stage: 'Wurzelwerk',
       links: [
@@ -251,7 +251,7 @@ Als DJane und Produzentin bei iDirty Records bringt sie frische Energie auf den 
     //       image: 'artists/puy-bachblyten-festival-line-up-2026.jpg',
     //       profile: `Puy ist Teil des neuen Kapitels und bringt mit UIUIUI seine eigene frische Veranstaltungsreihe an den Start.
     // Seit über 20 Jahren prägt er die Szene in NMS mit Events, die hängen bleiben.
-    // Als DJ bewegt er sich zwischen Peak-Time-Techno und groovigem Tech-House, immer druckvoll, immer tanzbar, immer nach vorne.`,
+    // Als Artist bewegt er sich zwischen Peak-Time-Techno und groovigem Tech-House, immer druckvoll, immer tanzbar, immer nach vorne.`,
     //       time: new Date('2024-07-26T21:30:00'),
     //       stage: 'Blytenbau',
     //       links: [],

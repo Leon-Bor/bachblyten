@@ -17,7 +17,7 @@ export class MitMachenComponent {
   protected readonly mail = 'jobs@bachblyten-festival.com';
   protected readonly mailLink = `mailto:${this.mail}?subject=${encodeURIComponent('Mitmachen Crew 2026')}`;
   protected readonly bookingMail = 'booking@bachblyten-festival.com';
-  protected readonly bookingMailLink = `mailto:${this.bookingMail}?subject=${encodeURIComponent('DJ / Special Submission')}`;
+  protected readonly bookingMailLink = `mailto:${this.bookingMail}?subject=${encodeURIComponent('Artist / Special Submission')}`;
 
   protected readonly roles: CrewRole[] = [
     {

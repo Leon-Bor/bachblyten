@@ -253,7 +253,7 @@ export class FaqComponent {
       id: 'general-knospe-stage',
       question: 'Was ist die Knospe Stage?',
       answer:
-        'Unsere vierte Bühne ist als Newcomer-Stage gedacht: erste große Floors und Anlagen für junge Artists und DJs, Fokus auf Potenzial und Mut statt Reichweite.',
+        'Unsere vierte Bühne ist als Newcomer-Stage gedacht: erste große Floors und Anlagen für junge Artists, Fokus auf Potenzial und Mut statt Reichweite.',
       category: 'general',
     },
     {
