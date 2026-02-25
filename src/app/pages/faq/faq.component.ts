@@ -90,6 +90,13 @@ export class FaqComponent {
       category: 'rules',
     },
     {
+      id: 'rules-no-shirt-no-service',
+      question: 'No Shirt, No Service – gilt das?',
+      answer:
+        'Ja. Auf dem gesamten Festivalgelände gilt die Regel „No Shirt, No Service“. Wer oben ohne unterwegs ist, erhält keine Services und wird gebeten, sich anzuziehen. Wir setzen das konsequent durch, damit sich alle Gäste wohlfühlen, ein respektvoller Rahmen für alle entsteht und Hygiene-Standards an Bars und Food-Ständen eingehalten werden.',
+      category: 'rules',
+    },
+    {
       id: 'rules-awareness',
       question: 'Gibt es eine Awareness- und Safe Area?',
       answer:
