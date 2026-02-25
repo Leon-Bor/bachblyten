@@ -205,19 +205,19 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
       ],
     },
     // softdrive-bachblyten-festival-line-up-2026
-    // {
-    //   name: 'Softdrive',
-    //   image: 'artists/softdrive-bachblyten-festival-line-up-2026.jpg',
-    //   profile:
-    //     'Softdrive ist das Duo Oliver & Bennet (seit 2020). Ihr Mix aus Hard House, New Wave und Trance verbindet Produktionsroutine mit frischen Ideen und bringt einen unverwechselbaren, treibenden Sound.',
+    {
+      name: 'Softdrive',
+      image: 'artists/softdrive-bachblyten-festival-line-up-2026.webp',
+      profile: `Oliver und Bennet haben sich 2020 zusammengetan und sind seitdem als Softdrive unterwegs – ein Duo, das zwei Perspektiven zu einem klaren, eigenen Sound verschmelzen lässt.
+Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen und einen anderen Blick auf Musik.`,
 
-    //   time: new Date('2024-07-26T18:00:00'),
-    //   stage: 'Blytenbau',
-    //   links: [
-    //     { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
-    //     { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
-    //   ],
-    // },
+      time: new Date('2024-07-26T18:00:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
+      ],
+    },
     // sabura-bachblyten-festival-line-up-2026
     // {
     //   name: 'Sabura',
