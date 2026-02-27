@@ -18,14 +18,9 @@ interface TicketTier {
   styleUrl: './tickets.component.scss',
 })
 export class TicketsComponent {
-  readonly soldPercentage = 80;
-  readonly remainingPercentage = 100 - this.soldPercentage;
-  readonly urgencyEyebrow = 'Early Bird';
-  get urgencyHeadline() {
-    return `Nur noch ${this.remainingPercentage}% übrig`;
-  }
+  readonly urgencyHeadline = 'Early Bird Tickets sind schon wech!';
   get urgencyCopy() {
-    return `Über ${this.soldPercentage}% der Early-Bird-Tickets sind schon weg. ${this.textline}`;
+    return `Jetzt geht es weiter mit der Regular Stufe. ${this.textline}`;
   }
 
   protected textline = this.chooseRandomTextline();
@@ -41,22 +36,22 @@ export class TicketsComponent {
 
   iframeHeight = 1500;
 
-  chooseRandomTextline() {
-    const options = [
-      'Dat is ’n Schnapper, sach ich dir. Seh to!',
-      'Hol dir dat Ding jetzt, sonst is dat futsch wie Ebbe bei Nordsee!',
-      'Erst ma sichern, dann ’n Tee trinken – so geiht dat hier oben!',
-      'Sicher dir den Bestpreis, ganz entspannt – aber flott!',
-      'Greif to, mien Jung – so billig kriegst dat nich nochmal!',
-    ];
-    return options[Math.floor(Math.random() * options.length)];
-  }
-
   onIframeLoad() {
     // is mobile?
     const isMobile = window.innerWidth <= 768;
     const baseHeight = isMobile ? 1450 : 1100;
 
     this.iframeHeight = baseHeight;
+  }
+
+  chooseRandomTextline() {
+    const options = [
+      'Nu is Regular dran – hol dir dat Ticket fix.',
+      'Regular Stufe löppt: schnapp dir dein Ticket, mien Jung.',
+      'Ab nu zählt Regular – wart nich to lang, hörst?',
+      'Regular Tickets sünd am Start, greif to.',
+      'Nu den Regular-Preis sichern, ehr dat ne nächste Stufe gifft.',
+    ];
+    return options[Math.floor(Math.random() * options.length)];
   }
 }

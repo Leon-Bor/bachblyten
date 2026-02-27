@@ -7,17 +7,6 @@
   <div class="ticket-urgency">
     <h4 class="ticket-urgency__headline">{{ urgencyHeadline }}</h4>
     <p class="ticket-urgency__copy">{{ urgencyCopy }}</p>
-    <div
-      class="ticket-urgency__progress"
-      role="progressbar"
-      [attr.aria-valuenow]="soldPercentage"
-      aria-valuemin="0"
-      aria-valuemax="100"
-      [attr.aria-label]="soldPercentage + '% der Early-Bird-Tickets verkauft'"
-    >
-      <span class="ticket-urgency__progress-fill" [style.width.%]="soldPercentage"></span>
-      <span class="ticket-urgency__progress-label">{{ soldPercentage }}% verkauft</span>
-    </div>
     <div class="suprised-ticket">
       <img src="wiesel-supriesed.webp" alt="Wiesel mit Überraschungseffekt" />
     </div>
