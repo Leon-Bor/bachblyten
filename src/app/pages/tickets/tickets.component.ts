@@ -39,7 +39,7 @@ export class TicketsComponent {
   onIframeLoad() {
     // is mobile?
     const isMobile = window.innerWidth <= 768;
-    const baseHeight = isMobile ? 1850 : 1100;
+    const baseHeight = isMobile ? 1850 : 1350;
 
     this.iframeHeight = baseHeight;
   }
