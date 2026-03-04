@@ -39,6 +39,19 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // skkin-velvet-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Skkin Velvet',
+      image: 'skkin-velvet-bachblyten-festival-line-up-2026.webp',
+      profile: `kkin Velvet bringt einen Sound mit, der direkt nach vorne geht – energiegeladen, euphorisch und mit genau dem richtigen Gespür für den Moment auf dem Dancefloor. Zwischen treibenden Trance-Vibes, druckvollen Beats und hypnotischen Passagen entsteht eine Atmosphäre, die einen einfach mitzieht.`,
+
+      time: new Date('2024-07-26T18:00:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/skkinvelvet/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/skkinvelvet' },
+      ],
+    },
     // total-balance-bachblyten-festival-line-up-2026.webp
     {
       name: 'Total Balance',
@@ -219,18 +232,18 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       ],
     },
     // sabura-bachblyten-festival-line-up-2026
-    // {
-    //   name: 'Sabura',
-    //   image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
-    //   profile:
-    //     'Sabura, Resident im Hamburger Waagenbau, mit Releases auf Tragedie, Legend und Alula Tunes. Technisch stark, spielt er Support und Headliner-Sets mit druckvollem, hypnotischem Techno.',
-    //   time: new Date('2024-07-27T17:00:00'),
-    //   stage: 'Wurzelwerk',
-    //   links: [
-    //     { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
-    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
-    //   ],
-    // },
+    {
+      name: 'Sabura',
+      image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
+      profile:
+        'Sabura steht für tiefen, treibenden Sound mit Charakter – hypnotisch, kraftvoll und immer mit Gefühl. Wer ihn schon einmal live erlebt hat, weiß, dass er nicht einfach nur spielt, sondern Räume schafft, die verbinden und mitziehen.',
+      time: new Date('2024-07-27T17:00:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
+      ],
+    },
     // dlusion-bachblyten-festival-line-up-2026
     {
       name: 'dLusion',
