@@ -42,7 +42,7 @@ export const LINEUP_DATA: LineupData = {
     // skkin-velvet-bachblyten-festival-line-up-2026.webp
     {
       name: 'Skkin Velvet',
-      image: 'skkin-velvet-bachblyten-festival-line-up-2026.webp',
+      image: 'artists/skkin-velvet-bachblyten-festival-line-up-2026.webp',
       profile: `Skkin Velvet bringt einen Sound mit, der direkt nach vorne geht – energiegeladen, euphorisch und mit genau dem richtigen Gespür für den Moment auf dem Dancefloor. Zwischen treibenden Trance-Vibes, druckvollen Beats und hypnotischen Passagen entsteht eine Atmosphäre, die einen einfach mitzieht.`,
 
       time: new Date('2024-07-26T18:00:00'),
