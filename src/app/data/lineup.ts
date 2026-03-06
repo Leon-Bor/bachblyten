@@ -194,7 +194,7 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
     // gizmo-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Gizmo',
-      image: 'artists/gizmo-bachblyten-festival-line-up-2026.jpg',
+      image: 'artists/gizmo-bachblyten-festival-line-up-2026.webp',
       profile: 'Producer • Artist - Energetic, forward-driving, vigorous.',
       time: new Date('2024-07-26T22:00:00'),
       stage: 'Wurzelwerk',
