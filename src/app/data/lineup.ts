@@ -39,6 +39,18 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // lampe-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Lampe',
+      image: 'artists/lampe-bachblyten-festival-line-up-2026.webp',
+      profile: `Lampé gehört für uns einfach zum Bachblyten Festival dazu. Seit vielen Jahren unterstützt er uns mit voller Energie, musikalisch hinter den Decks und genauso mit jeder Menge Technik und Support im Hintergrund. Auf ihn ist einfach immer Verlass.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/lampemusic/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/lampemusic' },
+      ],
+    },
     // skkin-velvet-bachblyten-festival-line-up-2026.webp
     {
       name: 'Skkin Velvet',
