@@ -18,6 +18,8 @@ Nur jemanden bringen oder Anhänger abstellen?
 Kurzzeitiges Bringen oder Abstellen ist möglich. Der Ausweis wird einbehalten und es wird ein Pfand von 150 € erhoben.
 Bargeld & Zahlungsmöglichkeiten
 Bargeldauszahlung gegen 5 € Gebühr am Haupttresen. Kartenzahlung und Barzahlung möglich.
+Behindertenrabatt
+Personen mit einem gültigen Schwerbehindertenausweis erhalten einen Rabattgutschein. Bitte meldet euch dafür per E-Mail an info@bachblyten-festival.com.
 Bus-Tour zum Festival
 Sunny Trips bringt Besucher von Hamburg, Lübeck oder Kiel direkt zum Festival.
 Camping

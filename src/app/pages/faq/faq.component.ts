@@ -194,6 +194,13 @@ export class FaqComponent {
     //   category: 'tickets',
     // },
     {
+      id: 'tickets-disability',
+      question: 'Gibt es einen Rabatt für Personen mit Behindertenausweis?',
+      answer:
+        'Ja. Personen mit einem gültigen Schwerbehindertenausweis erhalten einen Rabattgutschein. Meldet euch dafür per Mail an info@bachblyten-festival.com.',
+      category: 'tickets',
+    },
+    {
       id: 'tickets-schwesing',
       question: 'Schwesing Ticket (Anwohner*innen)?',
       answer:
