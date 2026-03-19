@@ -281,7 +281,7 @@ export class FaqComponent {
       id: 'camping-sustainability',
       question: 'Wie geht ihr mit Nachhaltigkeit um?',
       answer:
-        'Nachhaltigkeit ist ein Prozess: Wir verbessern Schritt für Schritt. Aktuell gibt es Dixi-Toiletten auf dem Campingplatz, saubere Toiletten auf dem Gelände gegen Beitrag und kostenpflichtige Duschen per Flatrate, weil es keine feste Wasserinfrastruktur gibt. Für kommende Jahre arbeiten wir an besseren, nachhaltigeren Lösungen.',
+        'Nachhaltigkeit ist ein Prozess: Wir verbessern Schritt für Schritt. Auf dem gesamten Festivalgelände gibt es ausschließlich vegetarische Produkte – auch das ist Teil unseres Nachhaltigkeitskonzepts. Aktuell gibt es Dixi-Toiletten auf dem Campingplatz, saubere Toiletten auf dem Gelände gegen Beitrag und kostenpflichtige Duschen per Flatrate, weil es keine feste Wasserinfrastruktur gibt. Für kommende Jahre arbeiten wir an besseren, nachhaltigeren Lösungen.',
       category: 'camping',
     },
   ];
