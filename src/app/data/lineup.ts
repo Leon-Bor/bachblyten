@@ -1,5 +1,5 @@
 export interface ArtistLink {
-  label: 'Instagram' | 'Soundcloud';
+  label: 'Instagram' | 'Soundcloud' | 'Youtube';
   url: string;
 }
 
@@ -39,6 +39,42 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // fatale-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Fatale',
+      image: 'artists/fatale-bachblyten-festival-line-up-2026.webp',
+      profile: `Fatale kommt aus Flensburg und steht seit zwei Jahren hinter den Decks, geprägt von echter Leidenschaft für Techno und dem Gefühl, das nur ein Dancefloor geben kann.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/randale_98/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/fatale_e' },
+      ],
+    },
+    // justice-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Justice',
+      image: 'artists/justice-bachblyten-festival-line-up-2026.webp',
+      profile: `Justice bringt einen Sound mit, der sofort hängen bleibt. Rollende Basslines, treibender Groove und immer wieder diese Momente zwischen Dunkelheit und Euphorie, die einen komplett reinziehen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/justice__dj/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/justice-hamburg' },
+      ],
+    },
+    // stryker-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Stryker',
+      image: 'artists/stryker-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit Stryker kommt ein echtes Stück internationale Psytrance-Geschichte zum Bachblyten Festival. Der französische DJ und Producer ist seit vielen Jahren Teil der Szene und bringt über zwei Jahrzehnte Erfahrung aus Clubs und Festivals rund um die Welt mit.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/djstryker_official/' },
+        { label: 'Youtube', url: 'https://www.youtube.com/channel/UCu4ZAaBUiarVu_brTGEa4ew' },
+      ],
+    },
     // lampe-bachblyten-festival-line-up-2026.webp
     {
       name: 'Lampé',
