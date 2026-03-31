@@ -39,6 +39,39 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // urem-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'UREM',
+      image: 'artists/urem-bachblyten-festival-line-up-2026.webp',
+      profile: `Hinter seiner entspannten Art steckt ein Sound, der es in sich hat. Verspielte, freche Basslines, emotionale Melodien und immer wieder überraschende Wendungen machen seine Sets zu einer Reise, die hängen bleibt und unter die Haut geht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/urem_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/urem' },
+      ],
+    },
+    // tophoo-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Tophoo',
+      image: 'artists/tophoo-bachblyten-festival-line-up-2026.webp',
+      profile: `Tophoo bringt treibende Psytrance-Energie mit zum Bachblyten Festival, roh, direkt und voller Bewegung. Sein Sound lebt von druckvollen Basslines, psychedelischen Elementen und genau dem richtigen Gespür für den Moment auf dem Floor.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/tophoo_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/tophoo' },
+      ],
+    },
+    // federacho-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FEDERACHO',
+      image: 'artists/federacho-bachblyten-festival-line-up-2026.webp',
+      profile: `Federacho ist fester Teil der Parallelwelten Crew und bringt genau die Energie mit, die den Parallelwald lebendig macht 🌲`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/dennis_federacho/' }],
+    },
     // fatale-bachblyten-festival-line-up-2026.webp
     {
       name: 'Fatale',
