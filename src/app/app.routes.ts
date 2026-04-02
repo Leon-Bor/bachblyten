@@ -10,6 +10,8 @@ import { MitMachenComponent } from './pages/mit-machen/mit-machen.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
+import { SubscribedComponent } from './pages/subscribed/subscribed.component';
+import { ConfirmEmailComponent } from './pages/confirm-email/confirm-email.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent, data: { background: 'sunrise' } },
@@ -23,6 +25,8 @@ export const routes: Routes = [
   { path: 'impressum', component: ImpressumComponent, data: { background: 'static' } },
   { path: 'kontakt', component: KontaktComponent, data: { background: 'static' } },
   { path: 'datenschutz', component: DatenschutzComponent, data: { background: 'static' } },
+  { path: 'subscribed', component: SubscribedComponent, data: { background: 'static' } },
+  { path: 'confirm-email', component: ConfirmEmailComponent, data: { background: 'static' } },
   // Legacy slugs from alten Google-Listings → auf neue Seiten leiten
   { path: 'ueber-das-festival', redirectTo: 'about', pathMatch: 'full' },
   { path: 'uber-das-festival', redirectTo: 'about', pathMatch: 'full' },
