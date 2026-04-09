@@ -39,6 +39,73 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // jenay-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'JENAY',
+      image: 'artists/baronessa-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit Jenay holen wir uns eine Energie aufs Bachblyten Festival, die einfach nach vorne will. Ihr Sound ist schnell, direkt und kompromisslos, genau das Richtige für alle, die sich komplett verlieren und einfach mal ausrasten wollen.
+`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/jenay_technovision/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/jenay_technovision' },
+      ],
+    },
+
+    // baronessa-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'BARONESSA',
+      image: 'artists/baronessa-bachblyten-festival-line-up-2026.webp',
+      profile: `Baronessa bringt einen Sound mit, der Gefühl und Energie verbindet. Geprägt von ihrer musikalischen Reise zwischen Gesang, Gitarre und elektronischer Musik schafft sie Sets, die tragen, aufbauen und einen komplett eintauchen lassen.
+`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/baronessa.music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/baronessamusic' },
+      ],
+    },
+    // Fab-Massimo-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FAB MASSIMO',
+      image: 'artists/Fab-Massimo-bachblyten-festival-line-up-2026.webp',
+      profile: `Seit vielen Jahren produziert er Musik mit viel Gefühl für Details und genau diesem Gespür für Momente, die hängen bleiben. Seine Tracks verbinden Energie und Emotion auf eine sehr direkte Art, ohne dabei an Tiefe zu verlieren.
+`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/fabmassimo/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/fabmassimo' },
+      ],
+    },
+
+    // punching-polly-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'PUNCHIN POLLY',
+      image: 'artists/punching-polly-bachblyten-festival-line-up-2026.webp',
+      profile: `Punching Polly knallt wie eine Konfettikanone direkt aufs Trommelfell – laut, glitzernd, gnadenlos. Sie spielt mit Charme und Härte, bis der Puls „rumms bumms“ macht und du eigentlich wieder beatmet werden musst.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/punching_polly/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/punchingpolly' },
+      ],
+    },
+
+    // susi&paula-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Susi&Paula',
+      image: 'artists/susi&paula-bachblyten-festival-line-up-2026.webp',
+      profile: `Susi&Paula bringen frische, verspielte und gleichzeitig druckvolle Energie aus Hamburg mit zum Bachblyten Festival. Als Teil des queer-feministischen Kollektivs crew.port stehen sie nicht nur für starke Sets, sondern auch für eine offene, respektvolle und sichere Clubkultur.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/djsusipaula/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/djsusipaula' },
+      ],
+    },
+
     // urem-bachblyten-festival-line-up-2026.webp
     {
       name: 'UREM',
