@@ -42,7 +42,7 @@ export const LINEUP_DATA: LineupData = {
     // jenay-bachblyten-festival-line-up-2026.webp
     {
       name: 'JENAY',
-      image: 'artists/baronessa-bachblyten-festival-line-up-2026.webp',
+      image: 'artists/jenay-bachblyten-festival-line-up-2026.webp',
       profile: `Mit Jenay holen wir uns eine Energie aufs Bachblyten Festival, die einfach nach vorne will. Ihr Sound ist schnell, direkt und kompromisslos, genau das Richtige für alle, die sich komplett verlieren und einfach mal ausrasten wollen.
 `,
       time: new Date('2024-07-26T20:30:00'),
