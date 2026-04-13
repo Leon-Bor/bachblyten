@@ -149,7 +149,7 @@ export class FaqComponent {
       id: 'arrival-bus-shuttle',
       question: 'Shuttlebus',
       answer:
-        'Wir klären aktuell die Shuttle-Optionen mit dem Anbieter. Ziel ist ein Angebot u. a. ab Hamburg und Kiel (ggf. weitere Städte). Sobald die Details feststehen, geben wir hier und auf den Kanälen Bescheid.',
+        'Unser Shuttle-Partner Sunny Trips fährt ab Hamburg, Neumünster, Lübeck und Kiel direkt zum Festival und zurück. Tickets gibt es über den Sunny Trips Ticketshop. Alle Details findest du auf unserer Anfahrt-Seite.',
       category: 'arrival',
     },
     {

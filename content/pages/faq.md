@@ -21,7 +21,7 @@ Bargeldauszahlung gegen 5 € Gebühr am Haupttresen. Kartenzahlung und Barzahlu
 Behindertenrabatt
 Personen mit einem gültigen Schwerbehindertenausweis erhalten einen Rabattgutschein. Bitte meldet euch dafür per E-Mail an info@bachblyten-festival.com.
 Bus-Tour zum Festival
-Sunny Trips bringt Besucher von Hamburg, Lübeck oder Kiel direkt zum Festival.
+Sunny Trips bringt Besucher von Hamburg, Neumünster, Lübeck oder Kiel direkt zum Festival.
 Camping
 Camping mit PKW, Camper oder Anhänger auf ausgewiesenen Flächen möglich. Zelten ohne Auto ist kostenlos.
 Duschen & Sanitäres
@@ -43,7 +43,7 @@ Festival ist nur für Erwachsene. Tiere sind nicht erlaubt.
 Regen
 Festival findet bei jedem Wetter statt. Großes Zirkuszelt vorhanden.
 Shuttle
-Kein Shuttle-Service im Jahr 2025.
+Unser Shuttle-Partner Sunny Trips fährt ab Hamburg, Neumünster, Lübeck und Kiel direkt zum Festival und zurück. Tickets gibt es über den Sunny Trips Ticketshop.
 Sofa-Pfand
 50 € Pfand pro Sofa oder sperrigem Gegenstand.
 Strom & Stromerzeuger
