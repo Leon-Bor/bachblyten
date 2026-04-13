@@ -12,6 +12,7 @@ interface FAQItem {
   question: string;
   answer: string;
   category: FAQCategory['id'];
+  link?: { label: string; url: string };
 }
 
 const FAQ_CATEGORIES: FAQCategory[] = [
@@ -147,10 +148,14 @@ export class FaqComponent {
     },
     {
       id: 'arrival-bus-shuttle',
-      question: 'Shuttlebus',
+      question: 'Gibt es direkte Busanreisen zum Festival?',
       answer:
-        'Unser Shuttle-Partner Sunny Trips fährt ab Hamburg, Neumünster, Lübeck und Kiel direkt zum Festival und zurück. Tickets gibt es über den Sunny Trips Ticketshop. Alle Details findest du auf unserer Anfahrt-Seite.',
+        'Ja, Sunny Trips bietet eine direkte Busverbindung aus Hamburg, Lübeck, Neumünster und Kiel an.',
       category: 'arrival',
+      link: {
+        label: 'Shuttle-Tickets buchen',
+        url: 'https://shop.paylogic.com/0e0cbca1b1b7494c94ab359788c81d54/offsale?utm_source=bachblyten-festival.com',
+      },
     },
     {
       id: 'service-sofa-deposit',

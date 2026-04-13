@@ -42,8 +42,8 @@ Kinder & Tiere
 Festival ist nur für Erwachsene. Tiere sind nicht erlaubt.
 Regen
 Festival findet bei jedem Wetter statt. Großes Zirkuszelt vorhanden.
-Shuttle
-Unser Shuttle-Partner Sunny Trips fährt ab Hamburg, Neumünster, Lübeck und Kiel direkt zum Festival und zurück. Tickets gibt es über den Sunny Trips Ticketshop.
+Gibt es direkte Busanreisen zum Festival?
+Ja, Sunny Trips bietet eine direkte Busverbindung aus Hamburg, Lübeck, Neumünster und Kiel an. [Shuttle-Tickets buchen](https://shop.paylogic.com/0e0cbca1b1b7494c94ab359788c81d54/offsale?utm_source=bachblyten-festival.com)
 Sofa-Pfand
 50 € Pfand pro Sofa oder sperrigem Gegenstand.
 Strom & Stromerzeuger

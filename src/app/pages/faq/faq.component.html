@@ -38,7 +38,14 @@
             [attr.aria-hidden]="!isOpen(item.id)"
             [class.open]="isOpen(item.id)"
           >
-            <p>{{ item.answer }}</p>
+            <p>
+              {{ item.answer }}
+              @if (item.link) {
+                <a [href]="item.link.url" target="_blank" rel="noreferrer" class="faq-link">
+                  {{ item.link.label }}
+                </a>
+              }
+            </p>
           </div>
         </div>
       </div>
