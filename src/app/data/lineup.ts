@@ -39,6 +39,45 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // PsyFiction-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'PsyFiction',
+      image: 'artists/PsyFiction-bachblyten-festival-line-up-2026.webp',
+      profile: `PsyFiction steht für tiefgehenden Psytrance mit einer klaren Handschrift. Sein Sound ist hypnotisch, treibend und voller Details, die sich erst nach und nach entfalten. Genau diese Mischung macht seine Sets so besonders und zieht einen immer weiter rein.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/psyfiction_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/psyfiction' },
+      ],
+    },
+    // fttz-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FTTZ',
+      image: 'artists/fttz-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit FTTZ holen wir uns frischen Drum and Bass Sound aus Lübeck zum Bachblyten Festival.
+Ihre Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und genau die Energie, die einen nicht stillstehen lässt. Ohne viel Schnickschnack, einfach ehrlicher Sound, die den Floor in Bewegung bringt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/fttz.dnb/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/user-36810797-496788976' },
+      ],
+    },
+
+    // amon.fire-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'AMON.FIRE',
+      image: 'artists/amon.fire-bachblyten-festival-line-up-2026.webp',
+      profile: `Der Lübecker DJ und Produzent steht für schnelle, druckvolle Sets zwischen Liquid, Neurofunk und Jump Up. Sein Sound geht direkt nach vorne und bringt jeden Floor in Bewegung, roh, kompromisslos und voller Energie.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/amon.fire.dnb/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/beats-by-amonfire' },
+      ],
+    },
+
     // jenay-bachblyten-festival-line-up-2026.webp
     {
       name: 'JENAY',
@@ -126,7 +165,7 @@ export const LINEUP_DATA: LineupData = {
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Parallelwald',
       links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/tophoo_music/' },
+        { label: 'Instagram', url: 'https://www.instagram.com/psyfiction_music/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/tophoo' },
       ],
     },
