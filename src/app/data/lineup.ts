@@ -39,6 +39,58 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // paze-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'PAZE',
+      image: 'artists/paze-bachblyten-festival-line-up-2026.webp',
+      profile: `Seit 2023 unterwegs und schon jetzt auf internationalen Floors zu hören, merkt man schnell, dass da jemand mit echtem Drive dahinter steckt. Seine Musik entwickelt sich ständig weiter und genau das spürt man auch auf dem Dancefloor.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/pazednb/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/sounds2feel-records' },
+      ],
+    },
+
+    // inductionxbewa-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'INDUCTION x BEWA',
+      image: 'artists/inductionxbewa-bachblyten-festival-line-up-2026.webp',
+      profile: `Induction und Bewa aus Kiel gehören zum Nach Vorne Kollektiv und bringen genau den Sound mit, der einfach nach vorne geht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/inductionsounds/' },
+        { label: 'Instagram', url: 'https://www.instagram.com/bewa_eq/' },
+      ],
+    },
+
+    // finndus-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FINNDUS',
+      image: 'artists/finndus-bachblyten-festival-line-up-2026.webp',
+      profile: `Finndus bringt genau den Psytrance-Vibe mit, den man nicht erklären kann, sondern fühlen muss. Aufgewachsen im Norden, längst fester Teil der Szene und jemand, der genau weiß, wie man Dancefloors in Bewegung hält.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/finndus_/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/finndus-psy' },
+      ],
+    },
+
+    // fav.e_bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FAV.E',
+      image: 'artists/fav.e_bachblyten-festival-line-up-2026.webp',
+      profile: `FAV:E bringt frischen Wind aus Lübeck mit und steht für Drum and Bass, der einfach keine Pause kennt. Als Teil der Baltic Bass Crew liefert er genau den Sound, der den Floor sofort nach vorne schiebt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/dj.fav.e/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/user-242274915' },
+      ],
+    },
+
     // PsyFiction-bachblyten-festival-line-up-2026.webp
     {
       name: 'PsyFiction',
