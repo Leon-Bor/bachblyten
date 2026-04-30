@@ -20,7 +20,8 @@ seo:
 ## Registerdaten
 - Registergericht:
 - Registernummer:
-- USt-IdNr.:
+- Steuernummer: 15/290/60548
+- USt-IdNr.: DE461794018
 - Aufsichtsbehörde (falls relevant):
 
 ## Redaktionell Verantwortlicher
