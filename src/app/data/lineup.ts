@@ -108,7 +108,7 @@ export const LINEUP_DATA: LineupData = {
       name: 'FTTZ',
       image: 'artists/fttz-bachblyten-festival-line-up-2026.webp',
       profile: `Mit FTTZ holen wir uns frischen Drum and Bass Sound aus Lübeck zum Bachblyten Festival.
-Ihre Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und genau die Energie, die einen nicht stillstehen lässt. Ohne viel Schnickschnack, einfach ehrlicher Sound, die den Floor in Bewegung bringt.`,
+Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und genau die Energie, die einen nicht stillstehen lässt. Ohne viel Schnickschnack, einfach ehrlicher Sound, der den Floor in Bewegung bringt.`,
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Blytenbau',
       links: [
