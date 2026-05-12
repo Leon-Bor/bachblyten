@@ -31,9 +31,9 @@ Eine Erste-Hilfe-Station ist vor Ort und ausgeschildert.
 Fundsachen
 Fundsachen am Haupttresen oder nach dem Festival per Mail an info@bachblyten-festival.com anfragen.
 Getränke
-Eigene Getränke in PET-Flaschen dürfen sowohl auf dem Campingplatz als auch auf das Festivalgelände mitgenommen werden. Auf dem Festivalgelände sind keine Glasflaschen, Dosen oder andere Behälter erlaubt, an denen man sich verletzen könnte – aus Rücksicht auf alle Gäste, die teils auch barfuß unterwegs sind.
+Auf dem Campingplatz dürft ihr eure eigenen Getränke in PET-Flaschen und Dosen mitbringen. Auf das Festivalgelände dürfen ausschließlich PET-Flaschen mitgenommen werden – keine Dosen oder andere Behälter, an denen man sich verletzen könnte. Glas ist auf dem gesamten Gelände komplett verboten.
 Glasverbot
-Striktes Glas- und Dosenverbot auf dem Festivalgelände. Bitte Getränke ausschließlich in PET-Flaschen mitbringen.
+Striktes Glasverbot auf dem gesamten Gelände (Camping und Festivalgelände). Auf dem Festivalgelände zusätzlich keine Dosen – nur PET-Flaschen.
 Grillen & Offenes Feuer
 Offenes Feuer verboten. Grillen nur zu festgelegten Zeiten erlaubt.
 Haftung

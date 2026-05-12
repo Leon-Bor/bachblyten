@@ -115,7 +115,7 @@ export class FaqComponent {
       id: 'rules-glass-ban',
       question: 'Getränke & Glasverbot',
       answer:
-        'Eigene Getränke in PET-Flaschen dürfen sowohl auf dem Campingplatz als auch auf das Festivalgelände mitgenommen werden. Auf dem Festivalgelände sind Glasflaschen, Dosen und andere Behälter, an denen man sich verletzen könnte, strikt verboten – aus Rücksicht auf alle Gäste, die teils auch barfuß unterwegs sind.',
+        'Glas ist auf dem gesamten Gelände (Camping und Festivalgelände) strikt verboten. Auf dem Campingplatz dürft ihr eure eigenen Getränke in PET-Flaschen und Dosen mitbringen. Auf das Festivalgelände dürfen ausschließlich PET-Flaschen mitgenommen werden – keine Dosen oder andere Behälter, an denen man sich verletzen könnte. So bleibt es sicher für alle, gerade weil viele bei uns auch barfuß unterwegs sind.',
       category: 'rules',
     },
     {
