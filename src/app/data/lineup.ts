@@ -548,6 +548,107 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
         { label: 'Soundcloud', url: 'https://soundcloud.com/Rauschhaus' },
       ],
     },
+    // WoZa-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'WoZa',
+      image: 'artists/WoZa-bachblyten-festival-line-up-2026.webp',
+      profile: `WoZa bringt genau die Art Progressive Psytrance mit, die einen vom ersten Moment an in Bewegung setzt. Treibend, melodisch und mit ordentlich Druck nach vorne, aber immer mit diesem psychedelischen Flow, der einen richtig reinzieht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/woza.official/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/woza_official' },
+      ],
+    },
+    // delaturk-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Delaturk',
+      image: 'artists/delaturk-bachblyten-festival-line-up-2026.webp',
+      profile: `Delaturk bringt genau die Art Progressive Psytrance mit, die wir im Parallelwald lieben. Treibende Grooves, psychedelischer Flow und diese warme, rollende Energie, die einen Stück für Stück tiefer in die Reise zieht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/delaturkmusic/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/delaturk95' },
+      ],
+    },
+    // majandra-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Majandra',
+      image: 'artists/majandra-bachblyten-festival-line-up-2026.webp',
+      profile: `Wenn Majandra hinter den Decks steht, geht es nach vorne. Mit treibendem Peaktime Techno, psychedelischen Elementen und organischem Groove schafft sie genau die Energie, die einen Dancefloor konstant in Bewegung hält.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/majandra_music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/user-671178180' },
+      ],
+    },
+    // Portamento-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Portamento',
+      image: 'artists/Portamento-bachblyten-festival-line-up-2026.webp',
+      profile: `Chrizzlix und Tophoo kennt ihr bei uns natürlich auch jeweils solo, aber gemeinsam als Portamento entsteht nochmal etwas ganz Eigenes. Hier greifen zwei musikalische Welten perfekt ineinander und entwickeln eine Energie, die nochmal ganz anders nach vorne drückt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+    },
+    // perky-soul-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Perky Soul',
+      image: 'artists/perky-soul-bachblyten-festival-line-up-2026.webp',
+      profile: `Perky Soul bringt melodischen Progressive Trance aus Hamburg mit zum Bachblyten Festival. Ein Sound voller positiver Energie, rollender Grooves und genau diesen euphorischen Momenten, bei denen man automatisch das Grinsen im Gesicht hat.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/djane_perky_soul_franzi/' }],
+    },
+    // FloorQuix-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'FloorQuix',
+      image: 'artists/FloorQuix-bachblyten-festival-line-up-2026.webp',
+      profile: `FloorQuix bringt frischen Progressive Sound aus Hamburg mit zum Bachblyten Festival. Treibende Offbeat-Grooves, melodische Elemente und genau dieses feine Gespür für Spannung machen seine Sets zu einer Reise, die einen Stück für Stück tiefer reinzieht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/floorquix/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/floorquix' },
+      ],
+    },
+    // schrittmacher-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Schrittmacher',
+      image: 'artists/schrittmacher-bachblyten-festival-line-up-2026.webp',
+      profile: `Wenn jemand seinen Namen lebt, dann wohl Schrittmacher. Seit fast drei Jahrzehnten ist Rouven in der elektronischen Szene unterwegs und hat dabei nicht nur unzählige Dancefloors bewegt, sondern die Szene auf vielen Ebenen aktiv mitgeprägt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/djschrittmacher/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/schrittmacherofficial' },
+      ],
+    },
+    // psyfonic-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Psyfonic',
+      image: 'artists/psyfonic-bachblyten-festival-line-up-2026.webp',
+      profile: `Psyfonic lebt Psytrance nicht nur, er trägt diesen Sound seit vielen Jahren mit voller Leidenschaft in die Szene. Als DJ, Produzent und Mitgründer von Sun Department Records steht er für Musik, die verbindet, antreibt und Menschen auf dem Dancefloor zusammenbringt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/psyfonic.music/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/psyfonic' },
+      ],
+    },
+    // irie-scenario-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Irie Scenario',
+      image: 'artists/irie-scenario-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit Irie Scenario holen wir uns feinsten Drum and Bass und Jungle Sound aus Lübeck zum Bachblyten Festival. Rollende Breakbeats, warme Basslines und genau die rohe, ehrliche Energie, die vom ersten Track an mitnimmt, mal tief und atmosphärisch, mal komplett nach vorne, aber immer mit feinem Gespür für Flow und Timing.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/irie.scenario/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/irie-scenario' },
+      ],
+    },
   ],
   stages: [
     {
