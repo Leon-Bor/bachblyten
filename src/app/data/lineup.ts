@@ -572,7 +572,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       name: 'Knospe',
       capacity: '600 Pax',
       spec: 'Offene Holzbühne, Club-PA und 180° Visual-Panel',
-      vibe: 'Der neue Floor für Newcomer. Grooviger Techno bis Peak-Time-Bretter, gespielt von Stick und Platte, direkt, ehrlich und mit voller Energie.',
+      vibe: 'Bühne für gute Musik abseits des Festival-Mainstreams. Grooviger Techno bis Peak-Time-Bretter, gespielt von Stick und Platte, direkt, ehrlich und mit voller Energie.',
     },
   ],
   playlists: [

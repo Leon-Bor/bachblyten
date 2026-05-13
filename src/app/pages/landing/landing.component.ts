@@ -46,7 +46,7 @@ export class LandingComponent {
     {
       title: 'Knospe Stage und Offenheit',
       description:
-        'Mit der Knospe Stage schaffen wir Platz für Stimmen von morgen. Eine Bühne für Newcomer, für erste Festivalmomente und echte Chancen. Offen für alle Menschen, unabhängig von Identität, Herkunft oder Ausdruck, auf wie hinter den Decks.',
+        'Die Knospe ist eine Bühne mit guter Musik für Künstler:innen, die sonst selten oder nie Festival-Gigs bekommen. Raum für Stimmen abseits der großen Reichweite, für erste Festivalmomente und echte Chancen. Offen für alle Menschen, unabhängig von Identität, Herkunft oder Ausdruck, auf wie hinter den Decks.',
       cta: 'Regeln lesen',
       link: '/faq',
     },

@@ -25,7 +25,6 @@ export class KontaktComponent {
 
   protected channels: ContactChannel[] = [
     { title: 'Kontaktformular', detail: 'In Kürze live – bis dahin gern per Mail.' },
-    { title: 'Telefon / Hotline', detail: '+49 (0) 4841 123456 · Fr–So 10–22 Uhr' },
     {
       title: 'Social & WhatsApp',
       detail: '@bachblyten auf Instagram & WhatsApp Broadcast (bald).',
