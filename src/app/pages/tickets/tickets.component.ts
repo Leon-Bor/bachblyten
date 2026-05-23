@@ -19,7 +19,7 @@ interface TicketTier {
 })
 export class TicketsComponent {
   readonly urgencyEyebrow = 'Letzte Stufe';
-  readonly urgencyHeadline = 'Regular Tickets sind ausverkauft!';
+  readonly urgencyHeadline = 'Endspurt — letzte Stufe läuft!';
   get urgencyCopy() {
     return `Jetzt geht's mit Late Bird in die finale Runde. ${this.textline}`;
   }
@@ -47,11 +47,11 @@ export class TicketsComponent {
 
   chooseRandomTextline() {
     const options = [
-      'Late Bird is de letzte Stufe – nu oder nie, mien Jung.',
-      'Dat is de finale Runde – greif to, ehr dat ganz vorbei is.',
-      'Letzte Chance op ’n Ticket – wart nich, bit dat ausverkooft is.',
       'Nu Late Bird sichern, dorna gifft dat nix mehr.',
-      'Endspurt! Late Bird löppt – hol dir dat Ding, hörst?',
+      'Greif to, mien Jung – ehr de Tickets ganz wech sünd.',
+      'Late Bird löppt – schnapp dir dein Ticket, hörst?',
+      'Wer nu töövt, kiekt achterher in de Röhr.',
+      'Hol dir dat Ding fix, sünst is Schicht im Schacht.',
     ];
     return options[Math.floor(Math.random() * options.length)];
   }
