@@ -18,9 +18,10 @@ interface TicketTier {
   styleUrl: './tickets.component.scss',
 })
 export class TicketsComponent {
-  readonly urgencyHeadline = 'Early Bird Tickets sind schon wech!';
+  readonly urgencyEyebrow = 'Letzte Stufe';
+  readonly urgencyHeadline = 'Regular Tickets sind ausverkauft!';
   get urgencyCopy() {
-    return `Jetzt geht es weiter mit der Regular Stufe. ${this.textline}`;
+    return `Jetzt geht's mit Late Bird in die finale Runde. ${this.textline}`;
   }
 
   protected textline = this.chooseRandomTextline();
@@ -46,11 +47,11 @@ export class TicketsComponent {
 
   chooseRandomTextline() {
     const options = [
-      'Nu is Regular dran – hol dir dat Ticket fix.',
-      'Regular Stufe löppt: schnapp dir dein Ticket, mien Jung.',
-      'Ab nu zählt Regular – wart nich to lang, hörst?',
-      'Regular Tickets sünd am Start, greif to.',
-      'Nu den Regular-Preis sichern, ehr dat ne nächste Stufe gifft.',
+      'Late Bird is de letzte Stufe – nu oder nie, mien Jung.',
+      'Dat is de finale Runde – greif to, ehr dat ganz vorbei is.',
+      'Letzte Chance op ’n Ticket – wart nich, bit dat ausverkooft is.',
+      'Nu Late Bird sichern, dorna gifft dat nix mehr.',
+      'Endspurt! Late Bird löppt – hol dir dat Ding, hörst?',
     ];
     return options[Math.floor(Math.random() * options.length)];
   }
