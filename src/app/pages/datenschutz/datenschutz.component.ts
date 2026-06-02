@@ -47,11 +47,17 @@ export class DatenschutzComponent {
       detail:
         'Zweck: Reichweitenmessung und Fehlersuche. IP-Anonymisierung aktiviert, keine Werbe- oder Signal-Funktionen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse); Opt-out über Browser-Add-on oder Do-Not-Track.',
     },
+    {
+      title: 'Marketing-Tracking (Meta Pixel / Facebook Pixel)',
+      detail:
+        'Zweck: Reichweiten- und Conversion-Messung sowie Ausspielung und Optimierung von Werbeanzeigen auf Facebook/Instagram. Der Pixel setzt Cookies und überträgt Nutzungsdaten (z. B. besuchte Seiten, IP-Adresse, Geräte-/Browser-Infos) an Meta. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. § 25 Abs. 1 TTDSG; bei aktivem Do-Not-Track wird der Pixel nicht ausgelöst.',
+    },
   ];
 
   protected recipients: string[] = [
     'See Tickets B.V. (Paylogic) inkl. angebundene Zahlungsdienstleister für Checkout (EU/UK/USA je nach Zahlungsmethode)',
     'Google Ireland Ltd. / Google LLC für Analytics, Maps, YouTube und Google Fonts',
+    'Meta Platforms Ireland Ltd. / Meta Platforms, Inc. (USA) für den Meta Pixel (Facebook/Instagram-Werbung)',
     'Unsplash / Getty Images CDN für Bildauslieferung',
     'Hosting- und Technikpartner in der EU nach Auftragsverarbeitung',
   ];
@@ -67,6 +73,7 @@ export class DatenschutzComponent {
   protected cookies: string[] = [
     'Essenzielle Cookies/Speicher: Session, Security und Paylogic-Checkout (Art. 6 Abs. 1 lit. b/f DSGVO)',
     'Analytics: Google Analytics 4 (gtag.js) mit IP-Anonymisierung; Cookies/Local Storage, Standard-Speicherdauer 14 Monate',
+    'Marketing: Meta Pixel (_fbp u. a.) für Conversion-Messung und Werbung auf Facebook/Instagram; nur bei Einwilligung bzw. ohne aktives Do-Not-Track, Speicherdauer der Cookies bis zu 90 Tage',
     'Embeds: YouTube-Videos und Google Maps setzen eigene Cookies, sobald die Seite mit dem Embed geladen wird',
     'Fonts & Media-CDN: Google Fonts und Unsplash liefern Assets ohne Cookies, aber mit Server-Logdaten beim Anbieter',
   ];
@@ -78,6 +85,13 @@ export class DatenschutzComponent {
         'Lädt von googletagmanager.com/google-analytics.com; verarbeitet pseudonyme Nutzungsdaten, setzt Cookies/Local Storage; IP-Anonymisierung aktiv, keine Google-Signals.',
       legal:
         'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO; Opt-out via Browser-Add-on oder Do-Not-Track.',
+    },
+    {
+      name: 'Meta Pixel (Facebook Pixel)',
+      detail:
+        'Lädt von connect.facebook.net; misst Seitenaufrufe/Conversions und ermöglicht Werbung auf Facebook/Instagram. Überträgt pseudonyme Nutzungsdaten (IP, User-Agent, besuchte Seiten) an Meta und setzt Cookies (z. B. _fbp). Datenübermittlung in die USA möglich.',
+      legal:
+        'Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) / § 25 Abs. 1 TTDSG; bei aktivem Do-Not-Track wird der Pixel nicht ausgelöst.',
     },
     {
       name: 'YouTube Embed',
