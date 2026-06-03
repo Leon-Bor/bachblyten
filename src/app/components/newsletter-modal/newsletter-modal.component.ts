@@ -6,6 +6,7 @@ import {
   NewsletterPayload,
   NewsletterSubmitResult
 } from './newsletter-modal.service';
+import { trackMetaEvent } from '../../shared/meta-pixel';
 
 @Component({
   selector: 'app-newsletter-modal',
@@ -70,6 +71,9 @@ export class NewsletterModalComponent {
       .then((result: NewsletterSubmitResult) => {
         this.submittedSuccess = result.success;
         this.submitError = result.success ? null : result.message ?? 'Da ging was schief.';
+        if (result.success) {
+          trackMetaEvent('Lead', { content_name: 'Festivalfunk Newsletter' });
+        }
       })
       .finally(() => {
         this.isSubmitting = false;

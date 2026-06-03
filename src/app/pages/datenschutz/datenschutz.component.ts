@@ -50,7 +50,7 @@ export class DatenschutzComponent {
     {
       title: 'Marketing-Tracking (Meta Pixel / Facebook Pixel)',
       detail:
-        'Zweck: Reichweiten- und Conversion-Messung sowie Ausspielung und Optimierung von Werbeanzeigen auf Facebook/Instagram. Der Pixel setzt Cookies und überträgt Nutzungsdaten (z. B. besuchte Seiten, IP-Adresse, Geräte-/Browser-Infos) an Meta. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. § 25 Abs. 1 TTDSG; bei aktivem Do-Not-Track wird der Pixel nicht ausgelöst.',
+        'Zweck: Reichweiten- und Conversion-Messung sowie Ausspielung und Optimierung von Werbeanzeigen auf Facebook/Instagram. Der Pixel setzt Cookies und überträgt Nutzungsdaten (z. B. besuchte Seiten, IP-Adresse, Geräte-/Browser-Infos) an Meta. Erfasste Ereignisse: Seitenaufruf (PageView), Aufruf des Ticketshops (InitiateCheckout), erfolgreiche Newsletter-Anmeldung (Lead), Aufruf von Line-up/Galerie (ViewContent) sowie Klicks auf Ticket-Buttons (TicketCTAClick). Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. § 25 Abs. 1 TTDSG; bei aktivem Do-Not-Track wird der Pixel nicht ausgelöst.',
     },
   ];
 
@@ -89,7 +89,7 @@ export class DatenschutzComponent {
     {
       name: 'Meta Pixel (Facebook Pixel)',
       detail:
-        'Lädt von connect.facebook.net; misst Seitenaufrufe/Conversions und ermöglicht Werbung auf Facebook/Instagram. Überträgt pseudonyme Nutzungsdaten (IP, User-Agent, besuchte Seiten) an Meta und setzt Cookies (z. B. _fbp). Datenübermittlung in die USA möglich.',
+        'Lädt von connect.facebook.net; misst Seitenaufrufe und Interaktionen (PageView, InitiateCheckout beim Ticketshop, Lead bei Newsletter-Anmeldung, ViewContent bei Line-up/Galerie, TicketCTAClick bei Klick auf Ticket-Buttons) und ermöglicht Werbung auf Facebook/Instagram. Überträgt pseudonyme Nutzungsdaten (IP, User-Agent, besuchte Seiten) an Meta und setzt Cookies (z. B. _fbp). Datenübermittlung in die USA möglich.',
       legal:
         'Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) / § 25 Abs. 1 TTDSG; bei aktivem Do-Not-Track wird der Pixel nicht ausgelöst.',
     },

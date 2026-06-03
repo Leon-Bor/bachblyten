@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { PhotoCollageComponent } from '../../components/photo-collage/photo-collage.component';
+import { trackMetaEvent } from '../../shared/meta-pixel';
 
 interface Post {
   handle: string;
@@ -40,6 +41,7 @@ export class GalleryComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+    trackMetaEvent('ViewContent', { content_type: 'gallery', content_name: 'Galerie' });
     this.loadPosts();
   }
 

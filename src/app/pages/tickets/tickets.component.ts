@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
+import { trackMetaEvent } from '../../shared/meta-pixel';
 
 interface TicketTier {
   name: string;
@@ -36,6 +37,7 @@ export class TicketsComponent {
   @ViewChild('iframe') iframe!: ElementRef<HTMLIFrameElement>;
 
   iframeHeight = 1500;
+  private checkoutTracked = false;
 
   onIframeLoad() {
     // is mobile?
@@ -43,6 +45,12 @@ export class TicketsComponent {
     const baseHeight = isMobile ? 2550 : 1360;
 
     this.iframeHeight = baseHeight;
+
+    // Nur einmal je Seitenaufruf feuern, wenn der Paylogic-Shop geladen ist.
+    if (!this.checkoutTracked) {
+      this.checkoutTracked = true;
+      trackMetaEvent('InitiateCheckout', { content_name: 'Ticketshop Paylogic' });
+    }
   }
 
   chooseRandomTextline() {

@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ArtistVisualComponent } from '../../components/artist-visual/artist-visual.component';
 import { ProfilePopoverComponent } from '../../components/profile-popover/profile-popover.component';
 import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
 import { LINEUP_DATA } from '../../data/lineup';
+import { trackMetaEvent } from '../../shared/meta-pixel';
+import { TicketCtaDirective } from '../../shared/ticket-cta.directive';
 
 @Component({
   selector: 'app-line-up',
@@ -17,17 +19,22 @@ import { LINEUP_DATA } from '../../data/lineup';
     ArtistVisualComponent,
     ProfilePopoverComponent,
     SparkButtonComponent,
+    TicketCtaDirective,
   ],
   templateUrl: './line-up.component.html',
   styleUrl: './line-up.component.scss',
 })
-export class LineUpComponent {
+export class LineUpComponent implements OnInit {
   protected data = LINEUP_DATA;
   protected stageNames = this.data.stages.map((stage) => stage.name);
   protected selectedStage: string = 'all';
 
   randomizedArtists = this.getRandomizedArtists();
   constructor() {}
+
+  ngOnInit(): void {
+    trackMetaEvent('ViewContent', { content_type: 'line-up', content_name: 'Line-up 2026' });
+  }
 
   protected get filteredArtists() {
     if (this.selectedStage === 'all') {
