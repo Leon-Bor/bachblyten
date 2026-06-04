@@ -44,18 +44,7 @@
         </div>
       </div>
 
-      <form
-        class="form"
-        [formGroup]="form"
-        (ngSubmit)="onSubmit()"
-        novalidate
-        [attr.action]="ckAction"
-        method="post"
-        [attr.data-sv-form]="ckFormId"
-        [attr.data-uid]="ckUid"
-        attr.data-format="inline"
-        attr.data-version="5"
-      >
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
         <label class="field">
           <span>Dein Name (optional)</span>
           <input type="text" formControlName="name" placeholder="z. B. Mira" />

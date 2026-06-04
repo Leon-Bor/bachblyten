@@ -22,9 +22,6 @@ export class NewsletterModalComponent {
   protected submittedSuccess = false;
   protected submitError: string | null = null;
   protected isSubmitting = false;
-  protected readonly ckFormId = '9048132';
-  protected readonly ckUid = '8e20593361';
-  protected readonly ckAction = 'https://app.kit.com/forms/9048132/subscriptions';
 
   protected readonly form = this.fb.nonNullable.group({
     name: [''],

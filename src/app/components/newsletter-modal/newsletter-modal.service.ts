@@ -13,9 +13,8 @@ export interface NewsletterSubmitResult {
 
 @Injectable({ providedIn: 'root' })
 export class NewsletterModalService {
-  private static readonly CK_FORM_ACTION = 'https://app.kit.com/forms/9048132/subscriptions';
-  private static readonly CK_FORM_ID = '9048132';
-  private static readonly CK_UID = '8e20593361';
+  private static readonly SUBSCRIBE_URL = 'https://events.alphabees.de/api/newsletter/subscribe';
+  private static readonly PUBLIC_ID = 'a0097257-a8cb-438c-a40c-aa82e9c81885';
 
   private readonly openState = signal(false);
 
@@ -30,29 +29,24 @@ export class NewsletterModalService {
   }
 
   async submit(payload: NewsletterPayload): Promise<NewsletterSubmitResult> {
-    const formData = new FormData();
-    formData.append('email_address', payload.email);
-    if (payload.name.trim()) {
-      formData.append('first_name', payload.name.trim());
-    }
-    formData.append('fields[consent]', payload.consent ? 'true' : 'false');
-    formData.append('form', NewsletterModalService.CK_FORM_ID);
-    formData.append('id', NewsletterModalService.CK_UID);
-
     try {
-      const response = await fetch(NewsletterModalService.CK_FORM_ACTION, {
+      const response = await fetch(NewsletterModalService.SUBSCRIBE_URL, {
         method: 'POST',
-        body: formData,
-        mode: 'cors'
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          publicId: NewsletterModalService.PUBLIC_ID,
+          email: payload.email,
+          name: payload.name.trim()
+        })
       });
 
       if (!response.ok) {
         const text = await response.text();
-        console.error('ConvertKit signup failed', response.status, text);
+        console.error('Newsletter signup failed', response.status, text);
         return { success: false, message: 'Signup fehlgeschlagen. Bitte versuch es gleich erneut.' };
       }
 
-      // ConvertKit kann JSON oder leeren Body liefern – robust parsen.
+      // Endpoint kann JSON oder leeren Body liefern – robust parsen.
       let message: string | undefined;
       try {
         const data = await response.json();
@@ -63,7 +57,7 @@ export class NewsletterModalService {
 
       return { success: true, message: message ?? 'Erfolg! Bitte E-Mail bestätigen.' };
     } catch (error) {
-      console.error('ConvertKit signup threw', error);
+      console.error('Newsletter signup threw', error);
       return {
         success: false,
         message: 'Netzwerkproblem – bist du online? Bitte später erneut versuchen.'
