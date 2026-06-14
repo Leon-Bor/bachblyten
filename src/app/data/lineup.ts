@@ -39,6 +39,171 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // wewibe-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Wewibe',
+      image: 'artists/wewibe-bachblyten-festival-line-up-2026.webp',
+      profile: `Wewibe aus Kiel steht für Progressive Trance und Psytrance mit Herz, Gefühl und einer ordentlichen Portion Vorwärtsdrang. Entstanden während der besonderen Zeit der Corona-Pandemie im Jahr 2020, entwickelte sich aus einer Idee ein Projekt, das Menschen durch Musik zusammenbringen möchte.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/wewibe.music/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/wewibeofficial',
+        },
+      ],
+    },
+    // tina-tischler-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Tina Tischler',
+      image: 'artists/tina-tischler-bachblyten-festival-line-up-2026.webp',
+      profile: `Nach vielen Jahren als Semangat und unzähligen Nächten zwischen deepen Grooves und druckvollem Techno kam 2023 der Switch: Trance, Baby! Seitdem steht Tina Tischler für euphorische Melodien, uplifting Vibes und genau die Energie, die einen mit offenen Armen auf den Dancefloor zieht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/tinatischler_semangat_music/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/semangat',
+        },
+      ],
+    },
+    // Neo-Bach-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Neo Bach',
+      image: 'artists/Neo-Bach-bachblyten-festival-line-up-2026.webp',
+      profile: `Neo Bach hat das Bachblyten Festival einst ins Leben gerufen. Damals noch an einem ganz anderen Ort, lange bevor der Flugplatz in Schwesing zum Zuhause von Bachblyten wurde.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/_neo.bach_/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/neo-bach',
+        },
+      ],
+    },
+    // Liquexx-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Liquexx',
+      image: 'artists/Liquexx-bachblyten-festival-line-up-2026.webp',
+      profile: `Liquexx steht für Progressive und Psytrance mit ordentlich Druck nach vorne. Treibende Basslines, psychedelische Elemente und immer wieder diese Momente, in denen plötzlich alles zusammenkommt und der Dancefloor komplett im Flow versinkt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/liquexx_/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/liquexx',
+        },
+      ],
+    },
+    // laniza-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Laniza',
+      image: 'artists/laniza-bachblyten-festival-line-up-2026.webp',
+      profile: `Laniza bringt genau die Art Progressive und Psytrance mit, die einen vom ersten Moment an mitnimmt. Druckvolle Basslines, fließende Melodien und hypnotische Klangwelten verschmelzen bei ihr zu einer Reise voller Energie, Gefühl und Bewegung.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/_la.niza_/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/la-niza',
+        },
+      ],
+    },
+    // HanUther-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'HanUther',
+      image: 'artists/HanUther-bachblyten-festival-line-up-2026.webp',
+      profile: `Wenn Han Uther an den Reglern steht, sollte besser niemand behaupten, nur für ein Stündchen bleiben zu wollen. Aus Kiel kommend serviert er Progressive Sounds mit ordentlich Vorwärtsdrang, melodischen Momenten und genau der richtigen Portion Wahnsinn.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/han_uther/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/hanuther',
+        },
+      ],
+    },
+    // glitzer-bass-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Glitzer & Bass',
+      image: 'artists/glitzer-bass-bachblyten-festival-line-up-2026.webp',
+      profile: `Zwischen Dark Disco und Tech House entstehen treibende Sets voller hypnotischer Melodien, rollender Bässe und genau der richtigen Portion Funkeln. Bekannte Melodien treffen auf kraftvolle Vocals und verwandeln sich in einen Sound, der gleichzeitig zum Tanzen und Träumen einlädt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/glitzerundbass/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/glitzerundbass',
+        },
+      ],
+    },
+    // djingis-khan-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'DJingis Khan',
+      image: 'artists/djingis-khan-bachblyten-festival-line-up-2026.webp',
+      profile: `DJingis Khan bringt Progressive Psytrance aus Berlin mit zum Bachblyten Festival. Aufgewachsen zwischen den Kulturen und geprägt von der elektronischen Musik der 90er, hat er seinen ganz eigenen Sound gefunden, druckvoll, emotional und immer mit ordentlich Vorwärtsdrang.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/djingis_khan_/' }],
+    },
+    // dicht&nicht-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Dicht & Nicht',
+      image: 'artists/dicht&nicht-bachblyten-festival-line-up-2026.webp',
+      profile: `Zwischen Druck und Tiefe entsteht ein Sound, der nicht nur nach vorne drängt, sondern auch nach innen führt. Peaktime Driving küsst Psytechno. Dark aber melodisch ist das Motto von Dicht&Nicht.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/dichtundnicht/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/user-603354870',
+        },
+      ],
+    },
+    // Danaconda-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Danaconda',
+      image: 'artists/Danaconda-bachblyten-festival-line-up-2026.webp',
+      profile: `Danacondas Sets fühlen sich an wie ein spontaner Abstecher auf die glitzerndste Tanzfläche der Stadt. Als Teil der Kölner Diskologne-Crew geht sie mit viel Liebe auf die Suche nach musikalischen Schätzen und haucht bekannten Klassikern mit ihren Retro-Edits neues Leben ein.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/danaconda.dj/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/dj_danaconda',
+        },
+      ],
+    },
+    // BrettZneider-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'BrettZneider',
+      image: 'artists/BrettZneider-bachblyten-festival-line-up-2026.webp',
+      profile: `Musikalisch geht es bei BrettZneider am liebsten nach vorne. Über 130 BPM, treibender Techno und Energie ohne Ende. Langweilig wird es hier garantiert nicht. Stattdessen gibt es Druck, Groove und Vollgas mit einem feinen Gespür für den richtigen Moment.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/brettzneider/' }],
+    },
+    // ackermann-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'ACKERMANN',
+      image: 'artists/ackermann-bachblyten-festival-line-up-2026.webp',
+      profile: `Fürs Bachblyten Festival hat Ackermann allerdings etwas ganz Bestimmtes im Gepäck. Im Blytenbau serviert er euch ein flottes, Bouncy Techno-Set mit ordentlich Schub nach vorne, einer Prise Liebe und natürlich ausreichend Bass untenrum.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/ackermann_psy/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/hannemann-the-ackermann' },
+      ],
+    },
     // paze-bachblyten-festival-line-up-2026.webp
     {
       name: 'PAZE',
@@ -80,7 +245,7 @@ export const LINEUP_DATA: LineupData = {
 
     // fav.e_bachblyten-festival-line-up-2026.webp
     {
-      name: 'FAV.E',
+      name: 'FAV:E',
       image: 'artists/fav.e_bachblyten-festival-line-up-2026.webp',
       profile: `FAV:E bringt frischen Wind aus Lübeck mit und steht für Drum and Bass, der einfach keine Pause kennt. Als Teil der Baltic Bass Crew liefert er genau den Sound, der den Floor sofort nach vorne schiebt.`,
       time: new Date('2024-07-26T20:30:00'),
@@ -217,7 +382,7 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Parallelwald',
       links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/psyfiction_music/' },
+        { label: 'Instagram', url: 'https://www.instagram.com/tophoo_music/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/tophoo' },
       ],
     },
@@ -591,6 +756,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       profile: `Chrizzlix und Tophoo kennt ihr bei uns natürlich auch jeweils solo, aber gemeinsam als Portamento entsteht nochmal etwas ganz Eigenes. Hier greifen zwei musikalische Welten perfekt ineinander und entwickeln eine Energie, die nochmal ganz anders nach vorne drückt.`,
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Parallelwald',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/portamento_music/' }],
     },
     // perky-soul-bachblyten-festival-line-up-2026.webp
     {
