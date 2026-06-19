@@ -43,6 +43,7 @@ export class LineupPinboardComponent implements AfterViewInit, OnDestroy {
 
   private swapTimers: number[] = [];
   private idleTweens: gsap.core.Tween[] = [];
+  private destroyed = false;
 
   constructor() {
     this.cards = STAGE_ORDER.map((stage, i) => {
@@ -78,6 +79,7 @@ export class LineupPinboardComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.destroyed = true;
     this.swapTimers.forEach((t) => window.clearTimeout(t));
     this.idleTweens.forEach((tween) => tween.kill());
     const els = [
@@ -141,14 +143,14 @@ export class LineupPinboardComponent implements AfterViewInit, OnDestroy {
   private scheduleSwap(i: number): void {
     this.swapTimers[i] = window.setTimeout(
       () => {
-        this.swapCard(i);
+        void this.swapCard(i);
         this.scheduleSwap(i);
       },
       gsap.utils.random(2400, 6500),
     );
   }
 
-  private swapCard(i: number): void {
+  private async swapCard(i: number): Promise<void> {
     const card = this.cards[i];
     const swing = this.swingRef.get(i)?.nativeElement;
     if (!card || !swing || card.busy || card.pool.length < 2) {
@@ -157,6 +159,13 @@ export class LineupPinboardComponent implements AfterViewInit, OnDestroy {
     card.busy = true;
     const next = this.drawFrom(card);
     if (!next) {
+      card.busy = false;
+      return;
+    }
+
+    // preload + decode the next image so the mid-flip swap is instant (esp. on slow mobile)
+    await this.preload(next.image);
+    if (this.destroyed) {
       card.busy = false;
       return;
     }
@@ -181,5 +190,15 @@ export class LineupPinboardComponent implements AfterViewInit, OnDestroy {
       })
       .set(swing, { rotationY: -90 })
       .to(swing, { rotationY: 0, scale: 1, opacity: 1, duration: 0.3, ease: 'back.out(1.7)' });
+  }
+
+  private async preload(src: string): Promise<void> {
+    const img = new Image();
+    img.src = src;
+    try {
+      await img.decode();
+    } catch {
+      // decode can reject (unsupported/aborted) — flip proceeds with the browser's normal load
+    }
   }
 }
