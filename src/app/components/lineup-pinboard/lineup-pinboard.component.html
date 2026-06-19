@@ -1,0 +1,17 @@
+<section class="lineup-cards">
+  <div class="cards">
+    <a class="lineup-card" #card *ngFor="let c of cards" routerLink="/line-up" [attr.aria-label]="c.stage + ' Lineup'">
+      <div class="card-tilt" [style.transform]="'rotate(' + c.tilt + 'deg)'">
+        <span class="pin" [style.--pin]="c.pin" aria-hidden="true"></span>
+        <div class="card-sway" #sway>
+          <div class="card-swing" #swing>
+            <div class="photo">
+              <img [src]="c.image" [alt]="c.artist" loading="lazy" />
+            </div>
+            <span class="caption">{{ c.stage }}<br />Lineup &raquo;</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>

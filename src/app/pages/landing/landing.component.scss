@@ -6,11 +6,11 @@
   align-items: center;
   justify-content: center;
   padding: 24px 6vw;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 
   // make less margin bottom on mobile
   @media (max-width: 600px) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     height: 70vh;
   }
 }
@@ -87,7 +87,9 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: min(620px, 78vw);
+  // 77.5vh term scales logo down once window height drops below ~800px
+  // (620px / 800px = 0.775); above that the 620px cap wins, so no jump.
+  width: min(620px, 78vw, 77.5vh);
   max-width: 720px;
   z-index: 2;
   filter: drop-shadow(0 12px 48px rgba(0, 0, 0, 0.35));

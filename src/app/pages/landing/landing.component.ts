@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LineupPinboardComponent } from '../../components/lineup-pinboard/lineup-pinboard.component';
 import { NewsletterModalService } from '../../components/newsletter-modal/newsletter-modal.service';
 import { PhotoCollageComponent } from '../../components/photo-collage/photo-collage.component';
 import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
@@ -22,7 +23,14 @@ interface TimelineDrop {
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, RouterLink, SparkButtonComponent, PhotoCollageComponent, TicketCtaDirective],
+  imports: [
+    CommonModule,
+    RouterLink,
+    SparkButtonComponent,
+    PhotoCollageComponent,
+    LineupPinboardComponent,
+    TicketCtaDirective,
+  ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss',
 })
