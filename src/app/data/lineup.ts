@@ -350,17 +350,17 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
     },
 
     // susi&paula-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Susi&Paula',
-      image: 'artists/susi&paula-bachblyten-festival-line-up-2026.webp',
-      profile: `Susi&Paula bringen frische, verspielte und gleichzeitig druckvolle Energie aus Hamburg mit zum Bachblyten Festival. Als Teil des queer-feministischen Kollektivs crew.port stehen sie nicht nur für starke Sets, sondern auch für eine offene, respektvolle und sichere Clubkultur.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/djsusipaula/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/djsusipaula' },
-      ],
-    },
+    // {
+    //   name: 'Susi&Paula',
+    //   image: 'artists/susi&paula-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Susi&Paula bringen frische, verspielte und gleichzeitig druckvolle Energie aus Hamburg mit zum Bachblyten Festival. Als Teil des queer-feministischen Kollektivs crew.port stehen sie nicht nur für starke Sets, sondern auch für eine offene, respektvolle und sichere Clubkultur.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/djsusipaula/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/djsusipaula' },
+    //   ],
+    // },
 
     // urem-bachblyten-festival-line-up-2026.webp
     {
