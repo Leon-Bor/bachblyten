@@ -39,6 +39,130 @@ export interface LineupData {
 
 export const LINEUP_DATA: LineupData = {
   artists: [
+    // peter-groskreutz_bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Peter Groskreutz',
+      image: 'artists/peter-groskreutz_bachblyten-festival-line-up-2026.webp',
+      profile: `Peter Groskreutz gehört zu den Menschen, die elektronische Musik nicht einfach nur machen, sondern leben. Schon lange bevor Laptop und Controller zum Standard wurden, experimentierte er mit elektronischen Klängen und entwickelte über die Jahre seinen ganz eigenen Sound.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/peter_groskreutz/' }],
+    },
+    // n2d2-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'N2D2',
+      image: 'artists/n2d2-bachblyten-festival-line-up-2026.webp',
+      profile: `In Kiel begann für N2D2 die Reise durch die elektronische Musikwelt. Als Resident im Rathausbunker gehörte er viele Jahre fest zur norddeutschen Szene und sammelte dort die Erfahrungen, die seinen Sound bis heute prägen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/nzwo.dzwo/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/nzwo_dzwo',
+        },
+      ],
+    },
+    // Monfred&Dipper-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Monfred & Dipper',
+      image: 'artists/Monfred&Dipper-bachblyten-festival-line-up-2026.webp',
+      profile: `Monfred & Dipper verwandeln seit Jahren Clubs und Festivals in kleine Traumwelten. Als Teil des @fantabulosa_kollektiv schaffen sie Räume, in denen Musik, Leichtigkeit und Gemeinschaft aufeinandertreffen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/mona.monfred/' },
+
+        { label: 'Instagram', url: 'https://www.instagram.com/denny_dipper/' },
+      ],
+    },
+    // Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Lenni Aqua & Pinko',
+      image: 'artists/Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp',
+      profile: ``,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [],
+    },
+    // Krabat-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Krabat',
+      image: 'artists/Krabat-bachblyten-festival-line-up-2026.webp',
+      profile: `Krabat gehört zu den Menschen, die man einfach gerne um sich hat. Ständiger Wegbegleiter, immer für einen Lacher gut und mindestens genauso versessen auf abgefahrene elektronische Musik wie der Rest unserer Bande. Wenn irgendwo ein verrückter neuer Sound entdeckt wird, stehen die Chancen gut, dass Krabat ihn schon längst auf dem Schirm hat. 😄`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/kr4bat_/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/krabat_techno',
+        },
+      ],
+    },
+    // kmare-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'KMARE',
+      image: 'artists/kmare-bachblyten-festival-line-up-2026.webp',
+      profile: `KMARE steht für Roots of Dub, Steppas und Raggajungle, aber vor allem für eine klare Haltung. Musik als verbindende Kraft, Basswellen als Sprache und Dancefloors als Orte, an denen Menschen unabhängig von Herkunft, Geschlecht, Identität oder Weltanschauung zusammenkommen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/itskmare/' }],
+    },
+    // Jona-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Jona',
+      image: 'artists/Jona-bachblyten-festival-line-up-2026.webp',
+      profile: `Jona gehört schon seit vielen Jahren zu den Menschen, die unseren Weg begleiten. Einer von denen, die man immer gerne um sich hat, auf dem Festival genauso wie daneben. 🌿`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/jona_milan_ro/' }],
+    },
+    // GrönlandExpress-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'GRÖNLANDEXPRESS',
+      image: 'artists/GrönlandExpress-bachblyten-festival-line-up-2026.webp',
+      profile: `Zwei Frauen, ein Sound und jede Menge gute Laune. Der GrönlandExpress bringt treibende Basslines, funky Grooves, Disco-Vibes und natürlich eine ordentliche Portion Glitzer mit zum Bachblyten Festival. ✨🚂`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/groenlandexpress/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/groenlandexpress',
+        },
+      ],
+    },
+    // dj-blüthe-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'DJ BLÜTHE',
+      image: 'artists/dj-blüthe-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit melodischem Deep House und Progressive House bringt DJ BLÜTHE genau die Atmosphäre mit, die man an einem sonnigen Festivaltag erleben möchte. Augen zu, Gesicht in die Sonne, den Gedanken freien Lauf lassen und sich einfach von der Musik tragen lassen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/djbluethe/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/dj-bluethe',
+        },
+      ],
+    },
+    // anyz-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'ANYZ',
+      image: 'artists/anyz-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit einer Mischung aus treibender Energie, großen Emotionen und einem außergewöhnlichen Gespür für Atmosphäre erschafft sie Sets, die einen nicht einfach nur tanzen lassen, sondern komplett in ihre Welt ziehen. Mal euphorisch, mal melancholisch, mal voller Vorwärtsdrang, aber immer mit einer klaren Handschrift.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/anyz_official/' },
+        {
+          label: 'Soundcloud',
+          url: 'https://soundcloud.com/anyz_official',
+        },
+      ],
+    },
     // wewibe-bachblyten-festival-line-up-2026.webp
     {
       name: 'Wewibe',
