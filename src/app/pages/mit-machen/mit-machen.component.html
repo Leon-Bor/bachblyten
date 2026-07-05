@@ -14,6 +14,42 @@
 </section>
 
 <section class="section">
+  <div class="section-heading">
+    <span class="eyebrow">Awareness</span>
+    <h3>Safe Space</h3>
+  </div>
+  <article class="card">
+    <p>
+      Das Bachblyten ist ein Safe Space. Gemeinsam mit dir möchten wir dafür sorgen, dass es auch
+      so bleibt! Wir suchen motivierte und empathische Menschen für ein Ehrenamt im
+      Awareness-Team.
+    </p>
+    <ul class="list-soft">
+      <li>
+        Erfahrungen mit emotionaler Betreuung und Grenzsituationen (z. B. aus Psychologie,
+        Erziehung oder Krankenpflege) sind nicht notwendig, stärken aber deine Bewerbung.
+      </li>
+      <li>
+        Du erhältst freien Zugang zum Festival und während der Schicht neben Einblicken hinter die
+        Kulissen auch Verpflegung.
+      </li>
+      <li>
+        Du arbeitest in einem genderdiversen Team, das du vor dem Festival bei einem Kennenlernen
+        triffst – ein Briefing findet ebenfalls vorab statt.
+      </li>
+      <li>
+        Schichten sind nach Absprache – nach Möglichkeit kannst du also auch mit Freund:innen
+        zusammenarbeiten.
+      </li>
+    </ul>
+    <p>Alle Bewerber:innen sind willkommen!</p>
+    <div class="cta-row">
+      <a class="cta" [href]="awarenessMailLink">awareness@bachblyten-festival.com</a>
+    </div>
+  </article>
+</section>
+
+<section class="section">
   <div class="section-grid">
     <article class="card" *ngFor="let role of roles">
       <h3>{{ role.title }}</h3>
@@ -51,47 +87,4 @@
       </div>
     </article>
   </div>
-</section>
-
-<section class="section">
-  <div class="section-heading">
-    <span class="eyebrow">Awareness</span>
-    <h3>Awareness-Team</h3>
-  </div>
-  <article class="card">
-    <p>
-      Wir suchen auch Menschen für unser Awareness-Team – als Ansprechpersonen für alle, die sich
-      auf dem Festival unwohl fühlen oder Unterstützung brauchen. Melde dich bei uns:
-    </p>
-    <div class="cta-row">
-      <a class="cta" [href]="awarenessMailLink">awareness@bachblyten-festival.com</a>
-    </div>
-  </article>
-</section>
-
-<section class="section">
-  <div class="section-heading">
-    <span class="eyebrow">Booking</span>
-    <h3>Musikalisch mitmachen</h3>
-  </div>
-  <article class="card booking-card">
-    <p>Du möchtest einen Slot? Schick uns dein Set, Links und den Slot, der dich reizt.</p>
-    <ul class="list-soft">
-      <li>
-        Mail an <a [href]="bookingMailLink">{{ bookingMail }}</a> mit Mix/Link, kurzem Intro und
-        deinem bevorzugten Slot (Tag/Nacht oder Uhrzeit). Wir können Slot-Wünsche nicht garantieren.
-      </li>
-      <li>
-        Der Andrang ist groß – bitte nimm es nicht persönlich, falls wir nicht antworten oder erst
-        spät reagieren.
-      </li>
-      <li>
-        Es könnte dazu bald ein kleines Special geben; Weitere Infos bekommt ihr über unsere Social
-        Media Kanäle.
-      </li>
-    </ul>
-    <div class="cta-row">
-      <a class="cta" [href]="bookingMailLink">booking@bachblyten-festival.com</a>
-    </div>
-  </article>
 </section>

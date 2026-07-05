@@ -16,8 +16,6 @@ interface CrewRole {
 export class MitMachenComponent {
   protected readonly mail = 'jobs@bachblyten-festival.com';
   protected readonly mailLink = `mailto:${this.mail}?subject=${encodeURIComponent('Mitmachen Crew 2026')}`;
-  protected readonly bookingMail = 'booking@bachblyten-festival.com';
-  protected readonly bookingMailLink = `mailto:${this.bookingMail}?subject=${encodeURIComponent('Artist / Special Submission')}`;
   protected readonly awarenessMail = 'awareness@bachblyten-festival.com';
   protected readonly awarenessMailLink = `mailto:${this.awarenessMail}?subject=${encodeURIComponent('Awareness Crew 2026')}`;
 
