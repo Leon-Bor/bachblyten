@@ -118,10 +118,10 @@ export const LINEUP_DATA: LineupData = {
       stage: 'Wurzelwerk',
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/jona_milan_ro/' }],
     },
-    // GrönlandExpress-bachblyten-festival-line-up-2026.webp
+    // GroenlandExpress-bachblyten-festival-line-up-2026.webp
     {
       name: 'GRÖNLANDEXPRESS',
-      image: 'artists/GrönlandExpress-bachblyten-festival-line-up-2026.webp',
+      image: 'artists/GroenlandExpress-bachblyten-festival-line-up-2026.webp',
       profile: `Zwei Frauen, ein Sound und jede Menge gute Laune. Der GrönlandExpress bringt treibende Basslines, funky Grooves, Disco-Vibes und natürlich eine ordentliche Portion Glitzer mit zum Bachblyten Festival. ✨🚂`,
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
@@ -133,10 +133,10 @@ export const LINEUP_DATA: LineupData = {
         },
       ],
     },
-    // dj-blüthe-bachblyten-festival-line-up-2026.webp
+    // dj-bluethe-bachblyten-festival-line-up-2026.webp
     {
       name: 'DJ BLÜTHE',
-      image: 'artists/dj-blüthe-bachblyten-festival-line-up-2026.webp',
+      image: 'artists/dj-bluethe-bachblyten-festival-line-up-2026.webp',
       profile: `Mit melodischem Deep House und Progressive House bringt DJ BLÜTHE genau die Atmosphäre mit, die man an einem sonnigen Festivaltag erleben möchte. Augen zu, Gesicht in die Sonne, den Gedanken freien Lauf lassen und sich einfach von der Musik tragen lassen.`,
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
