@@ -115,7 +115,14 @@ export class FaqComponent {
       id: 'rules-glass-ban',
       question: 'Getränke & Glasverbot',
       answer:
-        'Glas ist auf dem gesamten Gelände (Camping und Festivalgelände) strikt verboten. Auf dem Campingplatz dürft ihr eure eigenen Getränke in PET-Flaschen und Dosen mitbringen. Auf das Festivalgelände dürfen ausschließlich PET-Flaschen mitgenommen werden – keine Dosen oder andere Behälter, an denen man sich verletzen könnte. So bleibt es sicher für alle, gerade weil viele bei uns auch barfuß unterwegs sind.',
+        'Glas ist auf dem gesamten Gelände (Camping und Festivalgelände) strikt verboten. Auf dem Campingplatz dürft ihr eure eigenen Getränke in PET-Flaschen und Dosen mitbringen. Auf das Festivalgelände dürfen ausschließlich PET- und Metallflaschen mitgenommen werden – keine Dosen oder andere Behälter, an denen man sich verletzen könnte. So bleibt es sicher für alle, gerade weil viele bei uns auch barfuß unterwegs sind.',
+      category: 'rules',
+    },
+    {
+      id: 'rules-own-drinks',
+      question: 'Darf ich eigene Getränke mit aufs Festivalgelände nehmen?',
+      answer:
+        'Ja – nicht-alkoholische Getränke dürft ihr mit aufs Festivalgelände nehmen, solange sie nicht in Glasflaschen sind. PET- und Metallflaschen sind okay, Dosenbier bleibt draußen. Alkoholische Getränke gibt es günstig an unseren Bars.',
       category: 'rules',
     },
     {
@@ -230,7 +237,7 @@ export class FaqComponent {
       id: 'service-water',
       question: 'Trinkwasser',
       answer:
-        'Kostenlose Wasserstationen auf dem Gelände – bitte Bring-Your-Own-PET. Kein Glas, keine Metallkanister.',
+        'Kostenlose Wasserstationen auf dem Gelände – bringt eure eigene PET- oder Metallflasche mit. Kein Glas.',
       category: 'service',
     },
     {
