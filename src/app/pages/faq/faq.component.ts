@@ -237,7 +237,7 @@ export class FaqComponent {
       id: 'rules-deposit',
       question: 'Müllpfand',
       answer:
-        'Denk an die 10 € Müllpfand. Den Pfand bekommst du gegen einen gut gefüllten Müllbeutel zurück. Danke fürs Mitmachen.',
+        'Denk an die 10 € Müllpfand – bitte in bar. Den Pfand bekommst du gegen einen gut gefüllten Müllbeutel zurück. Danke fürs Mitmachen.',
       category: 'arrival',
     },
     {
