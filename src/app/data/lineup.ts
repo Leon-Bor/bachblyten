@@ -935,7 +935,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
       links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/dj_nasendusche/?g=5' },
+        { label: 'Instagram', url: 'https://www.instagram.com/dj_nasendusche/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/dj_nasendusche' },
       ],
     },
@@ -990,7 +990,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Parallelwald',
       links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/naxos__music/?g=5' },
+        { label: 'Instagram', url: 'https://www.instagram.com/naxos__music/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/naxosmusic23' },
       ],
     },
