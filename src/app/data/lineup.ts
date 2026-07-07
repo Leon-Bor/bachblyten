@@ -80,7 +80,7 @@ export const LINEUP_DATA: LineupData = {
     {
       name: 'Lenni Aqua & Pinko',
       image: 'artists/Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp',
-      profile: ``,
+      profile: `Lenni Aqua & Pinko servieren keinen gewöhnlichen DJ-Set-Abend, sondern einen kunterbunten Obstsalat aus funky Grooves, saftigen Samples, Mitsingmomenten und jeder Menge guter Laune. Von Speedhouse über Trance bis zu den Hits, bei denen plötzlich alle gleichzeitig mitsingen.`,
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
       links: [],

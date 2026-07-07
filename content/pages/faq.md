@@ -13,7 +13,7 @@ seo:
 
 Bachblyten Festival – FAQs
 Anreise am Donnerstag
-Das Camping- bzw. Festivalgelände öffnet am Freitag um 10:00 Uhr. Eine Anreise am Donnerstag ist grundsätzlich nicht möglich.
+Am Donnerstag, den 23.07., ist die Auffahrt auf den Campingplatz von 17:00 bis 22:00 Uhr möglich. Ab Freitag 8:00 Uhr ist die Anreise wie gewohnt möglich.
 Nur jemanden bringen oder Anhänger abstellen?
 Kurzzeitiges Bringen oder Abstellen ist möglich. Der Ausweis wird einbehalten und es wird ein Pfand von 150 € erhoben.
 Bargeld & Zahlungsmöglichkeiten

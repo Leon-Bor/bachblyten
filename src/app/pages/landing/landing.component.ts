@@ -63,9 +63,14 @@ export class LandingComponent {
 
   protected timeline: TimelineDrop[] = [
     {
+      title: 'Früher Camping-Zugang',
+      detail: 'Schon am Donnerstag mit dem Auto auf den Campingplatz fahren und ankommen.',
+      time: 'Do · 17:00–22:00',
+    },
+    {
       title: 'Einlass & Camping öffnen',
       detail: 'Ankommen, Platz finden, Zelt aufbauen, Bier aufmachen.',
-      time: 'Fr · 10:00',
+      time: 'Fr · 8:00',
     },
     {
       title: 'Sunset Opening',
