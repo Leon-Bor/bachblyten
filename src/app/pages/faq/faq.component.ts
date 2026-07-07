@@ -122,7 +122,7 @@ export class FaqComponent {
       id: 'rules-own-drinks',
       question: 'Darf ich eigene Getränke mit aufs Festivalgelände nehmen?',
       answer:
-        'Ja – nicht-alkoholische Getränke dürft ihr mit aufs Festivalgelände nehmen, solange sie nicht in Glasflaschen sind. PET- und Metallflaschen sind okay, Dosenbier bleibt draußen. Alkoholische Getränke gibt es günstig an unseren Bars.',
+        'Ja – nicht-alkoholische Getränke dürft ihr mit aufs Festivalgelände nehmen, solange sie nicht in Glasflaschen sind. PET- und Metallflaschen sind okay, Dosenbier bleibt draußen. Alkoholische Getränke gibt es zu fairen Preisen an unseren Bars.',
       category: 'rules',
     },
     {
