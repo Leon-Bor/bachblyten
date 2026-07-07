@@ -927,6 +927,110 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
         { label: 'Soundcloud', url: 'https://soundcloud.com/psyfonic' },
       ],
     },
+    // dj-nasendusche-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'DJ Nasendusche',
+      image: 'artists/dj-nasendusche-bachblyten-festival-line-up-2026.webp',
+      profile: `Als Teil der High Humidity Crew bringt DJ Nasendusche housige Grooves mit, die einfach immer funktionieren. Egal ob zum entspannten Ankommen, für den perfekten Sonnenuntergang oder wenn der Dancefloor schon längst in Bewegung ist. Gute House-Musik kennt eben keine Uhrzeit.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/dj_nasendusche/?g=5' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/dj_nasendusche' },
+      ],
+    },
+    // equibox-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'EQUiBOX',
+      image: 'artists/equibox-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit ihrer Liebe zu Progressive Psytrance haben die beiden über die Jahre einen ganz eigenen Stil entwickelt. Druckvoll, melodisch und voller Energie. Genau die Mischung, die einen den Alltag vergessen lässt und den Dancefloor in Bewegung hält.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/dropbox_dj/' },
+        { label: 'Instagram', url: 'https://www.instagram.com/equidies/' },
+      ],
+    },
+    // effex-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Effex',
+      image: 'artists/effex-bachblyten-festival-line-up-2026.webp',
+      profile: `Für viele ist Effex längst kein Unbekannter mehr. Bereits 2015 stand er beim Bachblyten Festival hinter den Decks und sorgte mit seinem Drum and Bass Set auf dem legendären Ghettoblaster zur Primetime für einen dieser Momente, die bis heute in Erinnerung geblieben sind. Das Intro von damals? Sorgt auch heute noch regelmäßig für Gänsehaut. 🔊`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/effex_dj/' }],
+    },
+    // m4ry-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'M4RY',
+      image: 'artists/m4ry-bachblyten-festival-line-up-2026.webp',
+      profile: `Aus Berlin kommend hat M4RY einen Sound entwickelt, den man sofort wiedererkennt. Druckvoll, funky und voller Groove. House, Funk und Techno verschmelzen zu einer ganz eigenen Mischung, die einfach unfassbar Spaß macht und einen automatisch in Bewegung bringt.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/m4rym4rym4ry/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/m4rym4rym4ry' },
+      ],
+    },
+    // matzenatur-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Matzenatur',
+      image: 'artists/matzenatur-bachblyten-festival-line-up-2026.webp',
+      profile: `Wenn es im Norden um Drum and Bass geht, ist die Wahrscheinlichkeit ziemlich groß, dass Matzenatur nicht weit entfernt ist. Seit Jahrzehnten begleitet er die Szene mit ganz viel Herzblut und gehört für viele längst zum festen Inventar.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/matze_nature/' }],
+    },
+    // naxos-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Naxos',
+      image: 'artists/naxos-bachblyten-festival-line-up-2026.webp',
+      profile: `Naxos gehört zu den Artists, die zeigen, dass Leidenschaft wichtiger ist als die Anzahl der Jahre hinter den Decks. Mit einem feinen Gespür für den richtigen Moment verbindet Naxos Progressive Trance, Dirty Prog, Offbeat und Psyprog zu einem Sound, der direkt in die Beine geht.
+`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/naxos__music/?g=5' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/naxosmusic23' },
+      ],
+    },
+    // ninja-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Ninja',
+      image: 'artists/ninja-bachblyten-festival-line-up-2026.webp',
+      profile: `NINJA steht für Energie, die sich Stück für Stück aufbaut und genau im richtigen Moment explodiert. Zwischen Peak Time Techno, Hardtechno und Harddance entstehen Sets, die mitreißen, überraschen und von Anfang bis Ende Spannung erzeugen.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/einfach_ninja/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/ninab-568928376' },
+      ],
+    },
+    // optical-mind-gate-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Optical Mind Gate',
+      image: 'artists/optical-mind-gate-bachblyten-festival-line-up-2026.webp',
+      profile: `Mit Optical Mind Gate schlägt Denny Wildenhain ein neues Kapitel auf. Nach vielen Jahren im Progressive Psytrance geht der Blick jetzt noch tiefer in die psychedelische Welt und genau das hört man.
+`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/optical.mind.gate/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/optical_mind_gate' },
+      ],
+    },
+    // sophie-cut-bachblyten-festival-line-up-2026.webp
+    {
+      name: 'Sophie Cut',
+      image: 'artists/sophie-cut-bachblyten-festival-line-up-2026.webp',
+      profile: `Sophie Cut hat ihren Sound im minimalistischen Techno gefunden. Mit sphärischen Klangwelten, feinen Variationen und genau den richtigen Build Ups entstehen Sets, die sich weniger wie eine Aneinanderreihung von Tracks anfühlen, sondern eher wie eine Reise durch einen Film.`,
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/sophiecuttt/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/sophie-cut' },
+      ],
+    },
     // irie-scenario-bachblyten-festival-line-up-2026.webp
     {
       name: 'Irie Scenario',
