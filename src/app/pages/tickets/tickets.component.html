@@ -10,7 +10,7 @@
     </div>
     <h4 class="ticket-urgency__headline">{{ urgencyHeadline }}</h4>
     <p class="ticket-urgency__copy">{{ urgencyCopy }}</p>
-    <div class="suprised-ticket">
+    <div class="suprised-ticket" *ngIf="!showAbendkasse">
       <img src="wiesel-supriesed.webp" alt="Wiesel mit Überraschungseffekt" />
     </div>
   </div>

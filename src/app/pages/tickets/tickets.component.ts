@@ -21,7 +21,12 @@ interface TicketTier {
 export class TicketsComponent {
   readonly urgencyEyebrow = 'Letzte Stufe';
   readonly urgencyHeadline = 'Endspurt — letzte Stufe läuft!';
+  protected readonly showAbendkasse = new Date() >= new Date(2026, 6, 24);
+
   get urgencyCopy() {
+    if (this.showAbendkasse) {
+      return 'Noch kein Ticket? Keine Panik — es gibt auch eine Abendkasse.';
+    }
     return `Jetzt geht's mit Late Bird in die finale Runde. ${this.textline}`;
   }
 
