@@ -531,18 +531,6 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
         { label: 'Soundcloud', url: 'https://soundcloud.com/fatale_e' },
       ],
     },
-    // justice-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Justice',
-      image: 'artists/justice-bachblyten-festival-line-up-2026.webp',
-      profile: `Justice bringt einen Sound mit, der sofort hängen bleibt. Rollende Basslines, treibender Groove und immer wieder diese Momente zwischen Dunkelheit und Euphorie, die einen komplett reinziehen.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/justice__dj/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/justice-hamburg' },
-      ],
-    },
     // stryker-bachblyten-festival-line-up-2026.webp
     {
       name: 'Stryker',
