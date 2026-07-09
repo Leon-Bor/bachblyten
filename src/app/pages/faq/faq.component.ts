@@ -126,6 +126,13 @@ export class FaqComponent {
       category: 'rules',
     },
     {
+      id: 'rules-police-checks',
+      question: 'Wird es Polizeikontrollen geben?',
+      answer:
+        'Ja. Wie in den vergangenen Jahren wird es rund um das Festivalgelände voraussichtlich wieder Polizeikontrollen geben. Bitte plant das bei eurer An- und Abreise mit ein. Unsere Bitte an euch: Fahrt niemals unter Alkohol- oder Drogeneinfluss. Sorgt dafür, dass ihr sicher ankommt und genauso sicher wieder nach Hause kommt. Passt auf euch und aufeinander auf.',
+      category: 'rules',
+    },
+    {
       id: 'rules-liability',
       question: 'Haftung',
       answer:
