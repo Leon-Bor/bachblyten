@@ -179,6 +179,13 @@ export class FaqComponent {
       category: 'service',
     },
     {
+      id: 'camping-grill',
+      question: 'Darf ich grillen?',
+      answer:
+        'Nein, Grillen ist auf dem gesamten Gelände verboten. Kleine Gaskocher sind erlaubt, solange sie unter ständiger Aufsicht betrieben werden.',
+      category: 'camping',
+    },
+    {
       id: 'camping-power',
       question: 'Strom & Generatoren',
       answer:
