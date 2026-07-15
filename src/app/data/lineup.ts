@@ -473,19 +473,6 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
       ],
     },
 
-    // susi&paula-bachblyten-festival-line-up-2026.webp
-    // {
-    //   name: 'Susi&Paula',
-    //   image: 'artists/susi&paula-bachblyten-festival-line-up-2026.webp',
-    //   profile: `Susi&Paula bringen frische, verspielte und gleichzeitig druckvolle Energie aus Hamburg mit zum Bachblyten Festival. Als Teil des queer-feministischen Kollektivs crew.port stehen sie nicht nur für starke Sets, sondern auch für eine offene, respektvolle und sichere Clubkultur.`,
-    //   time: new Date('2024-07-26T20:30:00'),
-    //   stage: 'Wurzelwerk',
-    //   links: [
-    //     { label: 'Instagram', url: 'https://www.instagram.com/djsusipaula/' },
-    //     { label: 'Soundcloud', url: 'https://soundcloud.com/djsusipaula' },
-    //   ],
-    // },
-
     // urem-bachblyten-festival-line-up-2026.webp
     {
       name: 'UREM',
@@ -667,19 +654,6 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
         { label: 'Soundcloud', url: 'https://soundcloud.com/n-o-v-a-e' },
       ],
     },
-    // hallert-bachblyten-festival-line-up-2026
-    // {
-    //   name: 'Hallert',
-    //   image: 'artists/hallert-bachblyten-festival-line-up-2026.jpg',
-    //   profile:
-    //     'Seit 2013 in elektronischen Sounds zuhause: Hallert aus Norddeutschland liebt es, eigene Produktionen auf Festivals zu spielen – tanzbare, kraftvolle Beats mit melodischem Drive.',
-    //   time: new Date('2024-07-26T20:30:00'),
-    //   stage: 'Wurzelwerk',
-    //   links: [
-    //     { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
-    //     { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
-    //   ],
-    // },
     {
       name: 'Maurice Mino',
       image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
@@ -802,17 +776,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
         },
       ],
     },
-    // puy-bachblyten-festival-line-up-2026
-    //     {
-    //       name: 'Puy',
-    //       image: 'artists/puy-bachblyten-festival-line-up-2026.jpg',
-    //       profile: `Puy ist Teil des neuen Kapitels und bringt mit UIUIUI seine eigene frische Veranstaltungsreihe an den Start.
-    // Seit über 20 Jahren prägt er die Szene in NMS mit Events, die hängen bleiben.
-    // Als Artist bewegt er sich zwischen Peak-Time-Techno und groovigem Tech-House, immer druckvoll, immer tanzbar, immer nach vorne.`,
-    //       time: new Date('2024-07-26T21:30:00'),
-    //       stage: 'Blytenbau',
-    //       links: [],
-    //     },
+
     // rauschhaus-bachblyten-festival-line-up-2026
     {
       name: 'Rauschhaus',
@@ -1030,6 +994,95 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
         { label: 'Instagram', url: 'https://www.instagram.com/irie.scenario/' },
         { label: 'Soundcloud', url: 'https://soundcloud.com/irie-scenario' },
       ],
+    },
+    // Knurz_Thumbnail.webp
+    {
+      name: 'Knurz',
+      image: 'artists/Knurz_Thumbnail.webp',
+      profile:
+        'Bei KNURZ gleicht kein Set dem anderen. Der Kieler bringt ein komplettes Modular Live-Set mit aufs Bachblyten Festival und erschafft seine Musik direkt im Moment. Keine Playlist, kein festes Arrangement, sondern pures Live-Feeling.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/peterknurz/' }],
+    },
+    // Hallert_Thumbnail.webp
+    {
+      name: 'Hallert',
+      image: 'artists/Hallert_Thumbnail.webp',
+      profile:
+        'Musikalisch folgt Hallert keiner festen Schublade. Eigene Produktionen treffen auf Lieblingsstücke anderer Artists, treibende Grooves auf satte Basslines. Was aber nie fehlen darf, sind diese kleinen Momente, die einen packen. Eine Melodie, ein Vocal oder irgendein catchy Element, das plötzlich hängen bleibt und aus einem guten Track einen besonderen macht.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
+      ],
+    },
+    // Acapla_Thumbnail.webp
+    {
+      name: 'Acapla',
+      image: 'artists/Acapla_Thumbnail.webp',
+      profile:
+        'Der Sound schleicht sich nicht an. Er packt einen. Tief rollende Basslines, atmosphärische Flächen und genau diese Momente, in denen plötzlich alles um einen herum verschwindet und nur noch die Musik zählt. Druckvoll, hypnotisch und mit einer Energie, die lange nachhallt.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/psyshowbob_dennsen/' }],
+    },
+    // Clemo_Thumbnail.webp
+    {
+      name: 'Clemo',
+      image: 'artists/Clemo_Thumbnail.webp',
+      profile:
+        'Ebenso Teil der High Humidity Crew, erschafft Clemo Klangwelten, in denen man sich ganz wunderbar verlieren kann. Psychedelische Elemente treffen auf melodische Tiefe, sphärische Flächen auf rollende Grooves. Kein Sound, der nach vorne drängt, sondern einer, der einen ganz von selbst mitnimmt.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [],
+    },
+    // Hannahtronica_Thumbnail.webp
+    {
+      name: 'Hannahtronica',
+      image: 'artists/Hannahtronica_Thumbnail.webp',
+      profile:
+        'Wer Hannahtronica schon einmal erlebt hat, weiß, dass hier nicht einfach Tracks aneinandergereiht werden. Mit viel Liebe zum Detail und einem feinen Gespür für den richtigen Moment entstehen Sets, die einen ganz entspannt auf den Dancefloor ziehen und dort auch erstmal nicht wieder loslassen. Auch mit eigenen Formaten wie "Round and Round" bringt Hannahtronica Menschen über Musik zusammen.',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/hannahtronica/' }],
+    },
+    // Stephenson_Thumbnail.webp
+    {
+      name: 'Stephensøn',
+      image: 'artists/Stephenson_Thumbnail.webp',
+      profile:
+        'Stephensøn gehört schon seit vielen Jahren zu den Menschen, die Bachblyten begleiten. Als enger Freund und Teil des neuen Teams bringt er nicht nur hinter den Kulissen gute Laune mit, sondern auch hinter den Decks. 🌿',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/stephensonsound/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/stephensonsound' },
+      ],
+    },
+    // Stoltec_Thumbnail.webp
+    {
+      name: 'Stoltec',
+      image: 'artists/Stoltec_Thumbnail.webp',
+      profile:
+        'Stoltec gehört seit vielen Jahren zu den Menschen, auf die man sich einfach verlassen kann. Bei unzähligen Veranstaltungen mit angepackt und inzwischen fester Teil des neuen Bachblyten Teams. 🌿',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: 'https://www.instagram.com/stoltec_techno/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/stoltec' },
+      ],
+    },
+    // Le-Puy_Thumbnail.webp
+    {
+      name: 'Le Puy',
+      image: 'artists/Le-Puy_Thumbnail.webp',
+      profile:
+        'Musikalisch ist Le Puy unglaublich vielseitig. Für das Bachblyten Festival war die Entscheidung aber schnell gefallen: Es darf ein bisschen zackiger werden. Mit genau der richtigen Portion Druck und jeder Menge Spaß wird im Blytenbau ordentlich nach vorne gespielt. 🔥',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Blytenbau',
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/le_puy/' }],
     },
   ],
   stages: [
