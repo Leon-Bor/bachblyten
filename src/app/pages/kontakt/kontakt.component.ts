@@ -27,7 +27,8 @@ export class KontaktComponent {
     { title: 'Kontaktformular', detail: 'In Kürze live – bis dahin gern per Mail.' },
     {
       title: 'Social & WhatsApp',
-      detail: '@bachblyten auf Instagram & WhatsApp Broadcast (bald).',
+      detail:
+        'Auf Instagram: @bachblyten. Über „Blytenride“ könnt ihr Mitfahrgelegenheiten organisieren.',
     },
   ];
 }
