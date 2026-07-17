@@ -1114,10 +1114,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       profile: '',
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
-      ],
+      links: [],
     },
     // Lars-Block-bachblyten-festival-line-up-2026.jpg
     {
@@ -1126,10 +1123,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       profile: '',
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
-      ],
+      links: [],
     },
     // Solvind-bachblyten-festival-line-up-2026.jpg
     {
@@ -1150,10 +1144,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       profile: '',
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
-      ],
+      links: [],
     },
     // empty-silence-bachblyten-festival-line-up-2026.jpg
     {
