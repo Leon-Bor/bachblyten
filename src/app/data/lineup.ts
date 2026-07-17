@@ -1084,6 +1084,90 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       stage: 'Blytenbau',
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/le_puy/' }],
     },
+    // Haqu-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Haqu',
+      image: 'artists/Haqu-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Parallelwald',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // Frank-Leder-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Frank Leder',
+      image: 'artists/Frank-Leder-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // Klangstrom-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Klangstrom',
+      image: 'artists/Klangstrom-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // Lars-Block-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Lars Block',
+      image: 'artists/Lars-Block-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // Solvind-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Solvind',
+      image: 'artists/Solvind-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Wurzelwerk',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // Timo-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Timo',
+      image: 'artists/Timo-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
+    // empty-silence-bachblyten-festival-line-up-2026.jpg
+    {
+      name: 'Empty Silence',
+      image: 'artists/empty-silence-bachblyten-festival-line-up-2026.jpg',
+      profile: '',
+      time: new Date('2024-07-26T20:30:00'),
+      stage: 'Knospe',
+      links: [
+        { label: 'Instagram', url: '' },
+        { label: 'Soundcloud', url: '' },
+      ],
+    },
   ],
   stages: [
     {
