@@ -1133,7 +1133,7 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
     },
     // Solvind-bachblyten-festival-line-up-2026.jpg
     {
-      name: 'Solvind',
+      name: 'Sølvind',
       image: 'artists/Solvind-bachblyten-festival-line-up-2026.jpg',
       profile: '',
       time: new Date('2024-07-26T20:30:00'),
