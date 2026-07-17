@@ -1088,25 +1088,24 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
     {
       name: 'Haqu',
       image: 'artists/Haqu-bachblyten-festival-line-up-2026.jpg',
-      profile: '',
+      profile:
+        'Seit 2019 ist HAQU Teil der Kieler Musikszene. Was auf kleinen privaten Veranstaltungen begann, führte ihn mit der Zeit in die Clubs und schließlich dorthin, wo er musikalisch zuhause ist, in die Goa Welt.',
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Parallelwald',
       links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
+        { label: 'Instagram', url: 'https://www.instagram.com/official.haqu/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/official_phaema' },
       ],
     },
     // Frank-Leder-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Frank Leder',
       image: 'artists/Frank-Leder-bachblyten-festival-line-up-2026.jpg',
-      profile: '',
+      profile:
+        'Frank Leder steht für Techno mit ordentlich Vorwärtsdrang. Fans beschreiben seine Sets gerne als „Lokomotive“ – energiegeladen, abwechslungsreich und immer mit dem richtigen Gespür für den Moment. Zwischen progressiven, melodischen und treibenden Sounds baut Frank Spannung auf, die sich Stück für Stück entfaltet und den Dancefloor mitnimmt.',
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
-      ],
+      links: [{ label: 'Instagram', url: 'https://www.instagram.com/frank_leder_music/' }],
     },
     // Klangstrom-bachblyten-festival-line-up-2026.jpg
     {
@@ -1140,8 +1139,8 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Wurzelwerk',
       links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
+        { label: 'Instagram', url: 'https://www.instagram.com/solvind.fl/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/soelvind' },
       ],
     },
     // Timo-bachblyten-festival-line-up-2026.jpg
@@ -1164,8 +1163,8 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       time: new Date('2024-07-26T20:30:00'),
       stage: 'Knospe',
       links: [
-        { label: 'Instagram', url: '' },
-        { label: 'Soundcloud', url: '' },
+        { label: 'Instagram', url: 'https://www.instagram.com/emptysilencemusic/' },
+        { label: 'Soundcloud', url: 'https://soundcloud.com/emptysilenceofc' },
       ],
     },
   ],
