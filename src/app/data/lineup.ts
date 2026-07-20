@@ -461,17 +461,17 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
     },
 
     // punching-polly-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'PUNCHIN POLLY',
-      image: 'artists/punching-polly-bachblyten-festival-line-up-2026.webp',
-      profile: `Punching Polly knallt wie eine Konfettikanone direkt aufs Trommelfell – laut, glitzernd, gnadenlos. Sie spielt mit Charme und Härte, bis der Puls „rumms bumms“ macht und du eigentlich wieder beatmet werden musst.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/punching_polly/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/punchingpolly' },
-      ],
-    },
+    // {
+    //   name: 'PUNCHIN POLLY',
+    //   image: 'artists/punching-polly-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Punching Polly knallt wie eine Konfettikanone direkt aufs Trommelfell – laut, glitzernd, gnadenlos. Sie spielt mit Charme und Härte, bis der Puls „rumms bumms“ macht und du eigentlich wieder beatmet werden musst.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/punching_polly/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/punchingpolly' },
+    //   ],
+    // },
 
     // urem-bachblyten-festival-line-up-2026.webp
     {
@@ -972,17 +972,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       ],
     },
     // sophie-cut-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Sophie Cut',
-      image: 'artists/sophie-cut-bachblyten-festival-line-up-2026.webp',
-      profile: `Sophie Cut hat ihren Sound im minimalistischen Techno gefunden. Mit sphärischen Klangwelten, feinen Variationen und genau den richtigen Build Ups entstehen Sets, die sich weniger wie eine Aneinanderreihung von Tracks anfühlen, sondern eher wie eine Reise durch einen Film.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/sophiecuttt/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/sophie-cut' },
-      ],
-    },
+    // {
+    //   name: 'Sophie Cut',
+    //   image: 'artists/sophie-cut-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Sophie Cut hat ihren Sound im minimalistischen Techno gefunden. Mit sphärischen Klangwelten, feinen Variationen und genau den richtigen Build Ups entstehen Sets, die sich weniger wie eine Aneinanderreihung von Tracks anfühlen, sondern eher wie eine Reise durch einen Film.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Blytenbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/sophiecuttt/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/sophie-cut' },
+    //   ],
+    // },
     // irie-scenario-bachblyten-festival-line-up-2026.webp
     {
       name: 'Irie Scenario',
