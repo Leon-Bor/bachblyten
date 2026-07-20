@@ -543,18 +543,18 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
       ],
     },
     // skkin-velvet-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Skkin Velvet',
-      image: 'artists/skkin-velvet-bachblyten-festival-line-up-2026.webp',
-      profile: `Skkin Velvet bringt einen Sound mit, der direkt nach vorne geht – energiegeladen, euphorisch und mit genau dem richtigen Gespür für den Moment auf dem Dancefloor. Zwischen treibenden Trance-Vibes, druckvollen Beats und hypnotischen Passagen entsteht eine Atmosphäre, die einen einfach mitzieht.`,
+    // {
+    //   name: 'Skkin Velvet',
+    //   image: 'artists/skkin-velvet-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Skkin Velvet bringt einen Sound mit, der direkt nach vorne geht – energiegeladen, euphorisch und mit genau dem richtigen Gespür für den Moment auf dem Dancefloor. Zwischen treibenden Trance-Vibes, druckvollen Beats und hypnotischen Passagen entsteht eine Atmosphäre, die einen einfach mitzieht.`,
 
-      time: new Date('2024-07-26T18:00:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/skkinvelvet/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/skkinvelvet' },
-      ],
-    },
+    //   time: new Date('2024-07-26T18:00:00'),
+    //   stage: 'Blytenbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/skkinvelvet/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/skkinvelvet' },
+    //   ],
+    // },
     // total-balance-bachblyten-festival-line-up-2026.webp
     {
       name: 'Total Balance',
