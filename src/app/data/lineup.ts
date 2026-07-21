@@ -880,17 +880,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       ],
     },
     // dj-nasendusche-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'DJ Nasendusche',
-      image: 'artists/dj-nasendusche-bachblyten-festival-line-up-2026.webp',
-      profile: `Als Teil der High Humidity Crew bringt DJ Nasendusche housige Grooves mit, die einfach immer funktionieren. Egal ob zum entspannten Ankommen, für den perfekten Sonnenuntergang oder wenn der Dancefloor schon längst in Bewegung ist. Gute House-Musik kennt eben keine Uhrzeit.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/dj_nasendusche/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/dj_nasendusche' },
-      ],
-    },
+    // {
+    //   name: 'DJ Nasendusche',
+    //   image: 'artists/dj-nasendusche-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Als Teil der High Humidity Crew bringt DJ Nasendusche housige Grooves mit, die einfach immer funktionieren. Egal ob zum entspannten Ankommen, für den perfekten Sonnenuntergang oder wenn der Dancefloor schon längst in Bewegung ist. Gute House-Musik kennt eben keine Uhrzeit.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/dj_nasendusche/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/dj_nasendusche' },
+    //   ],
+    // },
     // equibox-bachblyten-festival-line-up-2026.webp
     {
       name: 'EQUiBOX',
