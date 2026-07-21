@@ -654,19 +654,19 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
         { label: 'Soundcloud', url: 'https://soundcloud.com/n-o-v-a-e' },
       ],
     },
-    {
-      name: 'Maurice Mino',
-      image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Berliner Artist Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
-      time: new Date('2024-07-27T01:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/mauricemino/?hl=de' },
+    // {
+    //   name: 'Maurice Mino',
+    //   image: 'artists/maurice-mino-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Berliner Artist Maurice Mino entdeckte mit 12 seine Liebe zu elektronischer Musik. Kräftige Basslines und volle Sounds, die sofort fesseln.',
+    //   time: new Date('2024-07-27T01:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/mauricemino/?hl=de' },
 
-        { label: 'Soundcloud', url: 'https://soundcloud.com/mauricemino' },
-      ],
-    },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/mauricemino' },
+    //   ],
+    // },
 
     {
       name: 'Shabiki',
