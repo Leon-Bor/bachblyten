@@ -1006,18 +1006,18 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/peterknurz/' }],
     },
     // Hallert_Thumbnail.webp
-    {
-      name: 'Hallert',
-      image: 'artists/Hallert_Thumbnail.webp',
-      profile:
-        'Musikalisch folgt Hallert keiner festen Schublade. Eigene Produktionen treffen auf Lieblingsstücke anderer Artists, treibende Grooves auf satte Basslines. Was aber nie fehlen darf, sind diese kleinen Momente, die einen packen. Eine Melodie, ein Vocal oder irgendein catchy Element, das plötzlich hängen bleibt und aus einem guten Track einen besonderen macht.',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
-      ],
-    },
+    // {
+    //   name: 'Hallert',
+    //   image: 'artists/Hallert_Thumbnail.webp',
+    //   profile:
+    //     'Musikalisch folgt Hallert keiner festen Schublade. Eigene Produktionen treffen auf Lieblingsstücke anderer Artists, treibende Grooves auf satte Basslines. Was aber nie fehlen darf, sind diese kleinen Momente, die einen packen. Eine Melodie, ein Vocal oder irgendein catchy Element, das plötzlich hängen bleibt und aus einem guten Track einen besonderen macht.',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/hallert_ofc/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/dashallert' },
+    //   ],
+    // },
     // Acapla_Thumbnail.webp
     {
       name: 'Acapla',
@@ -1085,18 +1085,18 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/le_puy/' }],
     },
     // Haqu-bachblyten-festival-line-up-2026.jpg
-    {
-      name: 'Haqu',
-      image: 'artists/Haqu-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Seit 2019 ist HAQU Teil der Kieler Musikszene. Was auf kleinen privaten Veranstaltungen begann, führte ihn mit der Zeit in die Clubs und schließlich dorthin, wo er musikalisch zuhause ist, in die Goa Welt.',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Parallelwald',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/official.haqu/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/official_phaema' },
-      ],
-    },
+    // {
+    //   name: 'Haqu',
+    //   image: 'artists/Haqu-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Seit 2019 ist HAQU Teil der Kieler Musikszene. Was auf kleinen privaten Veranstaltungen begann, führte ihn mit der Zeit in die Clubs und schließlich dorthin, wo er musikalisch zuhause ist, in die Goa Welt.',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Parallelwald',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/official.haqu/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/official_phaema' },
+    //   ],
+    // },
     // Frank-Leder-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Frank Leder',
@@ -1147,17 +1147,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [],
     },
     // empty-silence-bachblyten-festival-line-up-2026.jpg
-    {
-      name: 'Empty Silence',
-      image: 'artists/empty-silence-bachblyten-festival-line-up-2026.jpg',
-      profile: '',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/emptysilencemusic/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/emptysilenceofc' },
-      ],
-    },
+    // {
+    //   name: 'Empty Silence',
+    //   image: 'artists/empty-silence-bachblyten-festival-line-up-2026.jpg',
+    //   profile: '',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/emptysilencemusic/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/emptysilenceofc' },
+    //   ],
+    // },
   ],
   stages: [
     {
