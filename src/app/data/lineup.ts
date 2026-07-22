@@ -77,14 +77,14 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Lenni Aqua & Pinko',
-      image: 'artists/Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp',
-      profile: `Lenni Aqua & Pinko servieren keinen gewöhnlichen DJ-Set-Abend, sondern einen kunterbunten Obstsalat aus funky Grooves, saftigen Samples, Mitsingmomenten und jeder Menge guter Laune. Von Speedhouse über Trance bis zu den Hits, bei denen plötzlich alle gleichzeitig mitsingen.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [],
-    },
+    // {
+    //   name: 'Lenni Aqua & Pinko',
+    //   image: 'artists/Lenni-Aqua-pinko-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Lenni Aqua & Pinko servieren keinen gewöhnlichen DJ-Set-Abend, sondern einen kunterbunten Obstsalat aus funky Grooves, saftigen Samples, Mitsingmomenten und jeder Menge guter Laune. Von Speedhouse über Trance bis zu den Hits, bei denen plötzlich alle gleichzeitig mitsingen.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [],
+    // },
     // Krabat-bachblyten-festival-line-up-2026.webp
     {
       name: 'Krabat',
@@ -179,20 +179,20 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // tina-tischler-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Tina Tischler',
-      image: 'artists/tina-tischler-bachblyten-festival-line-up-2026.webp',
-      profile: `Nach vielen Jahren als Semangat und unzähligen Nächten zwischen deepen Grooves und druckvollem Techno kam 2023 der Switch: Trance, Baby! Seitdem steht Tina Tischler für euphorische Melodien, uplifting Vibes und genau die Energie, die einen mit offenen Armen auf den Dancefloor zieht.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/tinatischler_semangat_music/' },
-        {
-          label: 'Soundcloud',
-          url: 'https://soundcloud.com/semangat',
-        },
-      ],
-    },
+    // {
+    //   name: 'Tina Tischler',
+    //   image: 'artists/tina-tischler-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Nach vielen Jahren als Semangat und unzähligen Nächten zwischen deepen Grooves und druckvollem Techno kam 2023 der Switch: Trance, Baby! Seitdem steht Tina Tischler für euphorische Melodien, uplifting Vibes und genau die Energie, die einen mit offenen Armen auf den Dancefloor zieht.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/tinatischler_semangat_music/' },
+    //     {
+    //       label: 'Soundcloud',
+    //       url: 'https://soundcloud.com/semangat',
+    //     },
+    //   ],
+    // },
     // Neo-Bach-bachblyten-festival-line-up-2026.webp
     {
       name: 'Neo Bach',
@@ -293,20 +293,20 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // Danaconda-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Danaconda',
-      image: 'artists/Danaconda-bachblyten-festival-line-up-2026.webp',
-      profile: `Danacondas Sets fühlen sich an wie ein spontaner Abstecher auf die glitzerndste Tanzfläche der Stadt. Als Teil der Kölner Diskologne-Crew geht sie mit viel Liebe auf die Suche nach musikalischen Schätzen und haucht bekannten Klassikern mit ihren Retro-Edits neues Leben ein.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/danaconda.dj/' },
-        {
-          label: 'Soundcloud',
-          url: 'https://soundcloud.com/dj_danaconda',
-        },
-      ],
-    },
+    // {
+    //   name: 'Danaconda',
+    //   image: 'artists/Danaconda-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Danacondas Sets fühlen sich an wie ein spontaner Abstecher auf die glitzerndste Tanzfläche der Stadt. Als Teil der Kölner Diskologne-Crew geht sie mit viel Liebe auf die Suche nach musikalischen Schätzen und haucht bekannten Klassikern mit ihren Retro-Edits neues Leben ein.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/danaconda.dj/' },
+    //     {
+    //       label: 'Soundcloud',
+    //       url: 'https://soundcloud.com/dj_danaconda',
+    //     },
+    //   ],
+    // },
     // BrettZneider-bachblyten-festival-line-up-2026.webp
     {
       name: 'BrettZneider',
@@ -434,31 +434,31 @@ Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und gena
     },
 
     // baronessa-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'BARONESSA',
-      image: 'artists/baronessa-bachblyten-festival-line-up-2026.webp',
-      profile: `Baronessa bringt einen Sound mit, der Gefühl und Energie verbindet. Geprägt von ihrer musikalischen Reise zwischen Gesang, Gitarre und elektronischer Musik schafft sie Sets, die tragen, aufbauen und einen komplett eintauchen lassen.
-`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/baronessa.music/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/baronessamusic' },
-      ],
-    },
+    //     {
+    //       name: 'BARONESSA',
+    //       image: 'artists/baronessa-bachblyten-festival-line-up-2026.webp',
+    //       profile: `Baronessa bringt einen Sound mit, der Gefühl und Energie verbindet. Geprägt von ihrer musikalischen Reise zwischen Gesang, Gitarre und elektronischer Musik schafft sie Sets, die tragen, aufbauen und einen komplett eintauchen lassen.
+    // `,
+    //       time: new Date('2024-07-26T20:30:00'),
+    //       stage: 'Wurzelwerk',
+    //       links: [
+    //         { label: 'Instagram', url: 'https://www.instagram.com/baronessa.music/' },
+    //         { label: 'Soundcloud', url: 'https://soundcloud.com/baronessamusic' },
+    //       ],
+    //     },
     // Fab-Massimo-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'FAB MASSIMO',
-      image: 'artists/Fab-Massimo-bachblyten-festival-line-up-2026.webp',
-      profile: `Seit vielen Jahren produziert er Musik mit viel Gefühl für Details und genau diesem Gespür für Momente, die hängen bleiben. Seine Tracks verbinden Energie und Emotion auf eine sehr direkte Art, ohne dabei an Tiefe zu verlieren.
-`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/fabmassimo/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/fabmassimo' },
-      ],
-    },
+    //     {
+    //       name: 'FAB MASSIMO',
+    //       image: 'artists/Fab-Massimo-bachblyten-festival-line-up-2026.webp',
+    //       profile: `Seit vielen Jahren produziert er Musik mit viel Gefühl für Details und genau diesem Gespür für Momente, die hängen bleiben. Seine Tracks verbinden Energie und Emotion auf eine sehr direkte Art, ohne dabei an Tiefe zu verlieren.
+    // `,
+    //       time: new Date('2024-07-26T20:30:00'),
+    //       stage: 'Wurzelwerk',
+    //       links: [
+    //         { label: 'Instagram', url: 'https://www.instagram.com/fabmassimo/' },
+    //         { label: 'Soundcloud', url: 'https://soundcloud.com/fabmassimo' },
+    //       ],
+    //     },
 
     // punching-polly-bachblyten-festival-line-up-2026.webp
     // {
@@ -722,18 +722,18 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       ],
     },
     // sabura-bachblyten-festival-line-up-2026
-    {
-      name: 'Sabura',
-      image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'Sabura steht für tiefen, treibenden Sound mit Charakter – hypnotisch, kraftvoll und immer mit Gefühl. Wer ihn schon einmal live erlebt hat, weiß, dass er nicht einfach nur spielt, sondern Räume schafft, die verbinden und mitziehen.',
-      time: new Date('2024-07-27T17:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
-      ],
-    },
+    // {
+    //   name: 'Sabura',
+    //   image: 'artists/sabura-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'Sabura steht für tiefen, treibenden Sound mit Charakter – hypnotisch, kraftvoll und immer mit Gefühl. Wer ihn schon einmal live erlebt hat, weiß, dass er nicht einfach nur spielt, sondern Räume schafft, die verbinden und mitziehen.',
+    //   time: new Date('2024-07-27T17:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/sabura.hh/?hl=de' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saburaa' },
+    //   ],
+    // },
     // dlusion-bachblyten-festival-line-up-2026
     {
       name: 'dLusion',
@@ -913,17 +913,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/effex_dj/' }],
     },
     // m4ry-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'M4RY',
-      image: 'artists/m4ry-bachblyten-festival-line-up-2026.webp',
-      profile: `Aus Berlin kommend hat M4RY einen Sound entwickelt, den man sofort wiedererkennt. Druckvoll, funky und voller Groove. House, Funk und Techno verschmelzen zu einer ganz eigenen Mischung, die einfach unfassbar Spaß macht und einen automatisch in Bewegung bringt.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/m4rym4rym4ry/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/m4rym4rym4ry' },
-      ],
-    },
+    // {
+    //   name: 'M4RY',
+    //   image: 'artists/m4ry-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Aus Berlin kommend hat M4RY einen Sound entwickelt, den man sofort wiedererkennt. Druckvoll, funky und voller Groove. House, Funk und Techno verschmelzen zu einer ganz eigenen Mischung, die einfach unfassbar Spaß macht und einen automatisch in Bewegung bringt.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/m4rym4rym4ry/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/m4rym4rym4ry' },
+    //   ],
+    // },
     // matzenatur-bachblyten-festival-line-up-2026.webp
     {
       name: 'Matzenatur',
