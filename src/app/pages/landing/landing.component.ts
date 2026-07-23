@@ -70,7 +70,7 @@ export class LandingComponent {
     {
       title: 'Einlass & Camping öffnen',
       detail: 'Ankommen, Platz finden, Zelt aufbauen, Bier aufmachen.',
-      time: 'Fr · 8:00',
+      time: 'Fr · 10:00',
     },
     {
       title: 'Sunset Opening',

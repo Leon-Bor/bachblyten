@@ -39,7 +39,7 @@ export class FaqComponent {
       id: 'arrival-early',
       question: 'Kann ich schon am Donnerstag anreisen?',
       answer:
-        'Ja! Am Donnerstag, den 23.07., könnt ihr von 17:00 bis 22:00 Uhr mit dem Auto auf den Campingplatz fahren. Ab Freitag 8:00 Uhr ist die Anreise wie gewohnt möglich. Bitte denkt an Auto und Wohnmobil Pässe.',
+        'Ja! Am Donnerstag, den 23.07., könnt ihr von 17:00 bis 22:00 Uhr mit dem Auto auf den Campingplatz fahren. Ab Freitag 10:00 Uhr ist die Anreise wie gewohnt möglich. Bitte denkt an Auto und Wohnmobil Pässe.',
       category: 'arrival',
     },
     {
@@ -265,7 +265,7 @@ export class FaqComponent {
       id: 'general-hours',
       question: 'Wann öffnen Gelände und Floors?',
       answer:
-        'Früher Camping-Zugang schon am Donnerstag (23.07.) von 17:00 bis 22:00 Uhr. Check-in ab Freitag 8:00 Uhr, Floors laufen bis Sonntag abend. Abreise bis Montag 12:00 Uhr.',
+        'Früher Camping-Zugang schon am Donnerstag (23.07.) von 17:00 bis 22:00 Uhr. Check-in ab Freitag 10:00 Uhr, Floors laufen bis Sonntag abend. Abreise bis Montag 12:00 Uhr.',
       category: 'general',
     },
     {
