@@ -101,14 +101,14 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // kmare-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'KMARE',
-      image: 'artists/kmare-bachblyten-festival-line-up-2026.webp',
-      profile: `KMARE steht für Roots of Dub, Steppas und Raggajungle, aber vor allem für eine klare Haltung. Musik als verbindende Kraft, Basswellen als Sprache und Dancefloors als Orte, an denen Menschen unabhängig von Herkunft, Geschlecht, Identität oder Weltanschauung zusammenkommen.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [{ label: 'Instagram', url: 'https://www.instagram.com/itskmare/' }],
-    },
+    // {
+    //   name: 'KMARE',
+    //   image: 'artists/kmare-bachblyten-festival-line-up-2026.webp',
+    //   profile: `KMARE steht für Roots of Dub, Steppas und Raggajungle, aber vor allem für eine klare Haltung. Musik als verbindende Kraft, Basswellen als Sprache und Dancefloors als Orte, an denen Menschen unabhängig von Herkunft, Geschlecht, Identität oder Weltanschauung zusammenkommen.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Blytenbau',
+    //   links: [{ label: 'Instagram', url: 'https://www.instagram.com/itskmare/' }],
+    // },
     // Jona-bachblyten-festival-line-up-2026.webp
     {
       name: 'Jona',
@@ -329,17 +329,17 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // paze-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'PAZE',
-      image: 'artists/paze-bachblyten-festival-line-up-2026.webp',
-      profile: `Seit 2023 unterwegs und schon jetzt auf internationalen Floors zu hören, merkt man schnell, dass da jemand mit echtem Drive dahinter steckt. Seine Musik entwickelt sich ständig weiter und genau das spürt man auch auf dem Dancefloor.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/pazednb/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/sounds2feel-records' },
-      ],
-    },
+    // {
+    //   name: 'PAZE',
+    //   image: 'artists/paze-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Seit 2023 unterwegs und schon jetzt auf internationalen Floors zu hören, merkt man schnell, dass da jemand mit echtem Drive dahinter steckt. Seine Musik entwickelt sich ständig weiter und genau das spürt man auch auf dem Dancefloor.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Blytenbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/pazednb/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/sounds2feel-records' },
+    //   ],
+    // },
 
     // inductionxbewa-bachblyten-festival-line-up-2026.webp
     {
@@ -393,31 +393,31 @@ export const LINEUP_DATA: LineupData = {
       ],
     },
     // fttz-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'FTTZ',
-      image: 'artists/fttz-bachblyten-festival-line-up-2026.webp',
-      profile: `Mit FTTZ holen wir uns frischen Drum and Bass Sound aus Lübeck zum Bachblyten Festival.
-Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und genau die Energie, die einen nicht stillstehen lässt. Ohne viel Schnickschnack, einfach ehrlicher Sound, der den Floor in Bewegung bringt.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/fttz.dnb/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/user-36810797-496788976' },
-      ],
-    },
+    //     {
+    //       name: 'FTTZ',
+    //       image: 'artists/fttz-bachblyten-festival-line-up-2026.webp',
+    //       profile: `Mit FTTZ holen wir uns frischen Drum and Bass Sound aus Lübeck zum Bachblyten Festival.
+    // Die Sets gehen direkt nach vorne, schnelle Breaks, druckvolle Basslines und genau die Energie, die einen nicht stillstehen lässt. Ohne viel Schnickschnack, einfach ehrlicher Sound, der den Floor in Bewegung bringt.`,
+    //       time: new Date('2024-07-26T20:30:00'),
+    //       stage: 'Blytenbau',
+    //       links: [
+    //         { label: 'Instagram', url: 'https://www.instagram.com/fttz.dnb/' },
+    //         { label: 'Soundcloud', url: 'https://soundcloud.com/user-36810797-496788976' },
+    //       ],
+    //     },
 
     // amon.fire-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'AMON.FIRE',
-      image: 'artists/amon.fire-bachblyten-festival-line-up-2026.webp',
-      profile: `Der Lübecker DJ und Produzent steht für schnelle, druckvolle Sets zwischen Liquid, Neurofunk und Jump Up. Sein Sound geht direkt nach vorne und bringt jeden Floor in Bewegung, roh, kompromisslos und voller Energie.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/amon.fire.dnb/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/beats-by-amonfire' },
-      ],
-    },
+    // {
+    //   name: 'AMON.FIRE',
+    //   image: 'artists/amon.fire-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Der Lübecker DJ und Produzent steht für schnelle, druckvolle Sets zwischen Liquid, Neurofunk und Jump Up. Sein Sound geht direkt nach vorne und bringt jeden Floor in Bewegung, roh, kompromisslos und voller Energie.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Blytenbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/amon.fire.dnb/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/beats-by-amonfire' },
+    //   ],
+    // },
 
     // jenay-bachblyten-festival-line-up-2026.webp
     {
@@ -668,59 +668,59 @@ Als Artist und Produzentin bei iDirty Records bringt sie frische Energie auf den
     //   ],
     // },
 
-    {
-      name: 'Shabiki',
-      image: 'artists/shabiki-bachblyten-festival-line-up-2026.jpg',
-      profile: '𝚂𝙷𝙰𝙱𝙸𝙺𝙸 – In Swahili, “Msichana na shabiki” means “girl with the fan.” 🪭',
-      time: new Date('2024-07-27T01:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/shabiki.music/?hl=de' },
+    // {
+    //   name: 'Shabiki',
+    //   image: 'artists/shabiki-bachblyten-festival-line-up-2026.jpg',
+    //   profile: '𝚂𝙷𝙰𝙱𝙸𝙺𝙸 – In Swahili, “Msichana na shabiki” means “girl with the fan.” 🪭',
+    //   time: new Date('2024-07-27T01:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/shabiki.music/?hl=de' },
 
-        { label: 'Soundcloud', url: 'https://soundcloud.com/shabiki_music' },
-      ],
-    },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/shabiki_music' },
+    //   ],
+    // },
 
     // gizmo-bachblyten-festival-line-up-2026.jpg
-    {
-      name: 'Gizmo',
-      image: 'artists/gizmo-bachblyten-festival-line-up-2026.webp',
-      profile: 'Producer • Artist - Energetic, forward-driving, vigorous.',
-      time: new Date('2024-07-26T22:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/gizmo.berlin/?hl=de' },
+    // {
+    //   name: 'Gizmo',
+    //   image: 'artists/gizmo-bachblyten-festival-line-up-2026.webp',
+    //   profile: 'Producer • Artist - Energetic, forward-driving, vigorous.',
+    //   time: new Date('2024-07-26T22:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/gizmo.berlin/?hl=de' },
 
-        { label: 'Soundcloud', url: 'https://soundcloud.com/gizmoberlin' },
-      ],
-    },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/gizmoberlin' },
+    //   ],
+    // },
     // saltz-bachblyten-festival-line-up-2026
-    {
-      name: 'Saltz',
-      image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
-      profile:
-        'SALTZ steht für treibende Grooves, klare Energie und genau das richtige Gespür für den Dancefloor. Zwischen deepen Vibes und druckvollem Techno baut sie Spannung auf, ohne den Flow zu verlieren.',
-      time: new Date('2024-07-27T15:00:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
-      ],
-    },
+    // {
+    //   name: 'Saltz',
+    //   image: 'artists/saltz-bachblyten-festival-line-up-2026.jpg',
+    //   profile:
+    //     'SALTZ steht für treibende Grooves, klare Energie und genau das richtige Gespür für den Dancefloor. Zwischen deepen Vibes und druckvollem Techno baut sie Spannung auf, ohne den Flow zu verlieren.',
+    //   time: new Date('2024-07-27T15:00:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/saltz_music/?hl=de' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/saltzmusic' },
+    //   ],
+    // },
     // softdrive-bachblyten-festival-line-up-2026
-    {
-      name: 'Softdrive',
-      image: 'artists/softdrive-bachblyten-festival-line-up-2026.webp',
-      profile: `Oliver und Bennet haben sich 2020 zusammengetan und sind seitdem als Softdrive unterwegs – ein Duo, das zwei Perspektiven zu einem klaren, eigenen Sound verschmelzen lässt.
-Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen und einen anderen Blick auf Musik.`,
+    //     {
+    //       name: 'Softdrive',
+    //       image: 'artists/softdrive-bachblyten-festival-line-up-2026.webp',
+    //       profile: `Oliver und Bennet haben sich 2020 zusammengetan und sind seitdem als Softdrive unterwegs – ein Duo, das zwei Perspektiven zu einem klaren, eigenen Sound verschmelzen lässt.
+    // Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen und einen anderen Blick auf Musik.`,
 
-      time: new Date('2024-07-26T18:00:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
-      ],
-    },
+    //       time: new Date('2024-07-26T18:00:00'),
+    //       stage: 'Blytenbau',
+    //       links: [
+    //         { label: 'Instagram', url: 'https://www.instagram.com/s0ftdrive/' },
+    //         { label: 'Soundcloud', url: 'https://soundcloud.com/softdrive' },
+    //       ],
+    //     },
     // sabura-bachblyten-festival-line-up-2026
     // {
     //   name: 'Sabura',
@@ -984,17 +984,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
     //   ],
     // },
     // irie-scenario-bachblyten-festival-line-up-2026.webp
-    {
-      name: 'Irie Scenario',
-      image: 'artists/irie-scenario-bachblyten-festival-line-up-2026.webp',
-      profile: `Mit Irie Scenario holen wir uns feinsten Drum and Bass und Jungle Sound aus Lübeck zum Bachblyten Festival. Rollende Breakbeats, warme Basslines und genau die rohe, ehrliche Energie, die vom ersten Track an mitnimmt, mal tief und atmosphärisch, mal komplett nach vorne, aber immer mit feinem Gespür für Flow und Timing.`,
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Blytenbau',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/irie.scenario/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/irie-scenario' },
-      ],
-    },
+    // {
+    //   name: 'Irie Scenario',
+    //   image: 'artists/irie-scenario-bachblyten-festival-line-up-2026.webp',
+    //   profile: `Mit Irie Scenario holen wir uns feinsten Drum and Bass und Jungle Sound aus Lübeck zum Bachblyten Festival. Rollende Breakbeats, warme Basslines und genau die rohe, ehrliche Energie, die vom ersten Track an mitnimmt, mal tief und atmosphärisch, mal komplett nach vorne, aber immer mit feinem Gespür für Flow und Timing.`,
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Blytenbau',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/irie.scenario/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/irie-scenario' },
+    //   ],
+    // },
     // Knurz_Thumbnail.webp
     {
       name: 'Knurz',
@@ -1029,25 +1029,25 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [{ label: 'Instagram', url: 'https://www.instagram.com/psyshowbob_dennsen/' }],
     },
     // Clemo_Thumbnail.webp
-    {
-      name: 'Clemo',
-      image: 'artists/Clemo_Thumbnail.webp',
-      profile:
-        'Ebenso Teil der High Humidity Crew, erschafft Clemo Klangwelten, in denen man sich ganz wunderbar verlieren kann. Psychedelische Elemente treffen auf melodische Tiefe, sphärische Flächen auf rollende Grooves. Kein Sound, der nach vorne drängt, sondern einer, der einen ganz von selbst mitnimmt.',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [],
-    },
+    // {
+    //   name: 'Clemo',
+    //   image: 'artists/Clemo_Thumbnail.webp',
+    //   profile:
+    //     'Ebenso Teil der High Humidity Crew, erschafft Clemo Klangwelten, in denen man sich ganz wunderbar verlieren kann. Psychedelische Elemente treffen auf melodische Tiefe, sphärische Flächen auf rollende Grooves. Kein Sound, der nach vorne drängt, sondern einer, der einen ganz von selbst mitnimmt.',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [],
+    // },
     // Hannahtronica_Thumbnail.webp
-    {
-      name: 'Hannahtronica',
-      image: 'artists/Hannahtronica_Thumbnail.webp',
-      profile:
-        'Wer Hannahtronica schon einmal erlebt hat, weiß, dass hier nicht einfach Tracks aneinandergereiht werden. Mit viel Liebe zum Detail und einem feinen Gespür für den richtigen Moment entstehen Sets, die einen ganz entspannt auf den Dancefloor ziehen und dort auch erstmal nicht wieder loslassen. Auch mit eigenen Formaten wie "Round and Round" bringt Hannahtronica Menschen über Musik zusammen.',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Knospe',
-      links: [{ label: 'Instagram', url: 'https://www.instagram.com/hannahtronica/' }],
-    },
+    // {
+    //   name: 'Hannahtronica',
+    //   image: 'artists/Hannahtronica_Thumbnail.webp',
+    //   profile:
+    //     'Wer Hannahtronica schon einmal erlebt hat, weiß, dass hier nicht einfach Tracks aneinandergereiht werden. Mit viel Liebe zum Detail und einem feinen Gespür für den richtigen Moment entstehen Sets, die einen ganz entspannt auf den Dancefloor ziehen und dort auch erstmal nicht wieder loslassen. Auch mit eigenen Formaten wie "Round and Round" bringt Hannahtronica Menschen über Musik zusammen.',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Knospe',
+    //   links: [{ label: 'Instagram', url: 'https://www.instagram.com/hannahtronica/' }],
+    // },
     // Stephenson_Thumbnail.webp
     {
       name: 'Stephensøn',
@@ -1126,17 +1126,17 @@ Oliver bringt über zehn Jahre Produktionserfahrung mit, Bennet frische Ideen un
       links: [],
     },
     // Solvind-bachblyten-festival-line-up-2026.jpg
-    {
-      name: 'Sølvind',
-      image: 'artists/Solvind-bachblyten-festival-line-up-2026.jpg',
-      profile: '',
-      time: new Date('2024-07-26T20:30:00'),
-      stage: 'Wurzelwerk',
-      links: [
-        { label: 'Instagram', url: 'https://www.instagram.com/solvind.fl/' },
-        { label: 'Soundcloud', url: 'https://soundcloud.com/soelvind' },
-      ],
-    },
+    // {
+    //   name: 'Sølvind',
+    //   image: 'artists/Solvind-bachblyten-festival-line-up-2026.jpg',
+    //   profile: '',
+    //   time: new Date('2024-07-26T20:30:00'),
+    //   stage: 'Wurzelwerk',
+    //   links: [
+    //     { label: 'Instagram', url: 'https://www.instagram.com/solvind.fl/' },
+    //     { label: 'Soundcloud', url: 'https://soundcloud.com/soelvind' },
+    //   ],
+    // },
     // Timo-bachblyten-festival-line-up-2026.jpg
     {
       name: 'Timo',
