@@ -58,5 +58,5 @@ Toleranz
 Kein Platz für Diskriminierung, Rassismus oder Extremismus.
 Trinkwasser
 Kostenlose Wasserzapfstation vorhanden. Kein Glas erlaubt.
-Umwelt-Pfand
-5 € Umweltpfand gegen gefüllten Müllbeutel erstattbar.
+Müllpfand
+10 € Müllpfand gegen gefüllten Müllbeutel erstattbar. Rückgabe nur am Sonntag von 10:00 bis 18:00 Uhr und am Montag von 9:00 bis 12:00 Uhr.

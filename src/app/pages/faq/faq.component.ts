@@ -258,7 +258,7 @@ export class FaqComponent {
       id: 'rules-deposit',
       question: 'Müllpfand',
       answer:
-        'Denk an die 10 € Müllpfand – bitte in bar. Den Pfand bekommst du gegen einen gut gefüllten Müllbeutel zurück – Rückgabe nur am Sonntag von 10:00 bis 18:00 Uhr. Danke fürs Mitmachen.',
+        'Denk an die 10 € Müllpfand – bitte in bar. Den Pfand bekommst du gegen einen gut gefüllten Müllbeutel zurück – Rückgabe nur am Sonntag von 10:00 bis 18:00 Uhr und am Montag von 9:00 bis 12:00 Uhr. Danke fürs Mitmachen.',
       category: 'arrival',
     },
     {
