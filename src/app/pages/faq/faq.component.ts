@@ -206,13 +206,6 @@ export class FaqComponent {
         'Über Paylogic kannst du dein Ticket erneut zusenden lassen. Vor Ort hilft dir das Helpdesk am Haupttresen.',
       category: 'tickets',
     },
-    {
-      id: 'tickets-box-office',
-      question: 'Gibt es eine Abendkasse?',
-      answer:
-        'Ja, es wird eine Abendkasse geben. Wir empfehlen, dein Ticket im Vorverkauf zu sichern, da du so Geld und eventuelle Wartezeit sparst.',
-      category: 'tickets',
-    },
     // {
     //   id: 'tickets-day-pass',
     //   question: 'Gibt es Tagestickets?',
@@ -230,7 +223,7 @@ export class FaqComponent {
       id: 'tickets-schwesing',
       question: 'Schwesing Ticket (Anwohner*innen)?',
       answer:
-        'Ja. Für Einwohner*innen von Schwesing gibt es an der Abendkasse ein stark vergünstigtes Kontingent. Bringt bitte einen Adressnachweis (z. B. Ausweis oder Meldebestätigung) mit.',
+        'Ja. Für Einwohner*innen von Schwesing gibt es ein stark vergünstigtes Kontingent. Bringt bitte einen Adressnachweis (z. B. Ausweis oder Meldebestätigung) mit.',
       category: 'tickets',
     },
     {
