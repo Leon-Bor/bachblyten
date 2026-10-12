@@ -13,7 +13,7 @@ export interface NewsletterSubmitResult {
 
 @Injectable({ providedIn: 'root' })
 export class NewsletterModalService {
-  private static readonly SUBSCRIBE_URL = 'https://events.alphabees.de/api/newsletter/subscribe';
+  private static readonly SUBSCRIBE_URL = 'https://alphaevents.tech/api/newsletter/subscribe';
   private static readonly PUBLIC_ID = 'a0097257-a8cb-438c-a40c-aa82e9c81885';
 
   private readonly openState = signal(false);
