@@ -90,6 +90,11 @@
   color: var(--text-main);
 }
 
+.location-mail {
+  color: var(--accent-lime);
+  text-decoration: underline;
+}
+
 // Mobile am Ende, damit es die Desktop-Regeln oben überschreibt
 @media (max-width: 600px) {
   .events {
