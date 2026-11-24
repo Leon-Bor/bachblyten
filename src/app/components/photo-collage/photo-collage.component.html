@@ -28,6 +28,6 @@
 <div class="lightbox" *ngIf="activePhoto" (click)="close()" aria-modal="true" role="dialog">
   <div class="lightbox-inner" (click)="$event.stopPropagation()">
     <button type="button" class="close" (click)="close()" aria-label="Schließen">×</button>
-    <img [src]="activePhoto?.src" [alt]="activePhoto?.alt" />
+    <img [src]="activePhoto.src" [alt]="activePhoto.alt" />
   </div>
 </div>

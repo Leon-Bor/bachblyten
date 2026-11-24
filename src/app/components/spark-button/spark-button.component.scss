@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 $spot-count: 52;
 
 :host {
@@ -83,17 +85,17 @@ $spot-count: 52;
 
 @for $i from 1 through $spot-count {
   .spark-btn__spot:nth-child(#{$i}) {
-    $size: random(4) + 3;
+    $size: math.random(4) + 3;
     width: #{$size}px;
     height: #{$size}px;
-    --x-start: #{random(140) - 70}px;
-    --y-start: #{random(120) - 60}px;
-    --x-end: #{random(400) - 200}px;
-    --y-end: #{random(160) - 80}px;
-    --duration: #{(random(30) / 5) + 4}s;
-    --delay: -#{random(20) / 10}s;
-    background: hsla(5 + random(20), 85%, 66%, 0.9);
-    box-shadow: 0 0 12px rgba(255, 120 + random(40), 120 + random(40), 0.26);
+    --x-start: #{math.random(140) - 70}px;
+    --y-start: #{math.random(120) - 60}px;
+    --x-end: #{math.random(400) - 200}px;
+    --y-end: #{math.random(160) - 80}px;
+    --duration: #{math.div(math.random(30), 5) + 4}s;
+    --delay: -#{math.div(math.random(20), 10)}s;
+    background: hsla(5 + math.random(20), 85%, 66%, 0.9);
+    box-shadow: 0 0 12px rgba(255, 120 + math.random(40), 120 + math.random(40), 0.26);
   }
 }
 

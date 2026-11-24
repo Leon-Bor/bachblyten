@@ -1,113 +1,77 @@
 <section class="bg-intro">
   <div class="mainbrand">
-    <img src="bb_mainbrand_light_24.webp" alt="Bachblyten Festival Hauptlogo" />
-    <p class="date">24 – 26 Juli 2026</p>
-    <p class="where">Flugplatz Schwesing</p>
-    <p class="where-sub">bei Husum, Schleswig-Holstein</p>
-
-    <div class="sell-more-tickets">
-      <app-spark-button
-        bbTicketCta="landing-hero"
-        routerLink="/tickets"
-        label="ZUM TICKET SHOP"
-      ></app-spark-button>
-    </div>
-  </div>
-</section>  
-
-<app-photo-collage [start]="24" [count]="13"></app-photo-collage>
-
-<section class="section seo-intro">
-  <div class="section-heading">
-    <span class="eyebrow">Festival Norddeutschland</span>
-    <h1>Elektronisches Festival in Norddeutschland: Bachblyten 2026</h1>
-  </div>
-  <div class="seo-grid">
-    <p class="seo-lede">
-      Bachblyten ist dein elektronisches Open Air in Schleswig-Holstein - mitten in Norddeutschland,
-      auf dem Rollfeld des Flugplatzes Schwesing. Drei Tage Techno, Indie Dance, Psy Techno, Goa und
-      Drum &amp; Bass mit Camping direkt neben den Floors.
-    </p>
-    <ul class="dash-list">
-      <li>
-        Norddeutschland-Location: nur wenige Minuten von Husum, gut erreichbar aus Hamburg &amp;
-        Kiel.
-      </li>
-      <li>4 Bühnen, neue Knospe Stage für Artists abseits der großen Festival-Circuits.</li>
-      <li>Camping, Cashless, Wasserstationen, faire Gastro.</li>
-      <li>Dates: 24.–26. Juli 2026 · Flugplatz Schwesing, Schleswig-Holstein.</li>
-    </ul>
-    <div class="chip-row">
-      <a class="pill" bbTicketCta="landing-chip" routerLink="/tickets">Tickets sichern</a>
-      <a class="pill" routerLink="/line-up">Line-up</a>
-      <a class="pill" routerLink="/anfahrt">Anfahrt &amp; Camping</a>
-    </div>
+    <img class="hero-logo" src="bb_logo_hex.png" alt="Bachblyten Logo" />
+    <p class="date">Bachblyten präsentiert</p>
+    <p class="where">Partys &amp; Events in Schleswig-Holstein</p>
+    <p class="where-sub">Festival-Pause 2027 – getanzt wird trotzdem</p>
   </div>
 </section>
 
-<app-lineup-pinboard></app-lineup-pinboard> 
-
-<section class="section highlights">
+<section class="section events" id="events">
   <div class="section-heading">
-    <span class="eyebrow">Warum kommen</span>
-    <h2>Ein Wochenende voller Blyten</h2>
+    <span class="eyebrow">Nächste Events</span>
+    <h1>Bachblyten Events</h1>
   </div>
-  <div class="section-grid">
-    <article class="card" *ngFor="let item of highlights">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
-      <div class="dash-row">
-        <a class="pill" routerLink="{{ item.link }}">{{ item.cta }}</a>
+  <div class="events-grid">
+    <article class="card event-card" *ngFor="let event of events" [id]="event.id">
+      <img
+        *ngIf="event.flyer; else noFlyer"
+        class="event-flyer"
+        [src]="event.flyer"
+        [alt]="'Flyer ' + event.title"
+        loading="lazy"
+      />
+      <ng-template #noFlyer>
+        <div class="event-flyer event-flyer--placeholder">
+          <span>{{ event.title }}</span>
+          <small>Flyer folgt</small>
+        </div>
+      </ng-template>
+      <div class="event-body">
+        <span class="slot-time">{{ event.date }}</span>
+        <h2>{{ event.title }}</h2>
+        <p class="event-location">{{ event.location }}</p>
+        <p>{{ event.description }}</p>
+        <div class="chip-row">
+          <span class="tag" *ngFor="let tag of event.tags">{{ tag }}</span>
+        </div>
+        <a
+          *ngIf="event.ticketUrl"
+          class="cta"
+          [bbTicketCta]="'landing-' + event.id"
+          [href]="event.ticketUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ event.ticketLabel }}</a
+        >
       </div>
-    </article>
-  </div>
-</section>
-
-<app-photo-collage [start]="10" [count]="9"></app-photo-collage>
-
-<section class="section timeline">
-  <div class="section-heading">
-    <span class="eyebrow">Was passiert wann</span>
-    <h2>Dein Wochenende auf dem Rollfeld</h2>
-  </div>
-  <div class="timeline-grid">
-    <article class="card" *ngFor="let slot of timeline">
-      <div class="slot-time">{{ slot.time }}</div>
-      <h4>{{ slot.title }}</h4>
-      <p>{{ slot.detail }}</p>
     </article>
   </div>
 </section>
 
 <section class="section newsletter">
   <div class="section-heading">
-    <span class="eyebrow">Loop dich ein</span>
-    <h2>Festivalfunk & Updates</h2>
+    <span class="eyebrow">Bachblyten Festival</span>
+    <h2>2027 machen wir Pause</h2>
   </div>
   <div class="newsletter-grid">
     <div class="newsletter-copy">
       <p>
-        Kein Feed-Overload, sondern das Wesentliche: Wir schicken dir wichtige Infos rund ums
-        Festival, damit du bestens vorbereitet bist. Zudem bekommst du nach dem Event exklusive
-        Aftermovie-Links und einen Umfragebogen, um dein Feedback zu teilen, damit wir uns jedes
-        Jahr weiter verbessern können.
+        Das Festival 2026 auf dem Flugplatz Schwesing war ein Fest – danke an alle, die dabei waren!
+        2027 wird es kein Bachblyten Festival geben. Vielleicht sehen wir uns 2028 wieder auf dem
+        Rollfeld. Bis dahin feiern wir mit euch auf unseren Events.
       </p>
-      <ul class="dash-list">
-        <li>Reminders für Anreise, Timetable und Camping.</li>
-        <li>Exklusive Aftermovie-Links.</li>
-        <li>Umfragebogen nach dem Festival.</li>
-        <li>Ticketverkaufsstart für 2027.</li>
-      </ul>
       <div class="chip-row">
-        <span class="pill">Timetable</span>
-        <span class="pill">Aftermovie</span>
-        <span class="pill">Ticketverkauf</span>
+        <a class="pill" routerLink="/2026">Rückblick 2026</a>
+        <a class="pill" routerLink="/gallery">Gallery</a>
+        <a class="pill" routerLink="/line-up">Line-up 2026</a>
       </div>
     </div>
     <div class="newsletter-card card">
-      <h4>Mach dein Postfach rave-ready</h4>
+      <h4>Als Erste:r erfahren, wie's weitergeht</h4>
       <p>
-        Trag dich ein, wir merken dich vor und versorgen dich mit den wichtigsten Festival-Infos.
+        Trag dich in den Festivalfunk ein – wir melden uns zu neuen Events und sobald es Neuigkeiten
+        zum Festival gibt.
       </p>
       <div class="cta-row">
         <button class="cta" type="button" (click)="newsletter.open()">Zum Festivalfunk</button>
@@ -124,38 +88,4 @@
   </div>
 </section>
 
-<section class="section aftermovie">
-  <div class="section-heading">
-    <span class="eyebrow">Vibes checken</span>
-    <h2>Aftermovie</h2>
-  </div>
-  <div class="video-wrap">
-    <iframe
-      src="https://www.youtube.com/embed/UAHgHB7qQTk"
-      title="Bachblyten Aftermovie"
-      frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-        web-share;
-      "
-      allowfullscreen
-    ></iframe>
-  </div>
-</section>
-
 <app-photo-collage [start]="0" [count]="9"></app-photo-collage>
-
-<section style="margin-top: 100px">
-  <div class="sell-more-tickets">
-    <app-spark-button
-      bbTicketCta="landing-footer"
-      routerLink="/tickets"
-      label="TICKETS SICHERN"
-    ></app-spark-button>
-  </div>
-</section>

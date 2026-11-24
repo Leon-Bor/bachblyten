@@ -1,0 +1,101 @@
+<section class="bg-intro">
+  <div class="mainbrand">
+    <img src="bb_mainbrand_light_24.webp" alt="Bachblyten Festival Hauptlogo" />
+    <p class="date">Rückblick 2026</p>
+    <p class="where">24 – 26 Juli 2026 · Flugplatz Schwesing</p>
+    <p class="where-sub">Danke, dass ihr dabei wart!</p>
+  </div>
+</section>
+
+<app-photo-collage [start]="24" [count]="13"></app-photo-collage>
+
+<section class="section seo-intro">
+  <div class="section-heading">
+    <span class="eyebrow">Archiv</span>
+    <h1>Bachblyten Festival 2026 – so war's</h1>
+  </div>
+  <div class="seo-grid">
+    <p class="seo-lede">
+      Drei Tage Techno, Indie Dance, Psy Techno, Goa und Drum &amp; Bass auf dem Rollfeld des
+      Flugplatzes Schwesing – mit Camping direkt neben den Floors. Hier bleibt alles zum Festival
+      2026 zum Nachstöbern.
+    </p>
+    <ul class="dash-list">
+      <li>Dates: 24.–26. Juli 2026 · Flugplatz Schwesing, Schleswig-Holstein.</li>
+      <li>4 Bühnen, neue Knospe Stage für Artists abseits der großen Festival-Circuits.</li>
+      <li>2027 macht das Festival Pause – vielleicht sehen wir uns 2028 wieder.</li>
+    </ul>
+    <div class="chip-row">
+      <a class="pill" routerLink="/line-up">Line-up 2026</a>
+      <a class="pill" routerLink="/faq">FAQ 2026</a>
+      <a class="pill" routerLink="/anfahrt">Anfahrt &amp; Camping</a>
+      <a class="pill" routerLink="/">Nächste Events</a>
+    </div>
+  </div>
+</section>
+
+<app-lineup-pinboard></app-lineup-pinboard> 
+
+<section class="section highlights">
+  <div class="section-heading">
+    <span class="eyebrow">Was es ausgemacht hat</span>
+    <h2>Ein Wochenende voller Blyten</h2>
+  </div>
+  <div class="section-grid">
+    <article class="card" *ngFor="let item of highlights">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div class="dash-row">
+        <a class="pill" routerLink="{{ item.link }}">{{ item.cta }}</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<app-photo-collage [start]="10" [count]="9"></app-photo-collage>
+
+<section class="section timeline">
+  <div class="section-heading">
+    <span class="eyebrow">Was passiert ist</span>
+    <h2>Das Wochenende auf dem Rollfeld</h2>
+  </div>
+  <div class="timeline-grid">
+    <article class="card" *ngFor="let slot of timeline">
+      <div class="slot-time">{{ slot.time }}</div>
+      <h4>{{ slot.title }}</h4>
+      <p>{{ slot.detail }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section aftermovie">
+  <div class="section-heading">
+    <span class="eyebrow">Vibes checken</span>
+    <h2>Aftermovie</h2>
+  </div>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/UAHgHB7qQTk"
+      title="Bachblyten Aftermovie"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+<app-photo-collage [start]="0" [count]="9"></app-photo-collage>
+
+<section style="margin-top: 100px">
+  <div class="sell-more-tickets">
+    <app-spark-button routerLink="/" label="NÄCHSTE EVENTS"></app-spark-button>
+  </div>
+</section>

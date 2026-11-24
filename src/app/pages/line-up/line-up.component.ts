@@ -7,7 +7,6 @@ import { ProfilePopoverComponent } from '../../components/profile-popover/profil
 import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
 import { LINEUP_DATA } from '../../data/lineup';
 import { trackMetaEvent } from '../../shared/meta-pixel';
-import { TicketCtaDirective } from '../../shared/ticket-cta.directive';
 
 @Component({
   selector: 'app-line-up',
@@ -19,7 +18,6 @@ import { TicketCtaDirective } from '../../shared/ticket-cta.directive';
     ArtistVisualComponent,
     ProfilePopoverComponent,
     SparkButtonComponent,
-    TicketCtaDirective,
   ],
   templateUrl: './line-up.component.html',
   styleUrl: './line-up.component.scss',

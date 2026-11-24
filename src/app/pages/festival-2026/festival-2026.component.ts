@@ -1,0 +1,96 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { LineupPinboardComponent } from '../../components/lineup-pinboard/lineup-pinboard.component';
+import { PhotoCollageComponent } from '../../components/photo-collage/photo-collage.component';
+import { SparkButtonComponent } from '../../components/spark-button/spark-button.component';
+
+interface Highlight {
+  title: string;
+  description: string;
+  cta: string;
+  link: string;
+}
+
+interface TimelineDrop {
+  title: string;
+  detail: string;
+  time: string;
+}
+
+@Component({
+  selector: 'app-festival-2026',
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterLink,
+    SparkButtonComponent,
+    PhotoCollageComponent,
+    LineupPinboardComponent,
+  ],
+  templateUrl: './festival-2026.component.html',
+  styleUrl: './festival-2026.component.scss',
+})
+export class Festival2026Component {
+  protected highlights: Highlight[] = [
+    {
+      title: 'Neubeginn und Haltung',
+      description:
+        'Bachblyten bekommt neues Leben. Ein neues Team, neue Energie und der Mut, Dinge anders zu denken. Wir gestalten neu, klar und bewusst, mit Blick nach vorn und Raum für Entwicklung.',
+      cta: 'Mehr erfahren',
+      link: '/about',
+    },
+    {
+      title: 'Vier Bühnen, ein Gefühl',
+      description:
+        'Musikalisch öffnet sich Bachblyten in viele Richtungen elektronischer Kultur. Indie Dance, Psy Techno, moderner Tech House, Bouncy und Hardtechno treffen auf Drum and Bass, Psytrance, Goa und Proggy. Vielfalt als Haltung, nicht als Trend.',
+      cta: 'Lineup entdecken',
+      link: '/line-up',
+    },
+    {
+      title: 'Knospe Stage und Offenheit',
+      description:
+        'Die Knospe ist eine Bühne mit guter Musik für Künstler:innen, die sonst selten oder nie Festival-Gigs bekommen. Raum für Stimmen abseits der großen Reichweite, für erste Festivalmomente und echte Chancen. Offen für alle Menschen, unabhängig von Identität, Herkunft oder Ausdruck, auf wie hinter den Decks.',
+      cta: 'Regeln lesen',
+      link: '/faq',
+    },
+  ];
+
+  protected timeline: TimelineDrop[] = [
+    {
+      title: 'Früher Camping-Zugang',
+      detail: 'Schon am Donnerstag mit dem Auto auf den Campingplatz fahren und ankommen.',
+      time: 'Do · 17:00–22:00',
+    },
+    {
+      title: 'Einlass & Camping öffnen',
+      detail: 'Ankommen, Platz finden, Zelt aufbauen, Bier aufmachen.',
+      time: 'Fr · 10:00',
+    },
+    {
+      title: 'Sunset Opening',
+      detail: 'Warm tanzen, Drinks genießen, Bässe & Lichter starten.',
+      time: 'Fr · 16:00',
+    },
+    {
+      title: 'Entspannungsphase',
+      detail: 'Yoga-Workshops, kreative Pausen, Zeit zum Durchatmen und Auftanken.',
+      time: 'Sa · 10:00',
+    },
+    {
+      title: 'Erneutes Aufblyhen',
+      detail: 'Feierstäbe ausfahren, bunte Outfits anziehen, Spaß haben.',
+      time: 'Sa · 18:00',
+    },
+    {
+      title: 'Festivalende',
+      detail: 'Letzte Beats, Abschiedsrunden, Festival klingt aus.',
+      time: 'So · 18:00',
+    },
+    {
+      title: 'Campingplatz schließt',
+      detail: 'Camping abbauen, aufräumen und Gelände (spätestens) verlassen.',
+      time: 'Mo · 12:00',
+    },
+  ];
+}

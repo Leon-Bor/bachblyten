@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { RouterLink } from '@angular/router';
 import { trackMetaEvent } from '../../shared/meta-pixel';
 
 interface TicketTier {
@@ -14,7 +13,7 @@ interface TicketTier {
 @Component({
   selector: 'app-tickets',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule],
   templateUrl: './tickets.component.html',
   styleUrl: './tickets.component.scss',
 })

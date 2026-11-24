@@ -2,12 +2,11 @@ import { AfterViewInit, Component, HostListener, Input, signal } from '@angular/
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HEADER_LINKS } from '../../navigation';
-import { TicketCtaDirective } from '../../shared/ticket-cta.directive';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, TicketCtaDirective],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })

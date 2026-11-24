@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from './pages/landing/landing.component';
-import { TicketsComponent } from './pages/tickets/tickets.component';
+import { Festival2026Component } from './pages/festival-2026/festival-2026.component';
 import { LineUpComponent } from './pages/line-up/line-up.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { AnfahrtComponent } from './pages/anfahrt/anfahrt.component';
@@ -15,7 +15,9 @@ import { ConfirmEmailComponent } from './pages/confirm-email/confirm-email.compo
 
 export const routes: Routes = [
   { path: '', component: LandingComponent, data: { background: 'sunrise' } },
-  { path: 'tickets', component: TicketsComponent, data: { background: 'static' } },
+  { path: '2026', component: Festival2026Component, data: { background: 'sunrise' } },
+  // ponytail: Festival-Ticketshop 2026 ist zu, TicketsComponent bleibt für ein mögliches 2028 liegen
+  { path: 'tickets', redirectTo: '', pathMatch: 'full' },
   { path: 'line-up', component: LineUpComponent, data: { background: 'static' } },
   { path: 'faq', component: FaqComponent, data: { background: 'static' } },
   { path: 'anfahrt', component: AnfahrtComponent, data: { background: 'static' } },
